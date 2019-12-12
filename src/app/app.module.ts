@@ -8,9 +8,11 @@ import { AppConfig } from './app.config';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MasterModule } from './layout/master/master.module';
 
+
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
