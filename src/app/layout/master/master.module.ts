@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MasterComponent } from './master.component';
 import { CommonModule } from '@angular/common';
 import { PublicComponent } from '../public/public.component';
+import { SidebarModule } from 'ng-sidebar';
 
 export const routes: Routes = [
     // {
@@ -46,6 +47,7 @@ export const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
+        SidebarModule.forRoot()
     ],
 
     declarations: [
