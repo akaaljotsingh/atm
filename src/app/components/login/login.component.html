@@ -9,15 +9,26 @@
                            
                       <img src="../../../assets/images/login10.png" alt="loginimage" height = 150px width=150px class="image1"/>
                         <div class="form-group" align="center">
-                          <input type="text" class="cool-link" placeholder="Username" id="txt" required/>
-                          <i class="fas fa-user"></i>
+                            <mat-form-field>
+                               
+                                <input matInput placeholder="Username">
+                                
+                              </mat-form-field>
+                              <i class="material-icons">
+                                  person
+                                  </i>
                         </div>
                       <div class="form-group" align="center">
-                        <input type="password" class="cool-link" placeholder="Password" id="pwd" required/>
-                        <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()" ></i>
+                        <mat-form-field>
+                          <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+                          <button class="button2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                          </button>
+                        </mat-form-field>
                       </div>
+                      
                      <div class="center">
-                        <button type="button" class="btn btn-success rounded" name="button">Let me In</button>
+                        <button type="button" class="btn btn-success rounded button1" name="button">Let me In</button>
                     </div>
                       
                       <div class="subheading">
