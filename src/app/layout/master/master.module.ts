@@ -22,12 +22,16 @@ export const routes: Routes = [
 
     },
     {
-        path: 'admin',
+        path: '',
         component: MasterComponent,
         children: [
             {
                 path: 'sample',
                 loadChildren: 'src/app/components/sample/_modules#SampleModule'
+            },
+            {
+                path: 'dashboard',
+                loadChildren: 'src/app/components/dashboard/_module#DashboardModule'
             }
             
         ],
