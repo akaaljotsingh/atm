@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppConfig } from './app.config';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MasterModule } from './layout/master/master.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -16,7 +17,7 @@ import { MasterModule } from './layout/master/master.module';
   ],
   imports: [
     BrowserModule,
-    Routing,MasterModule
+    Routing,MasterModule, BrowserAnimationsModule
   ],
   providers: [AppConfig, {
     provide: LocationStrategy, useClass: HashLocationStrategy
