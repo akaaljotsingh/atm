@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 import { SignupComponent } from './signup.component';
 import { ResetComponent } from './reset.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -15,6 +18,9 @@ import { ResetComponent } from './reset.component';
 
   imports: [
     CommonModule,
+    MatInputModule,
+    MatIconModule,
+
     RouterModule.forChild([
       { path: '', component: LoginComponent },
       { path: 'signup', component: SignupComponent},

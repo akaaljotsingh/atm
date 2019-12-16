@@ -6,16 +6,24 @@
                           <img src="../../../assets/images/login10.png" alt="loginimage" height = 150px width=150px class="image1"/>
                            
                           <div class="form-group" align="center">
-                            <input type="password" class="cool-link" placeholder="New Password" id="pwd" required/>
-                            <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()" ></i>
+                              <mat-form-field>
+                                  <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+                                  <button class="button2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                  </button>
+                                </mat-form-field>
                           </div>
                           <div class="form-group" align="center">
-                              <input type="password" class="cool-link" placeholder="Confirm Password" id="pwd" required/>
-                              <i class="fa fa-eye-slash" aria-hidden="true" onclick="myFunction()" ></i>
+                              <mat-form-field>
+                                  <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+                                  <button class="button2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                  </button>
+                                </mat-form-field>
                             </div>
                             
                           <div class="center">
-                            <button type="button" class="btn btn-success rounded" name="button">Submit</button>
+                            <button type="button" class="btn btn-success rounded button1" name="button">Submit</button>
                         </div>
                          
                          
