@@ -3,5 +3,28 @@ body{
     margin:0;
 }
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.tooltip {
+    font-size: 13px;
+  }
+
+  .invite-users-modal-component  .mat-radio-outer-circle {
+      height: 17px;
+      width: 17px;
+  }
+  .mat-radio-button.mat-accent .mat-radio-inner-circle {
+    height: 17px;
+    width: 17px;
+    background-color: #009AFF;
+  }
+  .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: #009AFF;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}

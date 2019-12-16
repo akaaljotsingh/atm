@@ -3,7 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { MasterComponent } from './master.component';
 import { CommonModule } from '@angular/common';
 import { PublicComponent } from '../public/public.component';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
+import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
+import {MatRadioModule} from '@angular/material/radio';
 export const routes: Routes = [
     // {
     //     path: '',
@@ -22,7 +26,7 @@ export const routes: Routes = [
 
     },
     {
-        path: '',
+        path: 'admin',
         component: MasterComponent,
         children: [
             {
@@ -46,12 +50,18 @@ export const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
+        MatSidenavModule,
+        MatTooltipModule,
+        MatDialogModule,
+        MatRadioModule
     ],
 
     declarations: [
         MasterComponent,
-        PublicComponent 
+        PublicComponent,
+        InvitePopupComponent 
     ],
-    providers: []
+    providers: [],
+    entryComponents: [InvitePopupComponent]
 })
 export class MasterModule { }
