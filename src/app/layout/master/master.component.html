@@ -1,11 +1,9 @@
 <div class="main-div  clearfix" (click)="notificationBoxClose($event)" >
-    <div class="fix-sidebar">
         <p>Logo</p>
         <div class="box" (click)="profileBox=!profileBox">
          <span>BS</span>
 
         </div>
-        <i class="notification" (click)="notificationBox=!notificationBox"  matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Notification" 
          class="far fa-bell">
          <div class="notification-box"  *ngIf="notificationBox">
           <span>Notification</span>
