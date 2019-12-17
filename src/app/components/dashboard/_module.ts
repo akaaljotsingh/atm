@@ -10,6 +10,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 
+import { SidebarModule } from 'ng-sidebar';
 
 
 
@@ -25,6 +26,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
   imports: [
     MatSharedModule,
+    SidebarModule.forRoot(),
     CommonModule,
     MatTooltipModule,
     MatDialogModule,

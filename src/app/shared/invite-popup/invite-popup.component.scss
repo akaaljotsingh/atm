@@ -1,0 +1,135 @@
+.invite-users-modal-component {
+    display: flex;
+    flex-direction: column;
+.invite-users-modal-content {
+     flex-direction: column;
+    min-height: 330px;
+    padding: 40px 40px 16px;
+    .invite-users-title-wrapper {
+     align-items: center;
+    margin-bottom: 28px;
+    display: flex;
+    }
+    }
+    .user-image {
+        height: 36px;
+    }
+    .invite-users-title {
+        margin-left: 12px;
+        font-size: 32px;
+        font-weight: 300;
+    }
+    .invite-users-modal-subtitle {
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .emails-kind-wrapper {
+        width: 100%;
+    }
+    .emails-input-wrapper {
+        flex-grow: 1;
+        margin-right: 6px;
+    }
+    .tags-input-component {
+        display: flex;
+    }
+    .tags-input-wrapper {
+        margin-bottom: 20px;
+    }
+    .tags-input-component .tags-input-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        border: 1px solid #C4C4C4;
+        border-radius: 4px;
+        max-height: 160px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .tags-input-wrapper .tags-input {
+        min-width: 98%;
+        flex: 1;
+        outline: none;
+        border: none;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333333;
+        padding: 2px 0px 3px 6px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+    .radio-button-component {
+        cursor: pointer;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .radio-button-circle {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        margin-right: 8px;
+        border-radius: 50%;
+        border: 1px solid #009AFF;
+        position: relative;
+    }
+    .bottom-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        margin-top: 40px;
+    }
+    .invite-button {
+        font-weight: 400;
+    }
+    .ds-btn-primary {
+        outline: none; 
+    }
+    .ds-btn {
+        display: inline-block;
+        font-weight: 300;
+        font-family: Roboto;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .641rem 2rem;
+        font-size: .875rem;
+        line-height: 1.25;
+        height: 2.50908rem;
+        border-radius: 15rem;
+        transition: padding-left .35s cubic-bezier(.19,1,.22,1),padding-right .35s cubic-bezier(.19,1,.22,1),color .1s ease-in-out,background-color .1s ease-in-out,border-color .1s ease-in-out;
+    }
+    .invite-users-externals-wrapper {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        background-color: #F7F7F7;
+        padding: 0 40px;
+        border-radius: 0 0 8px 8px;
+    }
+    .invite-users-external-component {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        .title {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+        }
+        .integration-icon {
+            height: 24px;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    }
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }

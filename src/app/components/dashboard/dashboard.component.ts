@@ -62,6 +62,12 @@ export class DashboardComponent implements OnInit {
   ['name', 'position', 'weight', 'symbol', 'position', 'weight', 'symbol', 'star'];
 dataSource = ELEMENT_DATA;
 
+private _opened: boolean = false;
+
+  private _toggleSidebar() {
+    this._opened = !this._opened;
+  }
+
 }
 
 @Component({

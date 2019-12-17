@@ -1,3 +1,97 @@
-<!-- <h1>Master works!</h1> -->
+<div class="main-div  clearfix" (click)="notificationBoxClose($event)" >
+        <p>Logo</p>
+        <div class="box" (click)="profileBox=!profileBox">
+         <span>BS</span>
+
+        </div>
+         class="far fa-bell">
+         <div class="notification-box"  *ngIf="notificationBox">
+          <span>Notification</span>
+          <hr>
+          <img src="../../../assets/images/notifications-image.png" alt="notifications">
+        </div></i>
+          <br>
+          <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
+          class="fas fa-inbox"></i>
+          <br>
+          <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Invite"
+          (click)="openDialog()" class="far fa-user"></i>
+            <br>
+            <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Search"
+             class="fas fa-search"></i>
+            <br>
+            <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
+             class="fas fa-question"></i>
+    </div>
+    <div class="content">
+       <mat-drawer-container class="example-container" autosize>
+           <mat-drawer #drawer class="example-sidenav" mode="side">
+               <div class="header-box">
+                       <a href="http://">Boards</a>
+               </div>
+               <hr>
+               <div class="links">
+               <a href="http://">Dashboard</a>
+           </div>
+           </mat-drawer>
+         
+           <div class="example-sidenav-content">
+             <button type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
+              <i *ngIf="arrowLeft" class="fas fa-chevron-left"></i>
+              <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
+             </button>
+           </div>
+         
+         </mat-drawer-container>
+    </div>
+    <div class="account" *ngIf="profileBox">
+
+        <a class="clearfix" href="http://">
+        <i class="far fa-user"></i> 
+        <span class="text">My profile
+        </span></a>
+  
+        <a class="clearfix" href="http://">
+          <i class="far fa-save"></i>
+          <span class="text">Import data
+          </span></a>
+          
+          <a class="clearfix" href="http://">
+            <i class="far fa-object-ungroup"></i>
+            <span class="text">Integration
+            </span></a>
+           
+            <a class="clearfix" href="http://">
+              <i class="far fa-trash-alt"></i>
+              <span class="text">Recycle bin
+              </span></a>
+             
+              <a class="clearfix" href="http://">
+                <i class="far fa-folder"></i>
+                <span class="text">Archived boards
+               </span></a> 
+  
+               <a class="clearfix" href="http://">
+                <i class="far fa-sun"></i>
+                <span class="text">Admin
+                </span></a>
+  
+                <a class="clearfix" href="http://">
+                  <i class="material-icons">
+                      people_outline
+                      </i> 
+                  <span class="text">Team
+                  </span></a>
+  
+                  <a class="clearfix" href="http://">
+                    <i class="material-icons">
+                        arrow_back_ios
+                        </i>
+                    <span class="text">Logout
+                    </span></a>
+      </div>
+    
+</div>
+
 
 <router-outlet></router-outlet>
