@@ -1,40 +1,169 @@
-<div class="example-container mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
+<!-- <div class="example-container mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource"> -->
   
       <!-- Name Column -->
-      <ng-container matColumnDef="name" sticky>
+      <!-- <ng-container matColumnDef="name" sticky>
         <th mat-header-cell *matHeaderCellDef> Name </th>
         <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-      </ng-container>
+      </ng-container> -->
   
       <!-- Position Column -->
-      <ng-container matColumnDef="position">
+      <!-- <ng-container matColumnDef="position">
         <th mat-header-cell *matHeaderCellDef> No. </th>
         <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-      </ng-container>
+      </ng-container> -->
   
       <!-- Weight Column -->
-      <ng-container matColumnDef="weight">
+      <!-- <ng-container matColumnDef="weight">
         <th mat-header-cell *matHeaderCellDef> Weight </th>
         <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-      </ng-container>
+      </ng-container> -->
   
       <!-- Symbol Column -->
-      <ng-container matColumnDef="symbol">
+      <!-- <ng-container matColumnDef="symbol">
         <th mat-header-cell *matHeaderCellDef> Symbol </th>
         <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-      </ng-container>
+      </ng-container> -->
   
       <!-- Star Column -->
-      <ng-container matColumnDef="star" stickyEnd>
+      <!-- <ng-container matColumnDef="star" stickyEnd>
         <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let element">
           <mat-icon>more_vert</mat-icon>
         </td>
-      </ng-container>
+      </ng-container> -->
   
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
   </div>
+  <h2>ATM</h2>
+   -->
+   
+
+   
+   
+
+   
+ 
+  <div class="topbar">
+
+ <div class="leftalign">
+   <h3>ATM</h3>
+   <p>it is an angular project</p>
+ </div>
+    
+  
+       
+        
+            
+        <div class="rightalign">
+          
+            
+              <div class="box1">
+              
+                  <a
+                  matTooltip="Integrations"
+                  aria-label="Button that displays a tooltip when focused or hovered over">
+                  <div class="shape1">
+                      <button mat-button (click)="openDialoge()">
+                      <i class="material-icons ">
+                          highlight
+                          </i>/0
+                          </button>
+
+                  </div>
+                 
+                   
+                    </a>
+                
+                   
+                    
+
+              </div>
+          
+              
+               <div class="box1">
+                  <a
+                  matTooltip="Automations"
+                  aria-label="Button that displays a tooltip when focused or hovered over">
+                 <div class="shape1">
+                    <button mat-button (click)="openDialogee()">
+                    <i class="material-icons">
+                        nfc
+                        </i> /1
+                        </button>
+
+                 </div>
+                  
+                    </a>
+
+               </div>
+              
+
+
+          
+
+            <div class="box3">
+                <a
+                matTooltip="Who is on this board ?"
+                aria-label="Button that displays a tooltip when focused or hovered over">
+              
+               <div class="shape3">
+                  <button mat-button (click)="openDialogue()">
+                  <i class="material-icons person">
+                      supervisor_account
+                      </i> / 0
+                      </button>
+
+               </div>
+         
+                </a>
+            
+                <a class="gap"
+                matTooltip="See rescent board activity"
+                aria-label="Button that displays a tooltip when focused or hovered over">
+               <div class="activity2">
+                  <button mat-button (click)="openDialog()">
+                  Activities /0
+                  </button>
+
+               </div>
+        
+          </a>
+
+            </div>
+            
+                <button mat-mini-fab (click)="openDialog()">...</button>
+              
+                   
+                 
+
+            
+        </div>
+      </div>
+           
+               
+                 
+
+        
+
+        
+     
+         
+       <!-- <div class="shape">
+         <img src="../../../assets/images/noun_Hexagon_1442155.svg" class="image" alt="">
+         <i class="material-icons icon1">
+            supervisor_account
+            </i>
+       </div> -->
+      
+      
+       
+
+        
+
+   
+      
+  
   

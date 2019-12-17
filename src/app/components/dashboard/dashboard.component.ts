@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 export interface PeriodicElement {
   name: string;
@@ -27,7 +28,32 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(dialogComponent, {
+      width: '1000px',
+      
+      
+    }); }
+    openDialoge(): void {
+      const dialogRef = this.dialog.open(integrationComponent, {
+        width: '1000px',
+        
+        
+      }); }
+      openDialogee(): void {
+        const dialogRef = this.dialog.open(automationComponent, {
+          width: '1000px',
+          
+          
+        }); }
+        openDialogue(): void {
+          const dialogRef = this.dialog.open(boardcomponent, {
+            width: '1000px',
+            
+            
+          }); }
+
+    constructor(public dialog: MatDialog) {}
 
   ngOnInit() {
   }
@@ -35,5 +61,70 @@ export class DashboardComponent implements OnInit {
   displayedColumns =
   ['name', 'position', 'weight', 'symbol', 'position', 'weight', 'symbol', 'star'];
 dataSource = ELEMENT_DATA;
+
+}
+
+@Component({
+  selector: 'dialogComponent',
+  templateUrl: './dialog.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class dialogComponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<dialogComponent>,
+    ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
+@Component({
+  selector: 'integrationComponent',
+  templateUrl: './integration.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class integrationComponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<integrationComponent>,
+    ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
+@Component({
+  selector: 'automationComponent',
+  templateUrl: './automation.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class automationComponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<automationComponent>,
+    ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
+@Component({
+  selector: 'boardcomponent',
+  templateUrl: './board.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class boardcomponent {
+
+  constructor(
+    public dialogRef: MatDialogRef<boardcomponent>,
+    ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
 
 }
