@@ -52,14 +52,11 @@ export const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
-<<<<<<< HEAD
         MatSidenavModule,
         MatTooltipModule,
         MatDialogModule,
-        MatRadioModule
-=======
+        MatRadioModule,
         SidebarModule.forRoot()
->>>>>>> 05e51e5a9484fd66a56b3028ec61159b69bd2a45
     ],
 
     declarations: [

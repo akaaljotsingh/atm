@@ -1,4 +1,4 @@
-<div class="main-div  clearfix" (click)="notificationBoxClose($event)" >
+<div class="main-div  clearfix">
         <p>Logo</p>
         <div class="box" (click)="profileBox=!profileBox">
          <span>BS</span>
@@ -9,7 +9,7 @@
           <span>Notification</span>
           <hr>
           <img src="../../../assets/images/notifications-image.png" alt="notifications">
-        </div></i>
+        </div>
           <br>
           <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
           class="fas fa-inbox"></i>
@@ -22,7 +22,7 @@
             <br>
             <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
              class="fas fa-question"></i>
-    </div>
+    
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
            <mat-drawer #drawer class="example-sidenav" mode="side">
