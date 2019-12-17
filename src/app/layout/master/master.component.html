@@ -2,11 +2,59 @@
     <div class="fix-sidebar">
         <p>Logo</p>
         <div class="box" (click)="profileBox=!profileBox">
-         <span>BS</span>
-
+         <!-- <span>BS</span> --> <img src="../../../assets/images/profile.png" alt="profile">
+         <div class="account" *ngIf="profileBox">
+            <p>Account</p>
+              <div class="ac-menu">
+              <a class="clearfix" href="http://">
+              <i class="far fa-user"></i> 
+              <span class="text">My profile
+              </span></a></div>
+      
+              <div class="ac-menu">
+              <a class="clearfix" href="http://">
+                <i class="far fa-save"></i>
+                <span class="text">Import data
+                </span></a></div>
+      
+                <div class="ac-menu">
+                <a class="clearfix" href="http://">
+                  <i class="far fa-object-ungroup"></i>
+                  <span class="text">Integration
+                  </span></a></div>
+      
+                  <div class="ac-menu">
+                  <a class="clearfix" href="http://">
+                    <i class="far fa-trash-alt"></i>
+                    <span class="text">Recycle bin
+                    </span></a></div>
+      
+                    <div class="ac-menu">
+                    <a class="clearfix" href="http://">
+                      <i class="far fa-folder"></i>
+                      <span class="text">Archived boards
+                     </span></a> </div>
+      
+                     <div class="ac-menu">
+                     <a class="clearfix" href="http://">
+                      <i class="far fa-sun"></i>
+                      <span class="text">Admin
+                      </span></a></div>
+      
+                      <div class="ac-menu">
+                      <a class="clearfix" href="http://">
+                        <i class="far fa-user"></i>
+                        <span class="text">Team
+                        </span></a></div>
+      
+                        <div class="ac-menu">
+                        <a class="clearfix" href="http://">
+                          <i class="fas fa-arrow-left"></i>
+                          <span class="text">Logout
+                          </span></a></div>
+            </div>
         </div>
-        <i class="notification" (click)="notificationBox=!notificationBox"  matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Notification" 
-         class="far fa-bell">
+        <i (click)="notificationBox=!notificationBox" class="far fa-bell">
          <div class="notification-box"  *ngIf="notificationBox">
           <span>Notification</span>
           <hr>
@@ -43,61 +91,13 @@
               <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
              </button>
            </div>
+           <router-outlet></router-outlet>
          
          </mat-drawer-container>
     </div>
-    <div class="account" *ngIf="profileBox">
-      <p>Account</p>
-        <div class="ac-menu">
-        <a class="clearfix" href="http://">
-        <i class="far fa-user"></i> 
-        <span class="text">My profile
-        </span></a></div>
 
-        <div class="ac-menu">
-        <a class="clearfix" href="http://">
-          <i class="far fa-save"></i>
-          <span class="text">Import data
-          </span></a></div>
-
-          <div class="ac-menu">
-          <a class="clearfix" href="http://">
-            <i class="far fa-object-ungroup"></i>
-            <span class="text">Integration
-            </span></a></div>
-
-            <div class="ac-menu">
-            <a class="clearfix" href="http://">
-              <i class="far fa-trash-alt"></i>
-              <span class="text">Recycle bin
-              </span></a></div>
-
-              <div class="ac-menu">
-              <a class="clearfix" href="http://">
-                <i class="far fa-folder"></i>
-                <span class="text">Archived boards
-               </span></a> </div>
-
-               <div class="ac-menu">
-               <a class="clearfix" href="http://">
-                <i class="far fa-sun"></i>
-                <span class="text">Admin
-                </span></a></div>
-
-                <div class="ac-menu">
-                <a class="clearfix" href="http://">
-                  <i class="far fa-user"></i>
-                  <span class="text">Team
-                  </span></a></div>
-                  
-                  <div class="ac-menu">
-                  <a class="clearfix" href="http://">
-                    <i class="fas fa-arrow-left"></i>
-                    <span class="text">Logout
-                    </span></a></div>
-      </div>
     
 </div>
 
 
-<router-outlet></router-outlet>
+

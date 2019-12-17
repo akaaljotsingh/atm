@@ -1,5 +1,106 @@
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.leftalign{
+    margin-left: 20px;
+}
+
+
+.rightalign{
+    display: flex;
+    height: 43px;
+    margin-top: 20px;
+ 
+    
+}
+.gap{
+    margin-right: 28px;
+}
+.box3{
+    border: 2px solid #8080804a;
+   
+    margin-right: 21px;
+    padding: 7px;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+}
+
+
+.hexagon{
+background-image: url(../../../assets/images/noun_Hexagon_1442155.svg);
+background-repeat: no-repeat;
+}
+.image{
+    width: 69px;
+  
+}
+.icon1{
+    position: absolute;
+    left: 22px;
+    top: 19px;
+   
+}
+.shape{
+    position: relative;
+}
+.shape1{
+   
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px 4px 0px 4px;
+    cursor: pointer;
+}
+.shape3{
+    padding-right: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 23px;
+    cursor: pointer;
+}
+
+.box1{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    cursor: pointer;
+}
+.activity2{
+    cursor: pointer;
+}
+.mat-button{
+    line-height: 0px;
+}
+.dots:hover{
+   
+    background-color: #bbb;
+    border-radius: 50%;
+}
+.mat-mini-fab.mat-accent{
+    margin-right: 5px;
+}
+.mat-mini-fab.mat-accent:hover{
+    background-color: grey;
+}
 .example-container {
-    height: 400px;
+    width: 99%;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+.example-container {
     width: 100%;
     overflow: auto;
   }
@@ -31,3 +132,4 @@
   .abc {
     width: 800px; background-color: red;
   }
+}
