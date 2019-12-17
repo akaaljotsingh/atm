@@ -21,6 +21,7 @@ import { SidebarModule } from 'ng-sidebar';
     integrationComponent,
     automationComponent,
     boardcomponent,
+   
 
   ],
 
@@ -39,7 +40,7 @@ import { SidebarModule } from 'ng-sidebar';
     ])
   ],
   providers: [],
-  entryComponents: [dialogComponent,integrationComponent,automationComponent,boardcomponent],
+  entryComponents: [dialogComponent,integrationComponent,automationComponent,boardcomponent,]
 
 })
 export class DashboardModule {
