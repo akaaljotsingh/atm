@@ -97,9 +97,9 @@ background-repeat: no-repeat;
 }
 .example-container {
     width: 99%;
-    height: 200px;
+    height: 363px;
     margin: 10px;
-    border: 1px solid #555;
+   
 .example-container {
     width: 100%;
     overflow: auto;
@@ -133,3 +133,61 @@ background-repeat: no-repeat;
     width: 800px; background-color: red;
   }
 }
+/*----integration popup-----*/
+.category{
+    text-align: center;
+
+}
+.mat-drawer-container{
+    background-color: white;
+}
+.mat-drawer-side {
+    border-right: none;
+}
+.mat-tab-label .mat-tab-label-content:active{
+    color: #673ab7;
+}
+/*------board popup--------*/
+.mat-mini-fab{
+    width: 35px;
+    height: 35px;
+}
+.mat-mini-fab .mat-button-wrapper {
+    padding: 6px 9px;
+}
+.material-icons{
+    cursor: pointer;
+}
+.boardcontent{
+    display: flex;
+    align-items: center;
+
+}
+/*------sidebar------*/
+.subscriberlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filterlogbutton{
+    margin-top: 9px;
+   
+}
+.sidemargin{
+    margin-left: 42px;
+}
+.filterlog{
+    border-radius: 20px;
+}
+.notification-box{
+    background-color: white;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.logtopbar{
+    
+}
+   
+   
+
+
