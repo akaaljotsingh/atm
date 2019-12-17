@@ -7,6 +7,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
+import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
 
@@ -52,22 +53,20 @@ export const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
-<<<<<<< HEAD
         MatSidenavModule,
         MatTooltipModule,
         MatDialogModule,
-        MatRadioModule
-=======
+        MatRadioModule,
         SidebarModule.forRoot()
->>>>>>> 05e51e5a9484fd66a56b3028ec61159b69bd2a45
     ],
 
     declarations: [
         MasterComponent,
         PublicComponent,
-        InvitePopupComponent 
+        InvitePopupComponent,
+        HelpPopupComponent 
     ],
     providers: [],
-    entryComponents: [InvitePopupComponent]
+    entryComponents: [InvitePopupComponent,HelpPopupComponent]
 })
 export class MasterModule { }

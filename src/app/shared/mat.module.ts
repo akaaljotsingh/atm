@@ -38,6 +38,7 @@ import {
     MatTreeModule
 } from '@angular/material';
 import { InvitePopupComponent } from './invite-popup/invite-popup.component';
+import { HelpPopupComponent } from './help-popup/help-popup.component';
 
 
 @NgModule({
@@ -118,6 +119,6 @@ import { InvitePopupComponent } from './invite-popup/invite-popup.component';
         MatTooltipModule,
         MatTreeModule,
     ],
-    declarations: [InvitePopupComponent,],
+    declarations: [InvitePopupComponent, HelpPopupComponent,],
 })
 export class MatSharedModule { }

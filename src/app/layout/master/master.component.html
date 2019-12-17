@@ -1,4 +1,4 @@
-<div class="main-div  clearfix" (click)="notificationBoxClose($event)" >
+<div class="main-div  clearfix">
     <div class="fix-sidebar">
         <p>Logo</p>
         <div class="box" (click)="profileBox=!profileBox">
@@ -23,7 +23,7 @@
              class="fas fa-search"></i>
             <br>
             <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
-             class="fas fa-question"></i>
+            (click)="helpPopup()" class="fas fa-question"></i>
     </div>
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
@@ -47,50 +47,54 @@
          </mat-drawer-container>
     </div>
     <div class="account" *ngIf="profileBox">
-
+      <p>Account</p>
+        <div class="ac-menu">
         <a class="clearfix" href="http://">
         <i class="far fa-user"></i> 
         <span class="text">My profile
-        </span></a>
-  
+        </span></a></div>
+
+        <div class="ac-menu">
         <a class="clearfix" href="http://">
           <i class="far fa-save"></i>
           <span class="text">Import data
-          </span></a>
-          
+          </span></a></div>
+
+          <div class="ac-menu">
           <a class="clearfix" href="http://">
             <i class="far fa-object-ungroup"></i>
             <span class="text">Integration
-            </span></a>
-           
+            </span></a></div>
+
+            <div class="ac-menu">
             <a class="clearfix" href="http://">
               <i class="far fa-trash-alt"></i>
               <span class="text">Recycle bin
-              </span></a>
-             
+              </span></a></div>
+
+              <div class="ac-menu">
               <a class="clearfix" href="http://">
                 <i class="far fa-folder"></i>
                 <span class="text">Archived boards
-               </span></a> 
-  
+               </span></a> </div>
+
+               <div class="ac-menu">
                <a class="clearfix" href="http://">
                 <i class="far fa-sun"></i>
                 <span class="text">Admin
-                </span></a>
-  
+                </span></a></div>
+
+                <div class="ac-menu">
                 <a class="clearfix" href="http://">
-                  <i class="material-icons">
-                      people_outline
-                      </i> 
+                  <i class="far fa-user"></i>
                   <span class="text">Team
-                  </span></a>
-  
+                  </span></a></div>
+                  
+                  <div class="ac-menu">
                   <a class="clearfix" href="http://">
-                    <i class="material-icons">
-                        arrow_back_ios
-                        </i>
+                    <i class="fas fa-arrow-left"></i>
                     <span class="text">Logout
-                    </span></a>
+                    </span></a></div>
       </div>
     
 </div>
