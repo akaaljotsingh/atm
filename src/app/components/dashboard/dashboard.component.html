@@ -46,118 +46,7 @@
 
    
  
-  <div class="topbar">
-
- <div class="leftalign">
-   <h3>ATM</h3>
-   <p>it is an angular project</p>
- </div>
-    
   
-       
-        
-            
-        <div class="rightalign">
-          
-            
-              <div class="box1">
-              
-                  <a
-                  matTooltip="Integrations"
-                  aria-label="Button that displays a tooltip when focused or hovered over">
-                  <div class="shape1">
-                      <button mat-button (click)="openIntegration()">
-                      <i class="material-icons ">
-                          highlight
-                          </i>/0
-                          </button>
-
-                  </div>
-                 
-                   
-                    </a>
-                
-                   
-                    
-
-              </div>
-          
-              
-               <div class="box1">
-                  <a
-                  matTooltip="Automations"
-                  aria-label="Button that displays a tooltip when focused or hovered over">
-                 <div class="shape1">
-                    <button mat-button (click)="openAutomation()">
-                    <i class="material-icons">
-                        nfc
-                        </i> /1
-                        </button>
-
-                 </div>
-                  
-                    </a>
-
-               </div>
-              
-
-
-          
-
-            <div class="box3">
-                <a
-                matTooltip="Who is on this board ?"
-                aria-label="Button that displays a tooltip when focused or hovered over">
-              
-               <div class="shape3">
-                  <button mat-button (click)="openBoard()">
-                  <i class="material-icons person">
-                      supervisor_account
-                      </i> / 0
-                      </button>
-
-               </div>
-         
-                </a>
-            
-                <a class="gap"
-                matTooltip="See rescent board activity"
-                aria-label="Button that displays a tooltip when focused or hovered over">
-               <div class="activity2">
-                  <button mat-button (click)="_toggleSidebar()">
-                  Activities /0
-                  </button>
-
-               </div>
-        
-          </a>
-
-            </div>
-            
-                <button mat-mini-fab (click)="openDialog()">...</button>
-              
-                   
-                 
-
-            
-        </div>
-      </div>
-           
-               
-                 
-
-        
-
-        
-     
-         
-       <!-- <div class="shape">
-         <img src="../../../assets/images/noun_Hexagon_1442155.svg" class="image" alt="">
-         <i class="material-icons icon1">
-            supervisor_account
-            </i>
-       </div> -->
-      
       
        
 
@@ -168,42 +57,266 @@
   
   
 <ng-sidebar-container>
+
   <ng-sidebar [(opened)]="_opened" position="right" contentClass="abc">
     <div class="sidemargin">
-        <h2>ATM Log</h2>
-        <mat-tab-group animationDuration="0ms">
-            <mat-tab label="activity"> 
-              <div class="filterlogbutton">
-                  <button mat-flat-button class="filterlog" color="primary" (click)="notificationBox=!notificationBox" >Primary <i class="material-icons"  >
-                      keyboard_arrow_down
-                      
-                      </i></button>
-                    </div>
-                      <div class="notification-box"  *ngIf="notificationBox">
-                        <div class="logtopbar">
-                            <p>Filter Log Showing 32 Activities</p>
+        <i class="material-icons" style="margin-top: 10px;">clear </i>
+            
+           
+        <h2>Activity Log</h2>
+       
+           
+                
+                          <mat-form-field>
+                              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                              <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
 
-                        </div>
+                          <mat-list >
+                               <mat-list-item>
+                                  <span class="dot">AB</span>
+                                   ABC
+                                   <span class="days">2d</span>
+                                   <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                                <hr class="horizontalline">
+                             
+                              <mat-list-item >
+                                <span class="dot">AB</span>
+                                  XYZ
+                                  <span class="days">3d</span>
+                                  <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                              <hr class="horizontalline">
+
+                              <mat-list-item > 
+                                 <span class="dot">BB</span> 
+                                 RST 
+                                 <span class="days">2d</span>
+                                 <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                              <hr class="horizontalline">
+
+                              <mat-list-item > 
+                                 <span class="dot">BB</span> 
+                                 RST
+                                 <span class="days">2d</span>
+                                 <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                              <hr class="horizontalline">
+
+                              <mat-list-item > 
+                                 <span class="dot">BB</span> 
+                                 RST
+                                 <span class="days">9d</span>
+                                 <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                              <hr class="horizontalline">
+
+                              <mat-list-item > 
+                                 <span class="dot">BB</span> 
+                                 RST
+                                 <span class="days">4d</span>
+                                 <span class="workdone">Updated the due date</span>
+                                </mat-list-item>
+                            </mat-list>
                          
-                          </div>
+                      </div>
+                    </ng-sidebar>
     
               
               
               
-            </mat-tab>
+           
     
-            <mat-tab label="Updates">Content 2</mat-tab>
+           
           
-          </mat-tab-group>
+        
           
 
-    </div>
+    
     
       
       
-  </ng-sidebar>
+ 
+
+  
+           
 
   <div ng-sidebar-content>
+      <div class="topbar">
+
+          <div class="leftalign">
+            <h1>ATM</h1>
+            <p>it is an angular project</p>
+          </div>
+             
+           
+                
+                 
+                     
+                 <div class="rightalign">
+                   
+                     
+                       <!-- <div class="box1">
+                       
+                           <a
+                           matTooltip="Integrations"
+                           aria-label="Button that displays a tooltip when focused or hovered over">
+                           <div class="shape1">
+                               <button mat-button (click)="openIntegration()">
+                               <i class="material-icons ">
+                                   highlight
+                                   </i>/0
+                                   </button>
+         
+                           </div>
+                          
+                            
+                             </a>
+                         
+                            
+                             
+         
+                       </div>
+                    -->
+                       
+                        <!-- <div class="box1">
+                           <a
+                           matTooltip="Automations"
+                           aria-label="Button that displays a tooltip when focused or hovered over">
+                          <div class="shape1">
+                             <button mat-button (click)="openAutomation()">
+                             <i class="material-icons">
+                                 nfc
+                                 </i> /1
+                                 </button>
+         
+                          </div>
+                           
+                             </a>
+         
+                        </div> -->
+         
+                       
+         
+                        <div class="box1">
+                           <span  matTooltip="Member 1" class="dot1 member1">AB</span>
+                           <span  matTooltip="member 2" class="dot1 member2">kB</span>
+                        
+                        </div>
+         
+                     <div class="box3">
+                         <a
+                         matTooltip="Who is on this board ?"
+                         aria-label="Button that displays a tooltip when focused or hovered over">
+                       
+                        <div class="shape3">
+                           <button mat-button (click)="openBoard()">
+                           <i class="material-icons person">
+                               supervisor_account
+                               </i> / 0
+                               </button>
+         
+                        </div>
+                  
+                         </a>
+                     
+                         <a class="gap"
+                         matTooltip="See rescent board activity"
+                         aria-label="Button that displays a tooltip when focused or hovered over">
+                        <div class="activity2">
+                           <button mat-button (click)="_toggleSidebar()">
+                           Activities /0
+                           </button>
+         
+                        </div>
+                 
+                   </a>
+         
+                     </div>
+                     <button class="menubutton" mat-mini-fab [matMenuTriggerFor]="menu" >...</button>
+                     <!-- <i [matMenuTriggerFor]="menu" class="material-icons dottedicon">  more_horiz
+                      </i>
+                       -->
+<mat-menu #menu="matMenu">
+
+  <div class="renameboard">
+      <i class="material-icons dotdrop">create </i>
+          <button mat-menu-item>
+             Rename Board
+          </button>
+  </div>
+            
+             
+              
+
+  
+  
+    
+
+  <div class="renameboard">
+      <i class="material-icons dotdrop"> cloud </i>
+       
+              <button mat-menu-item>
+                  Archived Task
+              </button>
+  </div>
+           
+     <div class="renameboard">
+      <i class="material-icons dotdrop">create </i>
+          <button mat-menu-item>
+             Rename Board
+          </button>
+  </div>
+           
+
+  <div class="renameboard">
+      <i class="material-icons dotdrop">create </i>
+          <button mat-menu-item>
+             Rename Board
+          </button>
+  </div>
+
+  <div class="renameboard">
+      <i class="material-icons dotdrop"> cloud </i>
+       
+              <button mat-menu-item>
+                  Archived Task
+              </button>
+  </div>
+           
+              
+                 
+                 
+</mat-menu>
+                         
+                     
+                 </div>
+                 
+               </div>
+               <div class="lowertopbar">
+                   <button mat-flat-button color="primary" class="taskbutton">New Task</button>
+                   <mat-form-field>
+                       <input matInput placeholder="Search">
+                     </mat-form-field>
+               </div>
+                    
+                        
+                          
+         <hr class="horizontalline1">
+                 
+         
+                 
+              
+                  
+                <!-- <div class="shape">
+                  <img src="../../../assets/images/noun_Hexagon_1442155.svg" class="image" alt="">
+                  <i class="material-icons icon1">
+                     supervisor_account
+                     </i>
+                </div> -->
         <div class="example-container mat-elevation-z8">
                 <table mat-table [dataSource]="dataSource"> -->
               

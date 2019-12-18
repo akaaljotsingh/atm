@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(dialogComponent, {
-      width: '1000px',
+      width: '500px',
       
       
     }); }
