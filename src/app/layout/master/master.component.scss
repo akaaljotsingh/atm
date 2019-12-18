@@ -3,18 +3,12 @@
     .fix-sidebar {
       padding: 0px 5px;
       float: left;
-      width: 65px;
+      width: 4%;
       color: white;
       background-color: #292F4C;
       height: 100vh;
       text-align: center;
-      // .info {
-      //   &:hover{
-      //     .notification-box{
-      //     display: block;
-      //   }
-      // }
-      // }
+   
       .notification {
         position: relative;
       }
@@ -30,23 +24,23 @@
       .box {
         margin-top: 40px;
         margin-bottom: 30px;
-        border: 1px solid white;
-        border-radius: 30px;
-        padding: 19px;
-        
-        span {
-          margin: 8px 0px;
-          font-size: 19px;
-          font-weight: 600;
+        position: relative;
+        img {
+          height: 50px;
         }
+        
+        // span {
+        //   margin: 8px 0px;
+        //   font-size: 19px;
+        //   font-weight: 600;
+        // }
       }
     }
     .content {
       float: left;
-      max-width: 1298px;
+      width: 95%;
       height: 100vh;
       mat-drawer-container {
-        
         height: 100vh;
         background-color: white;
         // border-right: 1px solid gray;
@@ -132,11 +126,13 @@
   width: 240px;
   padding: 15px 10px;
   position: absolute;
-  left: 100px;
-  top: 100px;
+  left: 60px;
+  top: 20px;
   z-index: 2;
   border-radius: 4px;
+  background-color: white;
   box-shadow: 0 4px 17px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
   p{
     color: #9699a6;
     padding-left: 16px;
@@ -153,10 +149,11 @@
     }
   }
   i {
+    font-size: 18px!important;
     float: left;
     color: #333333;
     cursor: pointer;
-    line-height: 3;
+    line-height: 2!important;
   }
   .text {
     margin-left: 12px;
@@ -165,7 +162,6 @@
     font-size: 16px;
     cursor: pointer;
     color: #333333;
-    font-weight: 400;
-    line-height: 3;
+    line-height: 2.5;
   }
 }

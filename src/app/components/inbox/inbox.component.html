@@ -1,0 +1,46 @@
+<div class="inbox-main-div">
+<h2>Inbox</h2>
+
+<div class="mail-box">
+    <div class="first-section">
+    <div class="clearfix">
+  <div class="img-div"> <img src="../../../assets/images/profile2.png" alt="profile pic"></div>
+    <div class="nmae"><p>Baljit Singh</p></div>
+    <div class="arrow-down"><i class="far fa-trash-alt"></i>
+        <i class="far fa-caret-square-down" (click)="replySection=!replySection"></i></div>
+</div>
+<div class="clearfix">
+    <div class="text">
+    <p><span>Dashboard</span> Satuts was changed from</p> 
+</div>
+    <div class="btn-div">
+    <button class="stuck-btn">Stuck</button> <i class="fas fa-chevron-right"></i>
+    <button class="done-btn">Done</button></div>
+</div>
+</div>
+<div class="second-section" *ngIf="replySection">
+<div class="part-a">
+    <div class="like-button"><button><i class="fas fa-thumbs-up"></i>Like</button></div>
+    <div class="like-button">
+        <button (click)="replyMessage=!replyMessage"><i class="fas fa-reply"></i>Reply</button></div>
+</div>
+<div class="part-b">
+    <button>Great Job</button>
+    <button>Thanks! I'll take it from here</button>
+    <button>Nice work! What's next?</button>
+</div>
+</div>
+<div class="third-section" *ngIf="replyMessage">
+    <div class="part-a clearfix">
+    <img src="../../../assets/images/profile2.png" alt="pic">
+    <form >
+         <input type="text" name="FirstName" value="Messsage">
+        </form>
+    </div>
+    <div class="part-b clearfix">
+    <span><i class="fas fa-paperclip"></i>Add file</span>
+    <button>Reply</button>
+</div>
+</div>
+</div>
+</div>

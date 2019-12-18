@@ -39,6 +39,14 @@ export const routes: Routes = [
             {
                 path: 'dashboard',
                 loadChildren: 'src/app/components/dashboard/_module#DashboardModule'
+            },
+            {
+                path: 'inbox',
+                loadChildren: 'src/app/components/inbox/_modules#InboxModule'
+            },
+            {
+                path: 'notification',
+                loadChildren: 'src/app/components/notification/_modules#NotificationModule'
             }
             
         ],

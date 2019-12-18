@@ -7,7 +7,6 @@ import { AppConfig } from './app.config';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MasterModule } from './layout/master/master.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { InvitePopupComponent  } from './shared/invite-popup/invite-popup.component';
 
 
 @NgModule({
