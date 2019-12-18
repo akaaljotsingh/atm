@@ -7,6 +7,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
+import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
 
@@ -38,6 +39,14 @@ export const routes: Routes = [
             {
                 path: 'dashboard',
                 loadChildren: 'src/app/components/dashboard/_module#DashboardModule'
+            },
+            {
+                path: 'inbox',
+                loadChildren: 'src/app/components/inbox/_modules#InboxModule'
+            },
+            {
+                path: 'notification',
+                loadChildren: 'src/app/components/notification/_modules#NotificationModule'
             }
             
         ],
@@ -62,9 +71,10 @@ export const routes: Routes = [
     declarations: [
         MasterComponent,
         PublicComponent,
-        InvitePopupComponent 
+        InvitePopupComponent,
+        HelpPopupComponent 
     ],
     providers: [],
-    entryComponents: [InvitePopupComponent]
+    entryComponents: [InvitePopupComponent,HelpPopupComponent]
 })
 export class MasterModule { }

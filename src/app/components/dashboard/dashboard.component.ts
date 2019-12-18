@@ -30,28 +30,30 @@ export class DashboardComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(dialogComponent, {
-      width: '1000px',
+      width: '500px',
       
       
     }); }
-    openDialoge(): void {
+    openIntegration(): void {
       const dialogRef = this.dialog.open(integrationComponent, {
         width: '1000px',
         
         
       }); }
-      openDialogee(): void {
+      openAutomation(): void {
         const dialogRef = this.dialog.open(automationComponent, {
           width: '1000px',
           
           
         }); }
-        openDialogue(): void {
+        openBoard(): void {
           const dialogRef = this.dialog.open(boardcomponent, {
-            width: '1000px',
+            width: '600px',
             
             
           }); }
+          
+         
 
     constructor(public dialog: MatDialog) {}
 

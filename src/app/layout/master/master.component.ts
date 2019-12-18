@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
+import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
 
 @Component({
   selector: 'app-master',
@@ -33,6 +34,14 @@ export class MasterComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
     });
+  }
+  helpPopup(): void {
+    const dialogRef = this.dialog.open(HelpPopupComponent, {
+      width: '850px',
+    });
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log('The dialog was closed');
+    // });
   }
   ngOnInit() {
   }

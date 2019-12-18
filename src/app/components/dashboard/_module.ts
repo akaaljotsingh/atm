@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent, dialogComponent,integrationComponent,automationComponent,boardcomponent } from './dashboard.component';
 import { MatSharedModule } from 'src/app/shared/mat.module';
 import {MatTooltipModule} from '@angular/material/tooltip';
-
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -21,6 +20,7 @@ import { SidebarModule } from 'ng-sidebar';
     integrationComponent,
     automationComponent,
     boardcomponent,
+   
 
   ],
 
@@ -39,7 +39,7 @@ import { SidebarModule } from 'ng-sidebar';
     ])
   ],
   providers: [],
-  entryComponents: [dialogComponent,integrationComponent,automationComponent,boardcomponent],
+  entryComponents: [dialogComponent,integrationComponent,automationComponent,boardcomponent,]
 
 })
 export class DashboardModule {
