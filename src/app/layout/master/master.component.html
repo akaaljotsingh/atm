@@ -1,15 +1,35 @@
-<!-- <div class="main-div  clearfix">
+<div class="main-div  clearfix">
+    <div class="fix-sidebar">
         <p>Logo</p>
         <div class="box" (click)="profileBox=!profileBox">
-         <span>BS</span>
+         <!-- <span>BS</span> --> <img src="../../../assets/images/profile.png" alt="profile">
+         <div class="account" *ngIf="profileBox">
+            <p>Account</p>
+              <div class="ac-menu">
+              <a class="clearfix" href="http://">
+              <i class="far fa-user"></i> 
+              <span class="text">My profile
+              </span></a></div>
 
+                     <div class="ac-menu" (click)="openDialog()">
+                     <a class="clearfix" href="http://">
+                      <i class="fas fa-plus"></i>
+                      <span class="text">Invite Member
+                      </span></a></div>
+      
+                        <div class="ac-menu">
+                        <a class="clearfix" href="http://">
+                          <i class="fas fa-arrow-left"></i>
+                          <span class="text">Logout
+                          </span></a></div>
+            </div>
         </div>
-         class="far fa-bell">
+        <i (click)="notificationBox=!notificationBox" class="far fa-bell">
          <div class="notification-box"  *ngIf="notificationBox">
           <span>Notification</span>
           <hr>
           <img src="../../../assets/images/notifications-image.png" alt="notifications">
-        </div>
+        </div></i>
           <br>
           <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
           class="fas fa-inbox"></i>
@@ -21,8 +41,8 @@
              class="fas fa-search"></i>
             <br>
             <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
-             class="fas fa-question"></i>
-    
+            (click)="helpPopup()" class="fas fa-question"></i>
+    </div>
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
            <mat-drawer #drawer class="example-sidenav" mode="side">
@@ -41,57 +61,13 @@
               <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
              </button>
            </div>
+           <router-outlet></router-outlet>
          
          </mat-drawer-container>
     </div>
-    <div class="account" *ngIf="profileBox">
 
-        <a class="clearfix" href="http://">
-        <i class="far fa-user"></i> 
-        <span class="text">My profile
-        </span></a>
-  
-        <a class="clearfix" href="http://">
-          <i class="far fa-save"></i>
-          <span class="text">Import data
-          </span></a>
-          
-          <a class="clearfix" href="http://">
-            <i class="far fa-object-ungroup"></i>
-            <span class="text">Integration
-            </span></a>
-           
-            <a class="clearfix" href="http://">
-              <i class="far fa-trash-alt"></i>
-              <span class="text">Recycle bin
-              </span></a>
-             
-              <a class="clearfix" href="http://">
-                <i class="far fa-folder"></i>
-                <span class="text">Archived boards
-               </span></a> 
-  
-               <a class="clearfix" href="http://">
-                <i class="far fa-sun"></i>
-                <span class="text">Admin
-                </span></a>
-  
-                <a class="clearfix" href="http://">
-                  <i class="material-icons">
-                      people_outline
-                      </i> 
-                  <span class="text">Team
-                  </span></a>
-  
-                  <a class="clearfix" href="http://">
-                    <i class="material-icons">
-                        arrow_back_ios
-                        </i>
-                    <span class="text">Logout
-                    </span></a>
-      </div>
     
-</div> -->
+</div> 
 
 
-<router-outlet></router-outlet>
+

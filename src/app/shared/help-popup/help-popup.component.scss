@@ -1,0 +1,78 @@
+.close {
+    text-align: right;
+}
+.main-div {
+    text-align: center;
+    h1 {
+        margin-top: 0px;
+    }
+    input {
+        margin: 30px 0px 50px 0px;
+        font-size: 26px;
+        color: #00a1e5;
+        padding: 16px 16px;
+        font-weight: 300;
+        border-radius: 3px;
+        outline: 0;
+        border: 0;
+        -webkit-box-shadow: 0px 1px 42px -24px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 42px -24px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 42px -24px rgba(0,0,0,0.75);
+        &:focus {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+    }
+    }
+    .help-sections-wrapper {
+        width: 750px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto auto 30px;
+    }
+    .section-content {
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        position: relative;
+        .sub-title {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            background: #323338;
+            opacity: 0.5;
+            color: white;
+            white-space: nowrap;
+            height: 26px;
+            font-size: 12px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+    .section-footer {
+        display: flex;
+        justify-content: center;
+        flex-basis: 56px;
+        background: white;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .help-section-component {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 3px 12px 1px rgba(0, 0, 0, 0.09);
+        cursor: pointer;
+        background-size: contain;
+        background-position: initial;
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 180px;
+    }
+    .footer-title {
+        align-self: center;
+        text-align: center;
+        font-size: 16px;
+    }
+     
