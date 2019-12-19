@@ -161,7 +161,12 @@ padding: 0px 40px;
         cursor: pointer;
         font-size: 13px;
         float: left;
-    
+    input {
+        border: none;
+        background-color: white;
+        padding: 0px;
+        border-radius: 0px;
+    }
     i {
         color: #0188e1;
         margin-right: 5px;
@@ -182,4 +187,14 @@ button {
 }
 }
 }
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    color: #0188e1;
+    font-size: 13px;
 }
