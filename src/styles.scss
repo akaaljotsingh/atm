@@ -5,6 +5,24 @@ body{
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+.orange {
+  background-color: #FDAB3D;
+}
+.blue {
+  background-color: #579BFC;
+}
+.red {
+  background-color: #E2445C;
+}
+.gray {
+  background-color: #C3C3C3;
+}
+.purple {
+  background-color: #A25DDC;
+}
+.green {
+  background-color: #00C875;
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .tooltip {

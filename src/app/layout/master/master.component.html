@@ -24,24 +24,32 @@
                           </span></a></div>
             </div>
         </div>
-        <i (click)="notificationBox=!notificationBox" class="far fa-bell">
-         <div class="notification-box"  *ngIf="notificationBox">
-          <span>Notification</span>
-          <hr>
-          <img src="../../../assets/images/notifications-image.png" alt="notifications">
-        </div></i>
-          <br>
-          <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
-          class="fas fa-inbox"></i>
-          <br>
-          <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Invite"
-          (click)="openDialog()" class="far fa-user"></i>
+        <div class="icon-image-notification">
+        <img src="../../../assets/images/notification.svg"
+        matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="notification"  alt="notification">
+      </div>
+
+      <div class="icon-image-inbox">
+        <img matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
+            src="../../../assets/images/inbox.svg" alt="inbox icon">
+      </div><br>
+      <div class="icon-image-inbox">
+        <img (click)="openDialog()" matTooltipPosition="right" matTooltipClass="tooltip" 
+        matTooltip="Invite person"  src="../../../assets/images/invite.svg" alt="inviteicon">
+      </div>
+      <br>
+      <div class="icon-image">
+        <img (click)="helpPopup()" matTooltipPosition="right" matTooltipClass="tooltip"
+         matTooltip="Help"  src="../../../assets/images/help.svg" alt="inviteicon">
+      </div>
+          <!-- <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Invite"
+           class="far fa-user"></i>
             <br>
             <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Search"
              class="fas fa-search"></i>
             <br>
             <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
-            (click)="helpPopup()" class="fas fa-question"></i>
+            (click)="helpPopup()" class="fas fa-question"></i> -->
     </div>
     <div class="content">
        <mat-drawer-container class="example-container" autosize>

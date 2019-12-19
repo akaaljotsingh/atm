@@ -29,7 +29,7 @@ export const routes: Routes = [
 
     },
     {
-        path: 'admin',
+        path: '',
         component: MasterComponent,
         children: [
             {

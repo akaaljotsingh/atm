@@ -14,8 +14,8 @@
     <p><span>Dashboard</span> Satuts was changed from</p> 
 </div>
     <div class="btn-div">
-    <button class="stuck-btn">Stuck</button> <i class="fas fa-chevron-right"></i>
-    <button class="done-btn">Done</button></div>
+    <button class="stuck-btn red">Stuck</button> <i class="fas fa-chevron-right"></i>
+    <button class="done-btn green">Done</button></div>
 </div>
 </div>
 <div class="second-section" *ngIf="replySection">
@@ -38,7 +38,11 @@
         </form>
     </div>
     <div class="part-b clearfix">
-    <span><i class="fas fa-paperclip"></i>Add file</span>
+    <!-- <span><i class="fas fa-paperclip"></i>Add file</span> -->
+    <label class="custom-file-upload">
+            <input type="file"/>
+            <i class="fas fa-paperclip"></i> Add file
+        </label>
     <button>Reply</button>
 </div>
 </div>

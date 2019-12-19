@@ -8,7 +8,27 @@
       background-color: #292F4C;
       height: 100vh;
       text-align: center;
-   
+      .icon-image-notification {
+        margin-bottom: 10px;
+        img {
+          height: 38px;
+          cursor: pointer;
+        }
+      }
+      .icon-image {
+        line-height: 2;
+      img {
+        height: 46px;
+        cursor: pointer;
+      }
+    }
+    .icon-image-inbox{
+      line-height: 2;
+      img {
+        height: 31px;
+        cursor: pointer;
+      }
+    }
       .notification {
         position: relative;
       }
