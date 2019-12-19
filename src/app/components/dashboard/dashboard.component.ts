@@ -28,6 +28,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class DashboardComponent implements OnInit {
 
+  taskFlag: boolean = false;
+
   openDialog(): void {
     const dialogRef = this.dialog.open(dialogComponent, {
       width: '500px',
