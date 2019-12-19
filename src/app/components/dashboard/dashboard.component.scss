@@ -349,3 +349,26 @@
 .member2 {
 	margin-right: -14px;
 }
+/*-----Columns------*/
+.task{
+	display: flex;
+    align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+.editicon{
+	position: absolute;
+	left: 15px;
+	z-index: 2;
+}
+// .content:hover .editicon {
+//    display: block;
+// }
+.edit{
+	font-size: 14px;
+    margin-left: 10px;
+}
+.task1 {
+	height: 45px;
+    width: 100%;
+}

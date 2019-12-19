@@ -399,18 +399,37 @@
                                                     <!-- Name Column -->
                                                     <ng-container matColumnDef="name" sticky>
                                                       <th mat-header-cell *matHeaderCellDef> Name </th>
-                                                      <td mat-cell *matCellDef="let element" (click)="_toggleSidebar()">
-                                                        <div>
-                                                          <span>{{element.name}}</span> 
-                                                        <input type="text" value="{{element.name}}" >
-                                                      </div>
+                                                      <td mat-cell *matCellDef="let element"  >
+                                                        <div class="task" >
+                                                            <div class="task1" (click)="_toggleSidebar()">
+                                                               
+                                                              </div>  
+                                                           
+                                                            <div class="editicon">
+                                                                <span *ngIf="taskFlag == false" (click)="taskFlag = true" >{{element.name}}</span>
+                                                                <input *ngIf="taskFlag == true" type="text" value="{{element.name}}"> 
+                                                            </div> 
+
+                                                        </div>
+                                                              
+                                                             
+                                                            
+
+                                                        
                                                       </td>
+
                                                     </ng-container>
                                                 
                                                     <!-- Position Column -->
                                                     <ng-container matColumnDef="position">
-                                                      <th mat-header-cell *matHeaderCellDef> No. </th>
-                                                      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                                                      <th mat-header-cell *matHeaderCellDef> Status </th>
+                                                      <td mat-cell *matCellDef="let element"> {{element.position}}
+                                                        <div class="status">
+                                                          
+                                                        </div>
+                                                        
+                                                      
+                                                      </td>
                                                     </ng-container>
                                                 
                                                     <!-- Weight Column -->
