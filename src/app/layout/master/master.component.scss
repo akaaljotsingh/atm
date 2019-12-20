@@ -13,6 +13,9 @@
         img {
           height: 38px;
           cursor: pointer;
+          &:focus {
+            outline: none;
+        }
         }
       }
       .icon-image {
@@ -27,6 +30,9 @@
       img {
         height: 31px;
         cursor: pointer;
+        &:focus {
+          outline: none;
+      }
       }
     }
       .notification {
@@ -104,7 +110,40 @@
       }
       }
       .header-box {
-        padding: 20px 22px 15px 22px
+        padding: 20px 22px 15px 22px;
+        a {
+          float: left;
+          font-size: 22px;
+        }
+        i {
+          float: right;
+          color: #009AFF;
+          font-size: 25px;
+        }
+      }
+      .search {
+        position: relative;
+        text-align: center;
+        input {
+          border: none;
+          padding: 10px 10px 10px 25px;
+          font-size: 17px;
+          color: #9699a6!important;
+          outline: 0;
+          width: 80%;
+          &:focus {
+            border-bottom: 1px solid #009AFF;
+            i {
+              color: #009AFF!important;
+            }
+          }
+        }
+        i {
+          position: absolute;
+          color: #9699a6!important;
+          left: 20px;
+          top: 11px;
+        }
       }
       .links {
         padding-left: 22px;
