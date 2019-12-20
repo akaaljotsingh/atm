@@ -63,9 +63,9 @@ td.content {
     height: 46px;
   }
 }
-td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
-  padding-left: 85px !important;
-}
+// td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+//   padding-left: 85px !important;
+// }
 td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
   text-align: center;
 }

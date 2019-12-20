@@ -82,6 +82,16 @@
 	
 	cursor: pointer;
 }
+.box11 {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	border-radius: 4px;
+	
+	cursor: pointer;
+}
 
 .activity2 {
 	cursor: pointer;
@@ -103,14 +113,15 @@
 	background-color: grey;
 }
 
-.example-container {
-	width: 99%;
-	height: 363px;
-	margin: 10px;
-	margin-top: 80px;
+// .example-container {
+// 	width:83%;
+// 	height: 363px;
+// 	margin-left: 39px;
+// 	margin-top: 80px;
 	.example-container {
 		width: 100%;
 		overflow: auto;
+		margin-top: 45px;
 	}
 	table {
 		width: 100%;
@@ -137,7 +148,7 @@
 		width: 800px;
 		background-color: red;
 	}
-}
+
 
 .dot {
 	height: 35px;
@@ -361,7 +372,7 @@
 }
 .editicon{
 	position: absolute;
-	left: 42px;
+	left: 82px;
 	z-index: 2;
 }
 // .content:hover .editicon {
@@ -379,7 +390,13 @@
 	height: 45px;
 	width: 134px;
 	background-color: blanchedalmond;
+	position: relative;
 
+}
+.statusdata{
+	position: absolute;
+    top: 22px;
+    left: 49px;
 }
 .item1{
 	background-color: brown;
@@ -419,6 +436,15 @@
 // }
 .mat-menu-item {
 	line-height: 38px;
+}
+.group{
+	display: flex;
+	
+	align-items: center;
+}
+.groupicon{
+	margin-right: 6px;
+    font-size: 18px;
 }
 ng-sidebar-container {
 	.notification-main-div {
