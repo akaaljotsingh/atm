@@ -1,61 +1,3 @@
-<!-- <div class="example-container mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource"> -->
-  
-      <!-- Name Column -->
-      <!-- <ng-container matColumnDef="name" sticky>
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-      </ng-container> -->
-  
-      <!-- Position Column -->
-      <!-- <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef> No. </th>
-        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-      </ng-container> -->
-  
-      <!-- Weight Column -->
-      <!-- <ng-container matColumnDef="weight">
-        <th mat-header-cell *matHeaderCellDef> Weight </th>
-        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
-      </ng-container> -->
-  
-      <!-- Symbol Column -->
-      <!-- <ng-container matColumnDef="symbol">
-        <th mat-header-cell *matHeaderCellDef> Symbol </th>
-        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
-      </ng-container> -->
-  
-      <!-- Star Column -->
-      <!-- <ng-container matColumnDef="star" stickyEnd>
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let element">
-          <mat-icon>more_vert</mat-icon>
-        </td>
-      </ng-container> -->
-  
-      <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
-  </div>
-  <h2>ATM</h2>
-   -->
-   
-
-   
-   
-
-   
- 
-  
-      
-       
-
-        
-
-   
-      
-  
-  
 <ng-sidebar-container>
 
   <ng-sidebar [(opened)]="_opened" position="right" contentClass="abc">
@@ -76,156 +18,215 @@
                             
                               
 
-                          <mat-list >
-                               <mat-list-item>
-                                 <div class="time">
-                                    <i class="material-icons clock"> access_time
-                                  </i>
-                                  <span>22h</span>
-                                </div>
-                                <div class="name">
-                                    <span  class="dot">AB</span>
-                                    <span>John Smith</span>
-
-                                </div>
-                                <div class="update">
-                                    <i class="material-icons clock">
-                                        add_circle_outline
-                                        </i>
-                                        <span>Created</span>
-
-                                </div>
-                                <div class="name">
-                                  <span>Group : things to do</span>
-                                </div>
-                              </mat-list-item>
-
-                              <hr class="horizontalline">
-
-                              <mat-list-item >
-                                  <div class="time">
-                                      <i class="material-icons clock"> access_time
-                                    </i>
-                                    <span>22h</span>
-                                  </div>
-                                  <div class="name">
-                                      <span  class="dot">AB</span>
-                                      <span>John Smith</span>
-  
-                                  </div>
-                                  <div class="update">
-                                      <i class="material-icons clock">
-                                          add_circle_outline
-                                          </i>
-                                          <span>Created</span>
-  
-                                  </div>
-                                  <div class="name">
-                                      <span>Group : things to do</span>
-                                    </div>
-                                  </mat-list-item>
-
-                                  <hr class="horizontalline">
-
-                                  <mat-list-item > 
-                                      <div class="time">
-                                         <i class="material-icons clock"> access_time
-                                       </i>
-                                       <span>22h</span>
-                                     </div>
-                                     <div class="name">
-                                         <span  class="dot">AB</span>
-                                         <span>John Smith</span>
-     
-                                     </div>
-                                     <div class="update">
-                                         <i class="material-icons clock">
-                                             add_circle_outline
-                                             </i>
-                                             <span>Created</span>
-     
-                                     </div>
-                                     <div class="name">
-                                       <span>Group : things to do</span>
-                                     </div>
-                                     </mat-list-item>
-
-                                     <hr class="horizontalline">
-
-                                     <mat-list-item > 
-                                        <div class="time">
-                                           <i class="material-icons clock"> access_time
-                                         </i>
-                                         <span>22h</span>
-                                       </div>
-                                       <div class="name">
-                                           <span  class="dot">AB</span>
-                                           <span>John Smith</span>
-       
-                                       </div>
-                                       <div class="update">
-                                           <i class="material-icons clock">
-                                               add_circle_outline
-                                               </i>
-                                               <span>Created</span>
-       
-                                       </div>
-                                       <div class="name">
-                                         <span>Group : things to do</span>
-                                       </div>
-                                       </mat-list-item>
-
-                                       <hr class="horizontalline">
-
-                                       <mat-list-item > 
-                                          <div class="time">
-                                             <i class="material-icons clock"> access_time
-                                           </i>
-                                           <span>22h</span>
-                                         </div>
-                                         <div class="name">
-                                             <span  class="dot">AB</span>
-                                             <span>John Smith</span>
-         
-                                         </div>
-                                         <div class="update">
-                                             <i class="material-icons clock">
-                                                 add_circle_outline
-                                                 </i>
-                                                 <span>Created</span>
-         
-                                         </div>
-                                         <div class="name">
-                                           <span>Group : things to do</span>
-                                         </div>
-                                         </mat-list-item>
-
-                                         <hr class="horizontalline">
-
-                                         <mat-list-item > 
+                            <div class="notification-main-div">
+                               
+                                <table>
+                                    <tr>
+                                      <td>
                                             <div class="time">
-                                               <i class="material-icons clock"> access_time
-                                             </i>
-                                             <span>22h</span>
-                                           </div>
-                                           <div class="name">
-                                               <span  class="dot">AB</span>
-                                               <span>John Smith</span>
-           
-                                           </div>
-                                           <div class="update">
-                                               <i class="material-icons clock">
-                                                   add_circle_outline
-                                                   </i>
-                                                   <span>Created</span>
-           
-                                           </div>
-                                           <div class="name">
-                                             <span>Group : things to do</span>
-                                           </div>
-                                           </mat-list-item>
-
-                                        </mat-list>
+                                                <i  class="material-icons clock"> access_time </i>
+                                                <span >22h</span></div>
+                                      </td>
+                                      <td>
+                                          <div class="name">
+                                          <span class="dot">AB</span>
+                                          <span >John Smith</span>
+                                        </div>
+                                    </td>
+                                      <td>
+                                            <div class="update">
+                                                <i class="material-icons clock"> add_circle_outline </i>
+                                                <span>Created</span></div>
+                                      </td>
+                                      <td>
+                                            <div class="name"><span>Group : things to do</span></div>
+                                      </td>
+                                      <td>
+                                          <div class="status">
+                                              <button class="red">Stuck</button>
+                                              <i class="fas fa-chevron-right"></i>
+                                              <button class="green">Done</button>
+                                          </div>
+                                      </td>
+                                    </tr>
+                            
+                                    <tr>
+                                            <td>
+                                                  <div class="time">
+                                                      <i  class="material-icons clock"> access_time </i>
+                                                      <span >22h</span></div>
+                                            </td>
+                                            <td>
+                                                <div class="name">
+                                                <span class="dot">AB</span>
+                                                <span >John Smith</span>
+                                              </div>
+                                          </td>
+                                            <td>
+                                                  <div class="update">
+                                                      <i class="material-icons clock"> add_circle_outline </i>
+                                                      <span>Created</span></div>
+                                            </td>
+                                            <td>
+                                                  <div class="name"><span>Group : things to do</span></div>
+                                            </td>
+                                            <td>
+                                                <div class="status">
+                                                    <button class="red">Stuck</button>
+                                                    <i class="fas fa-chevron-right"></i>
+                                                    <button class="green">Done</button>
+                                                </div>
+                                            </td>
+                                          </tr>
+                            
+                                          <tr>
+                                                <td>
+                                                      <div class="time">
+                                                          <i  class="material-icons clock"> access_time </i>
+                                                          <span >22h</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="name">
+                                                    <span class="dot">AB</span>
+                                                    <span >John Smith</span>
+                                                  </div>
+                                              </td>
+                                                <td>
+                                                      <div class="update">
+                                                          <i class="material-icons clock"> add_circle_outline </i>
+                                                          <span>Created</span></div>
+                                                </td>
+                                                <td>
+                                                      <div class="name"><span>Group : things to do</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="status">
+                                                        <button class="red">Stuck</button>
+                                                        <i class="fas fa-chevron-right"></i>
+                                                        <button class="green">Done</button>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                            
+                                              <tr>
+                                                    <td>
+                                                          <div class="time">
+                                                              <i  class="material-icons clock"> access_time </i>
+                                                              <span >22h</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="name">
+                                                        <span class="dot">AB</span>
+                                                        <span >John Smith</span>
+                                                      </div>
+                                                  </td>
+                                                    <td>
+                                                          <div class="update">
+                                                              <i class="material-icons clock"> add_circle_outline </i>
+                                                              <span>Created</span></div>
+                                                    </td>
+                                                    <td>
+                                                          <div class="name"><span>Group : things to do</span></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <button class="red">Stuck</button>
+                                                            <i class="fas fa-chevron-right"></i>
+                                                            <button class="green">Done</button>
+                                                        </div>
+                                                    </td>
+                                                  </tr>
+                            
+                                                  <tr>
+                                                        <td>
+                                                              <div class="time">
+                                                                  <i  class="material-icons clock"> access_time </i>
+                                                                  <span >22h</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="name">
+                                                            <span class="dot">AB</span>
+                                                            <span >John Smith</span>
+                                                          </div>
+                                                      </td>
+                                                        <td>
+                                                              <div class="update">
+                                                                  <i class="material-icons clock"> add_circle_outline </i>
+                                                                  <span>Created</span></div>
+                                                        </td>
+                                                        <td>
+                                                              <div class="name"><span>Group : things to do</span></div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="status">
+                                                                <button class="red">Stuck</button>
+                                                                <i class="fas fa-chevron-right"></i>
+                                                                <button class="green">Done</button>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+                            
+                                                      <tr>
+                                                            <td>
+                                                                  <div class="time">
+                                                                      <i  class="material-icons clock"> access_time </i>
+                                                                      <span >22h</span></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="name">
+                                                                <span class="dot">AB</span>
+                                                                <span >John Smith</span>
+                                                              </div>
+                                                          </td>
+                                                            <td>
+                                                                  <div class="update">
+                                                                      <i class="material-icons clock"> add_circle_outline </i>
+                                                                      <span>Created</span></div>
+                                                            </td>
+                                                            <td>
+                                                                  <div class="name"><span>Group : things to do</span></div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="status">
+                                                                    <button class="red">Stuck</button>
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                    <button class="green">Done</button>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                            
+                                                          <tr>
+                                                                <td>
+                                                                      <div class="time">
+                                                                          <i  class="material-icons clock"> access_time </i>
+                                                                          <span >22h</span></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="name">
+                                                                    <span class="dot">AB</span>
+                                                                    <span >John Smith</span>
+                                                                  </div>
+                                                              </td>
+                                                                <td>
+                                                                      <div class="update">
+                                                                          <i class="material-icons clock"> add_circle_outline </i>
+                                                                          <span>Created</span></div>
+                                                                </td>
+                                                                <td>
+                                                                      <div class="name"><span>Group : things to do</span></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="status">
+                                                                        <button class="red">Stuck</button>
+                                                                        <i class="fas fa-chevron-right"></i>
+                                                                        <button class="green">Done</button>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                   
+                                  </table>
+                            </div>
+                            
                          
                                       </div>
                                     </ng-sidebar>
@@ -246,46 +247,7 @@
                                                    <div class="rightalign">
                                                      
                                                        
-                                                         <!-- <div class="box1">
                                                          
-                                                             <a
-                                                             matTooltip="Integrations"
-                                                             aria-label="Button that displays a tooltip when focused or hovered over">
-                                                             <div class="shape1">
-                                                                 <button mat-button (click)="openIntegration()">
-                                                                 <i class="material-icons ">
-                                                                     highlight
-                                                                     </i>/0
-                                                                     </button>
-                                           
-                                                             </div>
-                                                            
-                                                              
-                                                               </a>
-                                                           
-                                                              
-                                                               
-                                           
-                                                         </div>
-                                                      -->
-                                                         
-                                                          <!-- <div class="box1">
-                                                             <a
-                                                             matTooltip="Automations"
-                                                             aria-label="Button that displays a tooltip when focused or hovered over">
-                                                            <div class="shape1">
-                                                               <button mat-button (click)="openAutomation()">
-                                                               <i class="material-icons">
-                                                                   nfc
-                                                                   </i> /1
-                                                                   </button>
-                                           
-                                                            </div>
-                                                             
-                                                               </a>
-                                           
-                                                          </div> -->
-                                           
                                                          
                                            
                                                           <div class="box1">
@@ -398,7 +360,7 @@
                                                 
                                                     <!-- Name Column -->
                                                     <ng-container matColumnDef="name" sticky>
-                                                      <th mat-header-cell *matHeaderCellDef> Name </th>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Name </th>
                                                       <td mat-cell *matCellDef="let element"  >
                                                         <div class="task" >
                                                             <div class="task1" (click)="_toggleSidebar()">
@@ -421,7 +383,7 @@
                                                 
                                                     <!-- Position Column -->
                                                     <ng-container matColumnDef="position">
-                                                      <th mat-header-cell *matHeaderCellDef> Status </th>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Status </th>
                                                       <td mat-cell *matCellDef="let element"> 
                                                         
                                                         <button mat-button [matMenuTriggerFor]="menu">
@@ -429,20 +391,26 @@
 
                                                           </div>
                                                         </button>
-                                                        <mat-menu #menu="matMenu">
-                                                          <button mat-menu-item>
+                                                        <mat-menu #menu="matMenu" >
+                                                          <button mat-menu-item class="list" >
                                                             <div class="item1">
                                                               <span>Done</span>
                                                             </div>
                                                           </button>
-                                                          <button mat-menu-item>
+                                                          <button mat-menu-item class="list">
                                                               <div class="item2">
-                                                                  <span>Working </span>
+                                                                  <span>Stuck </span>
                                                                 </div>
                                                           </button>
-                                                          <button mat-menu-item>
+                                                          <button mat-menu-item class="list">
                                                               <div class="item3">
                                                                   <span>Working on it</span>
+                                                                </div>
+                                                          </button>
+
+                                                          <button mat-menu-item class="list">
+                                                              <div class="item4">
+                                                                  <span>Waiting for review</span>
                                                                 </div>
                                                           </button>
                                                         </mat-menu>
@@ -453,19 +421,53 @@
                                                 
                                                     <!-- Weight Column -->
                                                      <ng-container matColumnDef="weight">
-                                                      <th mat-header-cell *matHeaderCellDef> Weight </th>
-                                                      <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Due date </th>
+                                                      <td mat-cell *matCellDef="let element">
+                                                        <mat-form-field>
+                                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                        <mat-datepicker #picker></mat-datepicker>
+                                                      </mat-form-field>
+                                                    </td>
                                                     </ng-container>
                                                 
                                                     <!-- Symbol Column -->
                                                     <ng-container matColumnDef="symbol">
-                                                      <th mat-header-cell *matHeaderCellDef> Symbol </th>
-                                                      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Priority </th>
+                                                      <td mat-cell *matCellDef="let element"> <button mat-button [matMenuTriggerFor]="menu">
+                                                          <div class="status">
+
+                                                          </div>
+                                                        </button>
+                                                        <mat-menu #menu="matMenu" >
+                                                          <button mat-menu-item class="list" >
+                                                            <div class="item1">
+                                                              <span>Urgent</span>
+                                                            </div>
+                                                          </button>
+                                                          <button mat-menu-item class="list">
+                                                              <div class="item2">
+                                                                  <span> High</span>
+                                                                </div>
+                                                          </button>
+                                                          <button mat-menu-item class="list">
+                                                              <div class="item3">
+                                                                  <span>Medium</span>
+                                                                </div>
+                                                          </button>
+
+                                                          <button mat-menu-item class="list">
+                                                              <div class="item4">
+                                                                  <span>Low</span>
+                                                                </div>
+                                                          </button>
+                                                        </mat-menu>
+                                                         </td>
                                                     </ng-container>
                                                 
                                                     <!-- Star Column -->
                                                     <ng-container matColumnDef="star" stickyEnd>
-                                                      <th mat-header-cell *matHeaderCellDef></th>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"></th>
                                                       <td mat-cell *matCellDef="let element">
                                                         <mat-icon>more_vert</mat-icon>
                                                       </td>
