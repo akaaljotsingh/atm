@@ -343,24 +343,107 @@
                                                    </div>
                                                    
                                                  </div>
-                                                 <div class="lowertopbar">
+                                                 <!-- <div class="lowertopbar">
                                                      <button mat-flat-button color="primary" class="taskbutton">New Task</button>
                                                      <mat-form-field>
                                                          <input matInput placeholder="Search">
                                                        </mat-form-field>
-                                                 </div>
+                                                 </div> -->
                                                       
                                                           
                                                             
                                            <hr class="horizontalline1">
                                                    
                                         
-                                          <div class="example-container mat-elevation-z8">
-                                                  <table mat-table [dataSource]="dataSource"> -->
+                                          <div class="example-container ">
+                                                  <table mat-table [dataSource]="dataSource"> 
                                                 
                                                     <!-- Name Column -->
                                                     <ng-container matColumnDef="name" sticky>
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Name </th>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading">
+                                                          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                                              <mat-icon>more_vert</mat-icon>
+                                                            </button>
+                                                            <mat-menu #menu="matMenu">
+                                                              
+
+                                                              
+
+                                                                <button mat-menu-item>
+                                                                    <div class="group">
+                                                                    <i class="material-icons groupicon">
+                                                                        add_circle
+                                                                        </i>
+                                                                  <span>Add Group</span>
+                                                                </div>
+                                                                </button>
+
+                                                                <button mat-menu-item>
+                                                                    <div class="group">
+                                                                    <i class="material-icons groupicon">
+                                                                        edit
+                                                                        </i>
+                                                                  <span>Rename Group</span>
+                                                                  </div>
+                                                                </button>
+
+                                                                <button mat-menu-item>
+                                                                   
+                                                                        <button mat-menu-item [matMenuTriggerFor]="vertebrates"><i class="material-icons groupicon">
+                                                                            color_lens
+                                                                            </i>Change Group color</button>
+                                                                       
+                                                                        <mat-menu #vertebrates="matMenu">
+                                                                           
+                                                                            <button mat-menu-item>red</button>
+                                                                            <button mat-menu-item>blue</button>
+                                                                          </mat-menu>
+                                                                    <!-- <div class="group">
+                                                                    <i class="material-icons groupicon">
+                                                                        color_lens
+                                                                        </i>
+                                                                  <span>Change Group color</span>
+                                                                  </div> -->
+                                                                </button>
+
+                                                              
+                                                              <button mat-menu-item >
+                                                                  <div class="group">
+                                                                  <i class="material-icons groupicon">
+                                                                      archive
+                                                                      </i>
+                                                                <span>Archive</span>
+                                                                </div>
+                                                              </button>
+                                                              <button mat-menu-item>
+                                                                  <div class="group">
+                                                                  <i class="material-icons groupicon">
+                                                                      description
+                                                                      </i>
+                                                                <span>Export to Excel</span>
+                                                                </div>
+                                                              </button>
+
+                                                              <button mat-menu-item>
+                                                                  <div class="group">
+                                                                      <i class="material-icons">
+                                                                          search
+                                                                          </i>
+                                                                <span>Search</span>
+                                                                </div>
+                                                              </button>
+
+                                                              <button mat-menu-item>
+                                                                  <div class="group">
+                                                                  <i class="material-icons groupicon">
+                                                                      delete
+                                                                      </i>
+                                                                <span>Delete</span>
+                                                                </div>
+                                                              </button>
+                                                            </mat-menu>
+                                                         Things to do
+                                                         </th>
                                                       <td mat-cell *matCellDef="let element"  >
                                                         <div class="task" >
                                                             <div class="task1" (click)="_toggleSidebar()">
@@ -388,6 +471,7 @@
                                                         
                                                         <button mat-button [matMenuTriggerFor]="menu">
                                                           <div class="status">
+                                                            <span class="statusdata">stuck</span>
 
                                                           </div>
                                                         </button>
@@ -433,35 +517,14 @@
                                                 
                                                     <!-- Symbol Column -->
                                                     <ng-container matColumnDef="symbol">
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Priority </th>
-                                                      <td mat-cell *matCellDef="let element"> <button mat-button [matMenuTriggerFor]="menu">
-                                                          <div class="status">
-
-                                                          </div>
-                                                        </button>
-                                                        <mat-menu #menu="matMenu" >
-                                                          <button mat-menu-item class="list" >
-                                                            <div class="item1">
-                                                              <span>Urgent</span>
-                                                            </div>
-                                                          </button>
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item2">
-                                                                  <span> High</span>
-                                                                </div>
-                                                          </button>
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item3">
-                                                                  <span>Medium</span>
-                                                                </div>
-                                                          </button>
-
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item4">
-                                                                  <span>Low</span>
-                                                                </div>
-                                                          </button>
-                                                        </mat-menu>
+                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Members </th>
+                                                      <td mat-cell *matCellDef="let element">
+                                                          <div class="box11">
+                                                              <span  matTooltip="Member 1" class="dot1 member1">AB</span>
+                                                              <span  matTooltip="member 2" class="dot1 member2">kB</span>
+                                                           
+                                                           </div>
+                                                         
                                                          </td>
                                                     </ng-container>
                                                 
