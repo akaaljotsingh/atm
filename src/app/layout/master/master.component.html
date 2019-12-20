@@ -67,12 +67,10 @@
               </div>
            </mat-drawer>
          
-           <div class="example-sidenav-content">
-             <button type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
+             <button class="arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
               <i *ngIf="arrowLeft" class="fas fa-chevron-left"></i>
               <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
              </button>
-           </div>
            <router-outlet></router-outlet>
          
          </mat-drawer-container>

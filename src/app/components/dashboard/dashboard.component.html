@@ -413,8 +413,7 @@
                                                         </div>
                                                               
                                                              
-                                                            
-
+                                                        
                                                         
                                                       </td>
 
@@ -423,10 +422,30 @@
                                                     <!-- Position Column -->
                                                     <ng-container matColumnDef="position">
                                                       <th mat-header-cell *matHeaderCellDef> Status </th>
-                                                      <td mat-cell *matCellDef="let element"> {{element.position}}
-                                                        <div class="status">
-                                                          
-                                                        </div>
+                                                      <td mat-cell *matCellDef="let element"> 
+                                                        
+                                                        <button mat-button [matMenuTriggerFor]="menu">
+                                                          <div class="status">
+
+                                                          </div>
+                                                        </button>
+                                                        <mat-menu #menu="matMenu">
+                                                          <button mat-menu-item>
+                                                            <div class="item1">
+                                                              <span>Done</span>
+                                                            </div>
+                                                          </button>
+                                                          <button mat-menu-item>
+                                                              <div class="item2">
+                                                                  <span>Working </span>
+                                                                </div>
+                                                          </button>
+                                                          <button mat-menu-item>
+                                                              <div class="item3">
+                                                                  <span>Working on it</span>
+                                                                </div>
+                                                          </button>
+                                                        </mat-menu>
                                                         
                                                       
                                                       </td>

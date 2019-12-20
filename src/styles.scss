@@ -63,3 +63,6 @@ td.content {
     height: 46px;
   }
 }
+ng-sidebar-container {
+  height: calc(100vh - 25px) !important;
+}
