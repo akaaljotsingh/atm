@@ -54,7 +54,7 @@ i {
   box-shadow: 3px 3px 6px grey;
 }
 .ng-sidebar{
-  width: 42%;
+  width: 68%;
 }
 
 td.content {
@@ -62,4 +62,10 @@ td.content {
   .task1 {
     height: 46px;
   }
+}
+td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
+  padding-left: 85px !important;
+}
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  text-align: center;
 }
