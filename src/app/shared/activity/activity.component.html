@@ -1,1 +1,62 @@
-<p>activity works!</p>
+<div class="avtivity-main-div">
+    <div class="main-content">
+        <div class="header">
+        <i class="far fa-window-maximize"></i>
+        <h3>notification</h3>
+    </div>
+
+    <!-- check list add popup box  Start-->
+     <div class="check-list-popup" *ngIf="checkListSection">
+        <div class="no-back">
+            <div class="popup-head">
+            <span class="pop-over-header-title">Add Checklist</span>
+            
+            <i class="fas fa-times close-btn" (click)="checkListSection=!checkListSection"></i>
+        </div>
+        <div>
+            <div class="pop-over-content">
+                    <label>Title</label>
+                    <input type="text" value="Checklist" >
+                    <label class="custom-file-upload">
+                              <input type="file"/>
+                             Add 
+                        </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!-- check list add popup box End-->
+
+                  <div class="member-popup popup-box" *ngIf="AddMembersSection">
+                        <div class="no-back">
+                            <div class="popup-head">
+                            <span class="pop-over-header-title">Members</span>
+                            
+                    <i class="fas fa-times close-btn" (click)="AddMembersSection=!AddMembersSection"></i>
+                        </div>
+                        <div>
+                            <div class="pop-over-content">
+                                    <input type="text" value="Search Members">
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>        
+    </div>
+   <div class="sidenav">
+       <p>ADD TO CART</p>
+       <button (click)="AddMembersSection=!AddMembersSection"><i class="far fa-user"></i>
+         <span>Members</span></button>
+
+       <button><i class="far fa-credit-card" style="color: #68758c;"></i> <span>Status</span></button>
+
+       <button (click)="checkListSection=!checkListSection"><i class="far fa-check-square"></i> <span>Check List</span></button>
+
+       <button><i class="far fa-clock"></i> <span>Due Date</span></button>
+
+     <button>  <label class="custom-file-add">
+            <input type="file"/>
+            <i class="fas fa-paperclip" style="color: #68758c;"></i> Attachment
+        </label></button>
+    </div> 
+</div>

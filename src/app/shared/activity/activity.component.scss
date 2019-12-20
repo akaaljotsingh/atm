@@ -1,0 +1,175 @@
+.avtivity-main-div {
+    background-color: #F4F5F7;
+    .main-content {
+        float: left;
+        width: 85%;
+        .header {
+            color: #42526e;
+            display: flex;
+            align-items: center;
+            h3 {
+                margin-left: 8px;
+            }
+        }
+        i {
+            color: #42526e;
+        }
+    }
+    .sidenav {
+        float: right;
+        width: 25%;
+        p {
+            color: #5e6c84;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .04em;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            background-color: rgba(9,30,66,.04);
+            border-radius: 3px;
+            cursor: pointer;
+            height: 32px;
+            width: 145px;
+            margin-top: 8px;
+            overflow: hidden;
+            padding: 6px 12px;
+            box-shadow: none;
+            border: none;
+            color: #172b4d;
+            font-size: 15px;
+            line-height: 20px;
+           font-weight: 400;
+           &:focus {
+               outline: none;
+           }
+           &:hover {
+            background-color: rgba(9,30,66,.08);
+            box-shadow: none;
+            border: none;
+        }
+        &:active {
+            background-color: #e4f0f6;
+            box-shadow: none;
+            border: none;
+            color: #0079bf;
+        }
+           i{
+               margin-right: 11px;
+               font-size: 14px;
+           }
+        }
+    }
+}
+
+
+input[type="file"] {
+    display: none; 
+}
+.member-popup {
+    left: 888px;
+    top: 315px;
+    position: absolute;
+}
+
+.popup-box {
+    display: block; 
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px -4px rgba(9,30,66,.25), 0 0 0 1px rgba(9,30,66,.08);
+    overflow: hidden;
+    width: 280px;
+    z-index: 7;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.check-list-popup {
+    left: 888px;
+    top: 395px;
+    position: absolute;
+}
+    .popup-head {
+        height: 40px;
+        position: relative;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    .pop-over-header-title {
+        box-sizing: border-box;
+        color: #5e6c84;
+        display: block;
+        line-height: 40px;
+        border-bottom: 1px solid rgba(9,30,66,.13);
+        margin: 0 12px;
+        overflow: hidden;
+        padding: 0 32px;
+        position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        z-index: 1;
+    }
+    .close-btn {
+        color: #6b778c;
+        padding: 10px 12px 10px 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .pop-over-content {
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0 12px 12px;
+    }
+    label {
+        margin-top: 4px;
+        font-weight: 700;
+    color: #5e6c84;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    display: block;
+    }
+    input {
+        margin-top: 8px;
+        width: 100%;
+        background-color: #fafbfc;
+    border: none;
+    box-shadow: inset 0 0 0 2px #dfe1e6;
+    color: #172b4d;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    }
+    .custom-file-add {
+        margin-top: 0px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;  
+    }
+    .custom-file-upload {   
+        cursor: pointer;
+        background-color: #61bd4f;
+        color: #fff;
+        height: 25px;
+        border-radius: 3px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+        width: 20%;
+   
+        input[type="file"] {
+            display: none; 
+        }
+    }

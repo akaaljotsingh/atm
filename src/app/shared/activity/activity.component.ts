@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activity.component.scss']
 })
 export class ActivityComponent implements OnInit {
-
+  checkListSection=false;
+  AddMembersSection=false;
   constructor() { }
 
   ngOnInit() {
