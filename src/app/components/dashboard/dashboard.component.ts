@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {ActivityComponent} from '../../shared/activity/activity.component';
+
 
 export interface PeriodicElement {
   name: string;
@@ -33,30 +35,28 @@ export class DashboardComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(dialogComponent, {
-      width: '500px',
-      
-      
+      width: '500px',  
     }); }
+
     openIntegration(): void {
       const dialogRef = this.dialog.open(integrationComponent, {
         width: '1000px',
-        
-        
       }); }
+
       openAutomation(): void {
         const dialogRef = this.dialog.open(automationComponent, {
           width: '1000px',
-          
-          
         }); }
+
         openBoard(): void {
           const dialogRef = this.dialog.open(boardcomponent, {
             width: '600px',
-            
-            
           }); }
           
-         
+          openActivity(): void {
+            const dialogRef = this.dialog.open(ActivityComponent, {
+              width: '770px',
+            }); } 
 
     constructor(public dialog: MatDialog) {}
 

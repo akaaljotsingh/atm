@@ -8,6 +8,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
 import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
+import {ActivityComponent} from '../../shared/activity/activity.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
 
@@ -72,9 +73,11 @@ export const routes: Routes = [
         MasterComponent,
         PublicComponent,
         InvitePopupComponent,
-        HelpPopupComponent 
+        HelpPopupComponent,
+        ActivityComponent
+         
     ],
     providers: [],
-    entryComponents: [InvitePopupComponent,HelpPopupComponent]
+    entryComponents: [InvitePopupComponent,HelpPopupComponent,ActivityComponent]
 })
 export class MasterModule { }

@@ -25,14 +25,17 @@
             </div>
         </div>
         <div class="icon-image-notification">
-        <img src="../../../assets/images/notification.svg"
-        matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="notification"  alt="notification">
+        <img src="../../../assets/images/notification.svg" alt="notification"
+        [routerLink]="['/notification']" routerLinkActive="active"
+        matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="notification">
       </div>
 
       <div class="icon-image-inbox">
-        <img matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox" 
+        <img matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox"
+        [routerLink]="['/inbox']" routerLinkActive="active" 
             src="../../../assets/images/inbox.svg" alt="inbox icon">
-      </div><br>
+      </div>
+      <br>
       <div class="icon-image-inbox">
         <img (click)="openDialog()" matTooltipPosition="right" matTooltipClass="tooltip" 
         matTooltip="Invite person"  src="../../../assets/images/invite.svg" alt="inviteicon">
@@ -54,13 +57,14 @@
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
            <mat-drawer #drawer class="example-sidenav" mode="side">
-               <div class="header-box">
+               <div class="header-box clearfix">
                        <a href="http://">Boards</a>
+                       <i class="fas fa-plus-circle"></i>
                </div>
-               <hr>
-               <div class="links">
-               <a href="http://">Dashboard</a>
-           </div>
+               <div class="search">
+               <input type="search" name="q" placeholder="Search boards..">
+               <i class="fas fa-search"></i>
+              </div>
            </mat-drawer>
          
              <button class="arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
