@@ -1,7 +1,7 @@
 .topbar {
 	display: flex;
 	justify-content: space-between;
-	margin-top: -11px;
+	margin-top: 22px;
 }
 
 .leftalign {
@@ -362,11 +362,12 @@
 .activitydate{
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
-}
-.date1{
+	align-items: center;
 	margin-right: 15px;
 }
+// .date1{
+// 	margin-right: 15px;
+// }
 
 
 /*-----Columns------*/
@@ -376,6 +377,7 @@
     align-items: center;
 	justify-content: flex-start;
 	position: relative;
+	left: 79px;
 }
 .editicon{
 	position: absolute;
