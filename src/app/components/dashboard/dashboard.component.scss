@@ -18,7 +18,6 @@
 .box3 {
 	border: 2px solid #8080804a;
 	margin-right: 21px;
-	
 	display: flex;
 	-ms-flex-align: center;
 	align-items: center;
@@ -79,17 +78,16 @@
 	justify-content: center;
 	margin-right: 28px;
 	border-radius: 4px;
-	
 	cursor: pointer;
+	
+	
 }
 .box11 {
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
 	border-radius: 4px;
-	
 	cursor: pointer;
 }
 
@@ -106,22 +104,17 @@
 	border-radius: 50%;
 }
 
-// .mat-mini-fab.mat-accent{
-//     margin-right: 5px;
-// }
+
 .mat-mini-fab.mat-accent:hover {
 	background-color: grey;
 }
 
-// .example-container {
-// 	width:83%;
-// 	height: 363px;
-// 	margin-left: 39px;
-// 	margin-top: 80px;
+
 	.example-container {
-		width: 100%;
+		width: 95%;
 		overflow: auto;
 		margin-top: 45px;
+		margin-left: 29px;
 	}
 	table {
 		width: 100%;
@@ -134,9 +127,7 @@
 	td.mat-column-position {
 		padding-left: 8px;
 	}
-	// .mat-table-sticky:first-child {
-	// 	border-right: 1px solid #e0e0e0;
-	// }
+	
 	.mat-table-sticky:last-child {
 		border-left: 1px solid #e0e0e0;
 	}
@@ -363,7 +354,23 @@
 .member2 {
 	margin-right: -14px;
 }
+
+/*-----search----*/
+.searchicon{
+	text-align: center;
+}
+.activitydate{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.date1{
+	margin-right: 15px;
+}
+
+
 /*-----Columns------*/
+
 .task{
 	display: flex;
     align-items: center;
@@ -372,12 +379,10 @@
 }
 .editicon{
 	position: absolute;
-	left: 82px;
+	left: 80px;
 	z-index: 2;
 }
-// .content:hover .editicon {
-//    display: block;
-// }
+
 .edit{
 	font-size: 14px;
     margin-left: 10px;
@@ -386,7 +391,7 @@
 	height: 45px;
     width: 100%;
 }
-.status{
+.status1{
 	height: 45px;
 	width: 134px;
 	background-color: blanchedalmond;
@@ -446,9 +451,43 @@
 	margin-right: 6px;
     font-size: 18px;
 }
+.colors{
+	background-color: white;
+	padding-left: 0;
+}
+.colorpicker{
+	display: flex;
+	justify-content: space-between;
+}
+.colorpicker1{
+	height:20px;
+	width: 20px;
+	background-color: yellow;
+	border-radius: 50%;
+}
+.colorpicker2{
+	height: 20px;
+	width: 20px;
+	background-color: rgb(197, 33, 60);
+	border-radius: 50%;
+}
+.colorpicker3{
+	height: 20px;
+	width: 20px;
+	background-color: rgb(51, 35, 201);
+	border-radius: 50%;
+}
+.mainhead{
+	font-size: 22px;
+    color: #673ab7;
+}
+
+
+
+
 ng-sidebar-container {
 	.notification-main-div {
-		padding: 0px 40px;
+		padding: 0px 25px;
 	
 		table {
 			font-family: arial, sans-serif;
@@ -498,7 +537,7 @@ ng-sidebar-container {
 			display: flex;
 			justify-content: center;
 			align-items: center;  
-			margin-left: 7px;
+			margin-left: 37px;
 			button {
 				color: white;
 				font-weight: 400;

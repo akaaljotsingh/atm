@@ -72,3 +72,6 @@ td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
 ng-sidebar-container {
   height: calc(100vh - 25px) !important;
 }
+.mat-header-cell {
+  font-size: 17px;
+}

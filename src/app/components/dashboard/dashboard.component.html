@@ -1,593 +1,642 @@
 <ng-sidebar-container>
 
-  <ng-sidebar [(opened)]="_opened" position="right" contentClass="abc">
-    <div class="sidemargin">
-        <i class="material-icons" style="margin-top: 10px;">clear </i>
-            
-           
-        <h2>Activity Log</h2>
-        
-           
-                
-                          <mat-form-field>
-                              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                              <mat-datepicker #picker></mat-datepicker>
-                            </mat-form-field>
-                            
-                            
-                              
+    <ng-sidebar [(opened)]="_opened" position="right" contentClass="abc">
+        <div class="sidemargin">
+            <i class="material-icons" style="margin-top: -5px;">clear </i>
+            <div class="activitydate">
+                    <h2>Activity Log</h2>
 
-                            <div class="notification-main-div">
-                               
-                                <table>
-                                    <tr>
-                                      <td>
-                                            <div class="time">
-                                                <i  class="material-icons clock"> access_time </i>
-                                                <span >22h</span></div>
-                                      </td>
-                                      <td>
-                                          <div class="name">
-                                          <span class="dot">AB</span>
-                                          <span >John Smith</span>
-                                        </div>
-                                    </td>
-                                      <td>
-                                            <div class="update">
-                                                <i class="material-icons clock"> add_circle_outline </i>
-                                                <span>Created</span></div>
-                                      </td>
-                                      <td>
-                                            <div class="name"><span>Group : things to do</span></div>
-                                      </td>
-                                      <td>
-                                          <div class="status">
-                                              <button class="red">Stuck</button>
-                                              <i class="fas fa-chevron-right"></i>
-                                              <button class="green">Done</button>
-                                          </div>
-                                      </td>
-                                    </tr>
-                            
-                                    <tr>
-                                            <td>
-                                                  <div class="time">
-                                                      <i  class="material-icons clock"> access_time </i>
-                                                      <span >22h</span></div>
-                                            </td>
-                                            <td>
-                                                <div class="name">
-                                                <span class="dot">AB</span>
-                                                <span >John Smith</span>
-                                              </div>
-                                          </td>
-                                            <td>
-                                                  <div class="update">
-                                                      <i class="material-icons clock"> add_circle_outline </i>
-                                                      <span>Created</span></div>
-                                            </td>
-                                            <td>
-                                                  <div class="name"><span>Group : things to do</span></div>
-                                            </td>
-                                            <td>
-                                                <div class="status">
-                                                    <button class="red">Stuck</button>
-                                                    <i class="fas fa-chevron-right"></i>
-                                                    <button class="green">Done</button>
-                                                </div>
-                                            </td>
-                                          </tr>
-                            
-                                          <tr>
-                                                <td>
-                                                      <div class="time">
-                                                          <i  class="material-icons clock"> access_time </i>
-                                                          <span >22h</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="name">
-                                                    <span class="dot">AB</span>
-                                                    <span >John Smith</span>
-                                                  </div>
-                                              </td>
-                                                <td>
-                                                      <div class="update">
-                                                          <i class="material-icons clock"> add_circle_outline </i>
-                                                          <span>Created</span></div>
-                                                </td>
-                                                <td>
-                                                      <div class="name"><span>Group : things to do</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="status">
-                                                        <button class="red">Stuck</button>
-                                                        <i class="fas fa-chevron-right"></i>
-                                                        <button class="green">Done</button>
-                                                    </div>
-                                                </td>
-                                              </tr>
-                            
-                                              <tr>
-                                                    <td>
-                                                          <div class="time">
-                                                              <i  class="material-icons clock"> access_time </i>
-                                                              <span >22h</span></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="name">
-                                                        <span class="dot">AB</span>
-                                                        <span >John Smith</span>
-                                                      </div>
-                                                  </td>
-                                                    <td>
-                                                          <div class="update">
-                                                              <i class="material-icons clock"> add_circle_outline </i>
-                                                              <span>Created</span></div>
-                                                    </td>
-                                                    <td>
-                                                          <div class="name"><span>Group : things to do</span></div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="status">
-                                                            <button class="red">Stuck</button>
-                                                            <i class="fas fa-chevron-right"></i>
-                                                            <button class="green">Done</button>
-                                                        </div>
-                                                    </td>
-                                                  </tr>
-                            
-                                                  <tr>
-                                                        <td>
-                                                              <div class="time">
-                                                                  <i  class="material-icons clock"> access_time </i>
-                                                                  <span >22h</span></div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="name">
-                                                            <span class="dot">AB</span>
-                                                            <span >John Smith</span>
-                                                          </div>
-                                                      </td>
-                                                        <td>
-                                                              <div class="update">
-                                                                  <i class="material-icons clock"> add_circle_outline </i>
-                                                                  <span>Created</span></div>
-                                                        </td>
-                                                        <td>
-                                                              <div class="name"><span>Group : things to do</span></div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="status">
-                                                                <button class="red">Stuck</button>
-                                                                <i class="fas fa-chevron-right"></i>
-                                                                <button class="green">Done</button>
-                                                            </div>
-                                                        </td>
-                                                      </tr>
-                            
-                                                      <tr>
-                                                            <td>
-                                                                  <div class="time">
-                                                                      <i  class="material-icons clock"> access_time </i>
-                                                                      <span >22h</span></div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="name">
-                                                                <span class="dot">AB</span>
-                                                                <span >John Smith</span>
-                                                              </div>
-                                                          </td>
-                                                            <td>
-                                                                  <div class="update">
-                                                                      <i class="material-icons clock"> add_circle_outline </i>
-                                                                      <span>Created</span></div>
-                                                            </td>
-                                                            <td>
-                                                                  <div class="name"><span>Group : things to do</span></div>
-                                                            </td>
-                                                            <td>
-                                                                <div class="status">
-                                                                    <button class="red">Stuck</button>
-                                                                    <i class="fas fa-chevron-right"></i>
-                                                                    <button class="green">Done</button>
-                                                                </div>
-                                                            </td>
-                                                          </tr>
-                            
-                                                          <tr>
-                                                                <td>
-                                                                      <div class="time">
-                                                                          <i  class="material-icons clock"> access_time </i>
-                                                                          <span >22h</span></div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="name">
-                                                                    <span class="dot">AB</span>
-                                                                    <span >John Smith</span>
-                                                                  </div>
-                                                              </td>
-                                                                <td>
-                                                                      <div class="update">
-                                                                          <i class="material-icons clock"> add_circle_outline </i>
-                                                                          <span>Created</span></div>
-                                                                </td>
-                                                                <td>
-                                                                      <div class="name"><span>Group : things to do</span></div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="status">
-                                                                        <button class="red">Stuck</button>
-                                                                        <i class="fas fa-chevron-right"></i>
-                                                                        <button class="green">Done</button>
-                                                                    </div>
-                                                                </td>
-                                                              </tr>
-                                   
-                                  </table>
+                    <mat-form-field class="date1">
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+
+            </div>
+
+           
+
+            <div class="notification-main-div">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
                             </div>
-                            
-                         
-                                      </div>
-                                    </ng-sidebar>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
 
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
 
-                                    <div ng-sidebar-content>
-                                        <div class="topbar">
-                                  
-                                            <div class="leftalign">
-                                              <h1>ATM</h1>
-                                              <p style="margin-top:-12px">it is an angular project</p>
-                                            </div>
-                                               
-                                             
-                                                  
-                                                   
-                                                       
-                                                   <div class="rightalign">
-                                                     
-                                                       
-                                                         
-                                                         
-                                           
-                                                          <div class="box1">
-                                                             <span  matTooltip="Member 1" class="dot1 member1">AB</span>
-                                                             <span  matTooltip="member 2" class="dot1 member2">kB</span>
-                                                          
-                                                          </div>
-                                           
-                                                       <div class="box3">
-                                                           <a
-                                                           matTooltip="Who is on this board ?"
-                                                           aria-label="Button that displays a tooltip when focused or hovered over">
-                                                         
-                                                          <div class="shape3">
-                                                             <button mat-button (click)="openBoard()">
-                                                             <i class="material-icons person">
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="time">
+                                <i class="material-icons clock"> access_time </i>
+                                <span>22h</span></div>
+                        </td>
+                        <td>
+                            <div class="name">
+                                <span class="dot">AB</span>
+                                <span>John Smith</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="update">
+                                <i class="material-icons clock"> add_circle_outline </i>
+                                <span>Created</span></div>
+                        </td>
+                        <td>
+                            <div class="name"><span>Group : things to do</span></div>
+                        </td>
+                        <td>
+                            <div class="status">
+                                <button class="red">Stuck</button>
+                                <i class="fas fa-chevron-right"></i>
+                                <button class="green">Done</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </ng-sidebar>
+
+    <div ng-sidebar-content>
+        <div class="topbar">
+
+            <div class="leftalign">
+                <h1>ATM</h1>
+                <p style="margin-top:-12px">it is an angular project</p>
+            </div>
+
+            <div class="rightalign">
+
+                <div class="box1">
+                    <span matTooltip="Member 1" class="dot1 member1">AB</span>
+                    <span matTooltip="member 2" class="dot1 member2">kB</span>
+
+                </div>
+
+                <div class="box3">
+                    <a matTooltip="Who is on this board ?" aria-label="Button that displays a tooltip when focused or hovered over">
+
+                        <div class="shape3">
+                            <button mat-button (click)="openBoard()">
+                                <i class="material-icons person">
                                                                  supervisor_account
                                                                  </i> / 0
-                                                                 </button>
-                                           
-                                                          </div>
-                                                    
-                                                           </a>
-                                                       
-                                                           <a class="gap"
-                                                           matTooltip="See rescent board activity"
-                                                           aria-label="Button that displays a tooltip when focused or hovered over">
-                                                          <div class="activity2">
-                                                             <button mat-button (click)="_toggleSidebar()">
-                                                             Activities /0
-                                                             </button>
-                                           
-                                                          </div>
-                                                   
-                                                     </a>
-                                           
-                                                       </div>
-                                                       <button class="menubutton" mat-mini-fab [matMenuTriggerFor]="menu" >...</button>
-                                                      
-                                  <mat-menu #menu="matMenu">
-                                  
-                                    <div class="renameboard">
-                                        <i class="material-icons dotdrop">create </i>
-                                            <button mat-menu-item>
-                                               Rename Board
-                                            </button>
-                                    </div>
-                                              
-                                               
-                                                
-                                  
-                                    
-                                    
-                                      
-                                  
-                                    <div class="renameboard">
-                                        <i class="material-icons dotdrop"> cloud </i>
-                                         
-                                                <button mat-menu-item>
-                                                    Archived Task
-                                                </button>
-                                    </div>
-                                             
-                                       <div class="renameboard">
-                                        <i class="material-icons dotdrop">create </i>
-                                            <button mat-menu-item>
-                                               Rename Board
-                                            </button>
-                                    </div>
-                                             
-                                  
-                                    <div class="renameboard">
-                                        <i class="material-icons dotdrop">create </i>
-                                            <button mat-menu-item>
-                                               Rename Board
-                                            </button>
-                                    </div>
-                                  
-                                    <div class="renameboard">
-                                        <i class="material-icons dotdrop"> cloud </i>
-                                         
-                                                <button mat-menu-item>
-                                                    Archived Task
-                                                </button>
-                                    </div>
-                                             
-                                                
-                                                   
-                                                   
-                                  </mat-menu>
-                                                           
-                                                       
-                                                   </div>
-                                                   
-                                                 </div>
-                                                 <!-- <div class="lowertopbar">
+                            </button>
+
+                        </div>
+
+                    </a>
+
+                    <a class="gap" matTooltip="See rescent board activity" aria-label="Button that displays a tooltip when focused or hovered over">
+                        <div class="activity2">
+                            <button mat-button (click)="_toggleSidebar()">
+                                Activities /0
+                            </button>
+
+                        </div>
+
+                    </a>
+
+                </div>
+                <button class="menubutton" mat-mini-fab [matMenuTriggerFor]="menu">...</button>
+
+                <mat-menu #menu="matMenu">
+
+                    <div class="renameboard">
+                        <i class="material-icons dotdrop">create </i>
+                        <button mat-menu-item>
+                            Rename Board
+                        </button>
+                    </div>
+
+                    <div class="renameboard">
+                        <i class="material-icons dotdrop"> cloud </i>
+
+                        <button mat-menu-item>
+                            Archived Task
+                        </button>
+                    </div>
+
+                    <div class="renameboard">
+                        <i class="material-icons dotdrop">create </i>
+                        <button mat-menu-item>
+                            Rename Board
+                        </button>
+                    </div>
+
+                    <div class="renameboard">
+                        <i class="material-icons dotdrop">create </i>
+                        <button mat-menu-item>
+                            Rename Board
+                        </button>
+                    </div>
+
+                    <div class="renameboard">
+                        <i class="material-icons dotdrop"> cloud </i>
+
+                        <button mat-menu-item>
+                            Archived Task
+                        </button>
+                    </div>
+
+                </mat-menu>
+
+            </div>
+
+        </div>
+        <!-- <div class="lowertopbar">
                                                      <button mat-flat-button color="primary" class="taskbutton">New Task</button>
                                                      <mat-form-field>
                                                          <input matInput placeholder="Search">
                                                        </mat-form-field>
                                                  </div> -->
-                                                      
-                                                          
-                                                            
-                                           <hr class="horizontalline1">
-                                                   
-                                        
-                                          <div class="example-container ">
-                                                  <table mat-table [dataSource]="dataSource"> 
-                                                
-                                                    <!-- Name Column -->
-                                                    <ng-container matColumnDef="name" sticky>
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading">
-                                                          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                                                              <mat-icon>more_vert</mat-icon>
-                                                            </button>
-                                                            <mat-menu #menu="matMenu">
-                                                              
 
-                                                              
+        <hr class="horizontalline1">
 
-                                                                <button mat-menu-item>
-                                                                    <div class="group">
-                                                                    <i class="material-icons groupicon">
+        <div class="searchicon" *ngIf="SearchFlag">
+            <mat-form-field>
+                <input matInput placeholder="Search">
+            </mat-form-field>
+
+        </div>
+
+        <div class="example-container ">
+            <table mat-table [dataSource]="dataSource">
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name" sticky>
+                    <th mat-header-cell *matHeaderCellDef class="statusheading mainhead">
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                         add_circle
                                                                         </i>
-                                                                  <span>Add Group</span>
-                                                                </div>
-                                                                </button>
+                                    <span>Add Group</span>
+                                </div>
+                            </button>
 
-                                                                <button mat-menu-item>
-                                                                    <div class="group">
-                                                                    <i class="material-icons groupicon">
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                         edit
                                                                         </i>
-                                                                  <span>Rename Group</span>
-                                                                  </div>
-                                                                </button>
+                                    <span>Rename Group</span>
+                                </div>
+                            </button>
 
-                                                                <button mat-menu-item>
-                                                                   
-                                                                        <button mat-menu-item [matMenuTriggerFor]="vertebrates"><i class="material-icons groupicon">
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                             color_lens
-                                                                            </i>Change Group color</button>
-                                                                       
-                                                                        <mat-menu #vertebrates="matMenu">
-                                                                           
-                                                                            <button mat-menu-item>red</button>
-                                                                            <button mat-menu-item>blue</button>
-                                                                          </mat-menu>
-                                                                    <!-- <div class="group">
+                                                                            </i>
+
+                                    <button class="colors" mat-menu-item [matMenuTriggerFor]="vertebrates">Change Group color</button>
+                                </div>
+                                <mat-menu #vertebrates="matMenu">
+                                    <div class="colorpicker">
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker2">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker1">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker3">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+
+                                    </div>
+
+                                    <div class="colorpicker">
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker2">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker3">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+                                            <button mat-menu-item>
+                                        
+                                                    <div class="colorpicker1">
+        
+                                                    </div>
+                                                    
+        
+                                              
+                                            </button>
+
+                                    </div>
+
+                                </mat-menu>
+                                <!-- <div class="group">
                                                                     <i class="material-icons groupicon">
                                                                         color_lens
                                                                         </i>
                                                                   <span>Change Group color</span>
                                                                   </div> -->
-                                                                </button>
+                            </button>
 
-                                                              
-                                                              <button mat-menu-item >
-                                                                  <div class="group">
-                                                                  <i class="material-icons groupicon">
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                       archive
                                                                       </i>
-                                                                <span>Archive</span>
-                                                                </div>
-                                                              </button>
-                                                              <button mat-menu-item>
-                                                                  <div class="group">
-                                                                  <i class="material-icons groupicon">
+                                    <span>Archive</span>
+                                </div>
+                            </button>
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                       description
                                                                       </i>
-                                                                <span>Export to Excel</span>
-                                                                </div>
-                                                              </button>
+                                    <span>Export to Excel</span>
+                                </div>
+                            </button>
 
-                                                              <button mat-menu-item>
-                                                                  <div class="group">
-                                                                      <i class="material-icons">
+                            <button mat-menu-item>
+                                <div class="group" (click)="SearchFlag=!SearchFlag">
+                                    <i class="material-icons"> 
                                                                           search
                                                                           </i>
-                                                                <span>Search</span>
-                                                                </div>
-                                                              </button>
 
-                                                              <button mat-menu-item>
-                                                                  <div class="group">
-                                                                  <i class="material-icons groupicon">
+                                    <span>Search</span>
+                                </div>
+                            </button>
+
+                            <button mat-menu-item>
+                                <div class="group">
+                                    <i class="material-icons groupicon">
                                                                       delete
                                                                       </i>
-                                                                <span>Delete</span>
-                                                                </div>
-                                                              </button>
-                                                            </mat-menu>
-                                                         Things to do
-                                                         </th>
-                                                      <td mat-cell *matCellDef="let element"  >
-                                                        <div class="task" >
-                                                            <div class="task1" (click)="_toggleSidebar()">
-                                                               
-                                                              </div>  
-                                                           
-                                                            <div class="editicon">
-                                                                <span *ngIf="taskFlag == false" (click)="taskFlag = true" >{{element.name}}</span>
-                                                                <input *ngIf="taskFlag == true" type="text" value="{{element.name}}"> 
-                                                            </div> 
+                                    <span>Delete</span>
+                                </div>
+                            </button>
+                        </mat-menu>
+                        Things to do
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="task">
+                            <div class="task1" (click)="_toggleSidebar()">
 
-                                                        </div>
-                                                              
-                                                             
-                                                        
-                                                        
-                                                      </td>
+                            </div>
 
-                                                    </ng-container>
-                                                
-                                                    <!-- Position Column -->
-                                                    <ng-container matColumnDef="position">
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Status </th>
-                                                      <td mat-cell *matCellDef="let element"> 
-                                                        
-                                                        <button mat-button [matMenuTriggerFor]="menu">
-                                                          <div class="status">
-                                                            <span class="statusdata">stuck</span>
+                            <div class="editicon">
+                                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
 
-                                                          </div>
-                                                        </button>
-                                                        <mat-menu #menu="matMenu" >
-                                                          <button mat-menu-item class="list" >
-                                                            <div class="item1">
-                                                              <span>Done</span>
-                                                            </div>
-                                                          </button>
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item2">
-                                                                  <span>Stuck </span>
-                                                                </div>
-                                                          </button>
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item3">
-                                                                  <span>Working on it</span>
-                                                                </div>
-                                                          </button>
+                                    <button mat-menu-item>
+                                        <div class="group">
+                                            <i class="material-icons groupicon">
+                                                                              add_circle
+                                                                              </i>
+                                            <span>Move to board</span>
+                                        </div>
+                                    </button>
 
-                                                          <button mat-menu-item class="list">
-                                                              <div class="item4">
-                                                                  <span>Waiting for review</span>
-                                                                </div>
-                                                          </button>
-                                                        </mat-menu>
-                                                        
-                                                      
-                                                      </td>
-                                                    </ng-container>
-                                                
-                                                    <!-- Weight Column -->
-                                                     <ng-container matColumnDef="weight">
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Due date </th>
-                                                      <td mat-cell *matCellDef="let element">
-                                                        <mat-form-field>
-                                                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                                                        <mat-datepicker #picker></mat-datepicker>
-                                                      </mat-form-field>
-                                                    </td>
-                                                    </ng-container>
-                                                
-                                                    <!-- Symbol Column -->
-                                                    <ng-container matColumnDef="symbol">
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"> Members </th>
-                                                      <td mat-cell *matCellDef="let element">
-                                                          <div class="box11">
-                                                              <span  matTooltip="Member 1" class="dot1 member1">AB</span>
-                                                              <span  matTooltip="member 2" class="dot1 member2">kB</span>
-                                                           
-                                                           </div>
-                                                         
-                                                         </td>
-                                                    </ng-container>
-                                                
-                                                    <!-- Star Column -->
-                                                    <ng-container matColumnDef="star" stickyEnd>
-                                                      <th mat-header-cell *matHeaderCellDef class="statusheading"></th>
-                                                      <td mat-cell *matCellDef="let element">
-                                                        <mat-icon>more_vert</mat-icon>
-                                                      </td>
-                                                    </ng-container>
-                                                
-                                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                                                  </table>
-                                                </div>
-                                      <!-- <button (click)="_toggleSidebar()">Toggle sidebar</button> -->
-                                     </div> 
-                                  
-                                  </ng-sidebar-container>
-                                  
-                    
+                                    <button mat-menu-item>
+                                        <div class="group">
+                                            <i class="material-icons groupicon">
+                                                                              edit
+                                                                              </i>
+                                            <span>Rename task</span>
+                                        </div>
+                                    </button>
 
+                                    <button mat-menu-item>
+                                        <div class="group">
+                                            <i class="material-icons groupicon">
+                                                add_circle
+                                                </i>
 
+                                            <button class="colors" mat-menu-item [matMenuTriggerFor]="vertebrates">
+                                                Move to Group
+                                            </button>
+                                        </div>
+                                        <mat-menu #vertebrates="matMenu">
 
-                                 
+                                            <button mat-menu-item>Table1</button>
+                                            <button mat-menu-item>Table2</button>
+                                        </mat-menu>
+                                        <!-- <div class="group">
+                                                                          <i class="material-icons groupicon">
+                                                                              color_lens
+                                                                              </i>
+                                                                        <span>Change Group color</span>
+                                                                        </div> -->
+                                    </button>
 
-                                
-                                
-                                
-                                   
+                                    <button mat-menu-item>
+                                        <div class="group">
+                                            <i class="material-icons groupicon">
+                                                                            archive
+                                                                            </i>
+                                            <span>Archive</span>
+                                        </div>
+                                    </button>
 
-                                 
-                                  
-                               
-                             
-                              
+                                    <button mat-menu-item>
+                                        <div class="group">
+                                            <i class="material-icons groupicon">
+                                                                            delete
+                                                                            </i>
+                                            <span>Delete</span>
+                                        </div>
+                                    </button>
+                                </mat-menu>
 
-                              
-                             
+                                <span *ngIf="taskFlag == false" (click)="taskFlag = true">{{element.name}}</span>
+                                <input *ngIf="taskFlag == true" type="text" value="{{element.name}}">
+                            </div>
 
-                              
-                             
-                               
-                              
-                             
-                          
-              
-              
-              
-           
-    
-           
-          
-        
-          
+                        </div>
 
-    
-    
-      
-      
- 
+                    </td>
 
-  
-           
+                </ng-container>
 
-  
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef class="statusheading"> Status </th>
+                    <td mat-cell *matCellDef="let element">
+
+                        <button mat-button [matMenuTriggerFor]="menu">
+                            <div class="status1">
+                                <span class="statusdata">{{element.position}}
+                                                              </span>
+
+                            </div>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item class="list">
+                                <div class="item1">
+                                    <span>Done</span>
+                                </div>
+                            </button>
+                            <button mat-menu-item class="list">
+                                <div class="item2">
+                                    <span>Stuck </span>
+                                </div>
+                            </button>
+                            <button mat-menu-item class="list">
+                                <div class="item3">
+                                    <span>Working on it</span>
+                                </div>
+                            </button>
+
+                            <button mat-menu-item class="list">
+                                <div class="item4">
+                                    <span>Waiting for review</span>
+                                </div>
+                            </button>
+                        </mat-menu>
+
+                    </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="weight">
+                    <th mat-header-cell *matHeaderCellDef class="statusheading"> Due date </th>
+                    <td mat-cell *matCellDef="let element">
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="symbol">
+                    <th mat-header-cell *matHeaderCellDef class="statusheading"> Members </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="box11">
+                            <span matTooltip="Member 1" class="dot1 member1">AB</span>
+                            <span matTooltip="member 2" class="dot1 member2">kB</span>
+
+                        </div>
+
+                    </td>
+                </ng-container>
+
+                <!-- Star Column -->
+                <ng-container matColumnDef="star" stickyEnd>
+                    <th mat-header-cell *matHeaderCellDef class="statusheading"></th>
+                    <td mat-cell *matCellDef="let element">
+                        <mat-icon>more_vert</mat-icon>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <!-- <button (click)="_toggleSidebar()">Toggle sidebar</button> -->
+
+    </div>
+
+</ng-sidebar-container>
