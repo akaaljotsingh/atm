@@ -5,16 +5,16 @@ import {ActivityComponent} from '../../shared/activity/activity.component';
 
 export interface PeriodicElement {
   name: string;
-  position: number;
-  weight: number;
+  position: string;
+  weight: string;
   symbol: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Task1 ' , weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Task2', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Task3', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Task4', weight: 9.0122, symbol: 'Be'},
+  {position: 'Done', name: 'Task1 ' , weight: '1.0079', symbol: 'H'},
+  {position: 'Stuck', name: 'Task2', weight: '4.0026', symbol: 'He'},
+  {position: 'Done', name: 'Task3', weight: '6.941', symbol: 'Li'},
+  {position: 'Stuck', name: 'Task4', weight: '9.0122', symbol: 'Be'},
   // {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
   // {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
   // {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
@@ -31,6 +31,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class DashboardComponent implements OnInit {
 
   taskFlag: boolean = false;
+  SearchFlag = false;
 
   openDialog(): void {
     const dialogRef = this.dialog.open(dialogComponent, {
@@ -71,6 +72,8 @@ private _opened: boolean = false;
   private _toggleSidebar() {
     this._opened = !this._opened;
   }
+
+  
 
 }
 

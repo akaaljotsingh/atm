@@ -16,6 +16,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 
 
+
 export const routes: Routes = [
     // {
     //     path: '',
@@ -48,6 +49,10 @@ export const routes: Routes = [
             {
                 path: 'inbox',
                 loadChildren: 'src/app/components/inbox/_modules#InboxModule'
+            },
+            {
+                path: 'holidays',
+                loadChildren: 'src/app/components/holidays/_modules#HolidaysModule'
             },
             {
                 path: 'notification',

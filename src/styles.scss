@@ -72,6 +72,7 @@ td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
 ng-sidebar-container {
   height: calc(100vh - 25px) !important;
 }
+<<<<<<< HEAD
 // login page css start from here
 
 .login{
@@ -100,3 +101,8 @@ ng-sidebar-container {
   border-top: .84375em solid transparent;
 }
   }
+=======
+.mat-header-cell {
+  font-size: 17px;
+}
+>>>>>>> bae6855aa1b42816ea0661527b07d246922bfefc
