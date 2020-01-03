@@ -12,6 +12,7 @@ import {ActivityComponent} from '../../shared/activity/activity.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
 
+
 export const routes: Routes = [
     // {
     //     path: '',
@@ -44,6 +45,10 @@ export const routes: Routes = [
             {
                 path: 'inbox',
                 loadChildren: 'src/app/components/inbox/_modules#InboxModule'
+            },
+            {
+                path: 'holidays',
+                loadChildren: 'src/app/components/holidays/_modules#HolidaysModule'
             },
             {
                 path: 'notification',

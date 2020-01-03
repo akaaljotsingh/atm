@@ -1,0 +1,49 @@
+.holidays-main-div{
+    padding: 40px 40px 0px 40px;
+    background-color: #F5F6FA;
+    h2{
+        color: #1E3262!important;
+    }
+    .float-l{ float: left;}
+    .float-r{ float: right; margin-top: 25px;}
+    .btn{ 
+        padding: 9px 24px;
+        border: 1px solid #70AADE;
+        background-color: #70AADE;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+     }
+     .btn:hover{
+         transition: 1s;
+         -webkit-box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
+         -moz-box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
+         box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
+     }
+     table {
+        width: 100%;
+        td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+          text-align: left!important;
+          color: black!important;
+      }
+      }
+      
+      .mat-form-field {
+        font-size: 14px;
+        width: 100%;
+      }
+      
+      td, th {
+        width: 25%;
+      }
+      .mat-tab-group {
+      // border: 1px solid gray!important;
+      margin-top: 40px;
+      background-color: white!important;
+      padding: 15px!important;
+      border-radius: 10px!important;
+      -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+-moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+      }
+}
