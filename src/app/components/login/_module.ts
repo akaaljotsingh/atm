@@ -6,6 +6,7 @@ import { SignupComponent } from './signup.component';
 import { ResetComponent } from './reset.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -20,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
     CommonModule,
     MatInputModule,
     MatIconModule,
+    MatCheckboxModule,
 
     RouterModule.forChild([
       { path: '', component: LoginComponent },

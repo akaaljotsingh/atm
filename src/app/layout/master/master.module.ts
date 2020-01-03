@@ -11,6 +11,10 @@ import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
 import {ActivityComponent} from '../../shared/activity/activity.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material/input';
+
 
 export const routes: Routes = [
     // {
@@ -66,7 +70,10 @@ export const routes: Routes = [
         MatTooltipModule,
         MatDialogModule,
         MatRadioModule,
-        SidebarModule.forRoot()
+        MatInputModule,
+        SidebarModule.forRoot(),
+        MatProgressBarModule,
+        MatCheckboxModule
     ],
 
     declarations: [

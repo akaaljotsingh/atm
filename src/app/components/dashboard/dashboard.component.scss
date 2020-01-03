@@ -1,13 +1,99 @@
+.main-dashboard {
+	padding: 30px 20px 20px 20px; 
+}
 .topbar {
 	display: flex;
 	justify-content: space-between;
-	margin-top: -11px;
+	h3 {
+		font-size: 26px;
+		color: #1E3262;
+		margin-bottom: 2px;
+	}
+	p{
+		margin-top: 1px;
+		color: #CDC9CB;
+	}
 }
-
-.leftalign {
-	margin-left: 20px;
+.blue {
+	background-color: #1565C0;
 }
-
+.red {
+	background-color: #E53935;
+}
+.green {
+	background-color: #43A047;
+}
+.bnd-blue {
+	background-color: #0097A7;	
+}
+.cards-div{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	margin-bottom: 30px;
+	.card {
+		padding: 22px;
+		flex:1 1 auto;
+		margin: 0px 5px;
+		float: left;
+		width: 220px;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 1px -1px rgba(0,0,0,.2),
+		 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+		.circle {
+			height: 60px;
+			width: 60px;
+			border-radius: 50%;
+			background-color: white;
+			display: flex;
+			align-items: center;
+		justify-content: center;
+		i {
+			color: #1E3262;
+			font-size: 30px;
+		}
+		}
+		.text {
+			p {
+			color: white;
+			font-size: 16px;
+			margin: 4px 12px;
+		}
+		}
+	}
+}
+.project-status {
+	height: 30px;
+	padding: 15px;
+	background-color: white;
+	border-radius: 8px 8px 0px 0px;
+	.text {
+		float: left;
+		p {
+			margin: 0px;
+			font-size: 20px;
+			color: #1E3262;
+			font-weight: 500;
+		}
+	}
+	.btn {
+		float: right;
+		height: 28px;
+		width: 28px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover{
+			background-color: #E7E9ED;
+		}
+		i {
+			color: #9B9B9B;
+		}
+	}
+}
 .rightalign {
 	display: flex;
 	height: 43px;
@@ -18,7 +104,6 @@
 .box3 {
 	border: 2px solid #8080804a;
 	margin-right: 21px;
-	
 	display: flex;
 	-ms-flex-align: center;
 	align-items: center;
@@ -121,7 +206,7 @@
 	.example-container {
 		width: 100%;
 		overflow: auto;
-		margin-top: 45px;
+		margin-top: 3px;
 	}
 	table {
 		width: 100%;
@@ -134,9 +219,7 @@
 	td.mat-column-position {
 		padding-left: 8px;
 	}
-	// .mat-table-sticky:first-child {
-	// 	border-right: 1px solid #e0e0e0;
-	// }
+
 	.mat-table-sticky:last-child {
 		border-left: 1px solid #e0e0e0;
 	}

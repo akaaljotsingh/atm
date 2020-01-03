@@ -72,3 +72,31 @@ td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
 ng-sidebar-container {
   height: calc(100vh - 25px) !important;
 }
+// login page css start from here
+
+.login{
+  .mat-checkbox-frame {
+    border-color: white!important;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-label {
+    color: white!important;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-underline {
+      background-color: white!important;
+      height: 2px!important;
+    }
+    .mat-form-field-ripple{
+      background-color: white!important;
+    }
+  }
+  .nav {
+    .mat-form-field-appearance-legacy .mat-form-field-infix {
+      padding: .3375em 0;
+  }
+  .mat-form-field-appearance-legacy .mat-form-field-infix {
+    font-size: .875rem;
+}
+.mat-form-field-infix {
+  border-top: .84375em solid transparent;
+}
+  }

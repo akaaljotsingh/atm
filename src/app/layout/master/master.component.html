@@ -1,77 +1,69 @@
 <div class="main-div  clearfix">
-    <div class="fix-sidebar">
-        <p>Logo</p>
-        <div class="box" (click)="profileBox=!profileBox">
-         <!-- <span>BS</span> --> <img src="../../../assets/images/profile.png" alt="profile">
-         <div class="account" *ngIf="profileBox">
-            <p>Account</p>
-              <div class="ac-menu">
-              <a class="clearfix" href="http://">
-              <i class="far fa-user"></i> 
-              <span class="text">My profile
-              </span></a></div>
-
-                     <div class="ac-menu" (click)="openDialog()">
-                     <a class="clearfix" href="http://">
-                      <i class="fas fa-plus"></i>
-                      <span class="text">Invite Member
-                      </span></a></div>
-      
-                        <div class="ac-menu">
-                        <a class="clearfix" href="http://">
-                          <i class="fas fa-arrow-left"></i>
-                          <span class="text">Logout
-                          </span></a></div>
-            </div>
-        </div>
-        <div class="icon-image-notification">
-        <img src="../../../assets/images/notification.svg" alt="notification"
-        [routerLink]="['/notification']" routerLinkActive="active"
-        matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="notification">
-      </div>
-
-      <div class="icon-image-inbox">
-        <img matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Inbox"
-        [routerLink]="['/inbox']" routerLinkActive="active" 
-            src="../../../assets/images/inbox.svg" alt="inbox icon">
-      </div>
-      <br>
-      <div class="icon-image-inbox">
-        <img (click)="openDialog()" matTooltipPosition="right" matTooltipClass="tooltip" 
-        matTooltip="Invite person"  src="../../../assets/images/invite.svg" alt="inviteicon">
-      </div>
-      <br>
-      <div class="icon-image">
-        <img (click)="helpPopup()" matTooltipPosition="right" matTooltipClass="tooltip"
-         matTooltip="Help"  src="../../../assets/images/help.svg" alt="inviteicon">
-      </div>
-          <!-- <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Invite"
-           class="far fa-user"></i>
-            <br>
-            <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Search"
-             class="fas fa-search"></i>
-            <br>
-            <i matTooltipPosition="right" matTooltipClass="tooltip" matTooltip="Help"
-            (click)="helpPopup()" class="fas fa-question"></i> -->
-    </div>
+    
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
            <mat-drawer #drawer class="example-sidenav" mode="side">
-               <div class="header-box clearfix">
-                       <a href="http://">Boards</a>
-                       <i class="fas fa-plus-circle"></i>
-               </div>
-               <div class="search">
-               <input type="search" name="q" placeholder="Search boards..">
-               <i class="fas fa-search"></i>
+              <div class="profile-div">
+                <div class="img-circle">
+                  <img src="../../../assets/images/profile-img.jpg" alt="profile-img">
+                </div>
+                <div class="usser-name">
+                  <h4>Jhon Simchenko</h4>
+                  <span>Product Owner</span>
+                </div>
+                <!-- <div class="logout">
+                  <i class="material-icons">
+                    more_horiz
+                    </i>
+                </div> -->
+              </div>
+              <div class="sidebar-menu">
+                <h4>Menu</h4>
+                <ul>
+                  <li><a href="http://">Dashboard</a></li>
+                  <li><a href="http://">Notification</a></li>
+                  <li><a href="http://">Inbox</a></li>
+                  <li><a href="http://">Holiday</a></li>
+                </ul>
+              </div>
+
+              <div class="sidebar-menu">
+                <h4>Projects</h4>
+                <ul>
+                  <li> <i class="material-icons">ballot</i> <a href="http://">Tracking App</a></li>
+                  <li> <i class="material-icons">ballot</i> <a href="http://">E-Ticket</a></li>
+                  <li> <i class="material-icons">ballot</i> <a href="http://">Warehouse</a></li>
+                </ul>
+              </div>
+              <div class="add-btn">
+                  <i class="material-icons"> add </i>
+                <span>Add Project</span>
               </div>
            </mat-drawer>
          
-             <button class="arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
+             <!-- <button class="arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
               <i *ngIf="arrowLeft" class="fas fa-chevron-left"></i>
               <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
-             </button>
+             </button> -->
+               <div class="nav">
+                 <div class="icons-div">
+                  <form class="example-form">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Search"
+                               [errorStateMatcher]="matcher">
+                      </mat-form-field>
+                    </form>
+                 <span>  <i class="material-icons"> move_to_inbox  </i></span>
+                 <span>   <i class="material-icons"> notifications  </i></span>
+                 <span>  <i class="material-icons"> account_circle  </i> </span>
+                </div>
+               </div>
+               <button class="button-sidebar arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
+                  <i class="material-icons"> menu </i>
+                 </button>
+              
            <router-outlet></router-outlet>
+
          
          </mat-drawer-container>
     </div>

@@ -1,48 +1,43 @@
 <div class="backgroundimage">
-
-
-<div class="Aligner">
-
-            <div class="container d-100 text-center">
-                
-                    <form>
-                           
-                      <img src="../../../assets/images/login10.png" alt="loginimage" height = 150px width=150px class="image1"/>
-                        <div class="form-group" align="center">
-                            <mat-form-field>
-                               
-                                <input matInput placeholder="Username">
-                                
-                              </mat-form-field>
+    <div class="Aligner">
+                <div class="container d-100 text-center">
+                    
+                        <form class="login">
+                          <i class="material-icons image1">account_circle</i>
+                          <!-- <img src="../../../assets/images/login10.png" alt="loginimage" height = 150px width=150px class="image1"/> -->
+                            <div class="form-group" text-align="center">
                               <i class="material-icons">
-                                  person
-                                  </i>
-                        </div>
-                      <div class="form-group" align="center">
-                        <mat-form-field>
-                          <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
-                          <button class="button2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                          </button>
-                        </mat-form-field>
+                                person
+                                </i>
+                                <mat-form-field>                                                             
+                                    <input matInput placeholder="Username">                                
+                                  </mat-form-field>
+                                  
+                            </div>
+                          <div class="form-group" text-align="center">
+                            <!-- <button class="button2" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">                          
+                              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button> -->
+                            <i class="material-icons">
+                              lock
+                              </i>
+                            <mat-form-field>
+                              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">                          
+                            </mat-form-field>
+                          </div>
+                          <div>
+                            <mat-checkbox>Remember me</mat-checkbox>
+                            <span class="forgot-pss"><a href="#">Forgot Password?</a></span>
+                          </div>
+                         <div class="center">
+                           <!-- <a href="#" type="button" class="btn btn-sucess reunded button1" name="button">Log In</a> -->
+                            <button type="button" class="btn btn-success rounded button1" name="button">Log In</button>
+                        </div>                      
+                          <div class="subheading">
+                                <!-- <p class="psw">Forgot <a routerLink="reset" routerLinkActive="active"> password?</a></p> -->
+                                <p class="psw">Don't have an account?<span><a href="#" class="regist">Register.</a></span></p>
+                          </div>
+                        </form>
                       </div>
-                      
-                     <div class="center">
-                        <button type="button" class="btn btn-success rounded button1" name="button">Let me In</button>
+                      </div>
                     </div>
-                      
-                      <div class="subheading">
-                            <p class="psw">Forgot <a routerLink="reset" routerLinkActive="active"> password?</a></p>
-                            <p class="psw">Don't have an account? <a routerLink="signup" routerLinkActive="active">SignUP</a></p>
-
-                      </div>
-                     
-                     
-                            
-                            
-                          
-                    </form>
-                  </div>
-                  </div>
-                </div>
-                 
