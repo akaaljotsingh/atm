@@ -7,7 +7,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { SidebarModule } from 'ng-sidebar';
-
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 
 @NgModule({
@@ -28,7 +29,11 @@ import { SidebarModule } from 'ng-sidebar';
     MatTooltipModule,
     MatDialogModule,
     MatSidenavModule,
-
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    }),
+    
    
     
     RouterModule.forChild([

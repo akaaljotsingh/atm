@@ -17,51 +17,60 @@
                     </i>
                 </div> -->
               </div>
-              <div class="sidebar-menu">
+              <!-- <div class="sidebar-menu">
                 <h4>Menu</h4>
                 <ul>
                   <li><a href="http://">Dashboard</a></li>
                   <li><a href="http://">Notification</a></li>
-                  <li><a href="http://">Inbox</a></li>
-                  <li><a href="http://">Holiday</a></li>
+                  <li><a href="http://">Leave</a></li>
+                  <li><a href="http://">History</a></li>
                 </ul>
-              </div>
+              </div> -->
 
               <div class="sidebar-menu">
-                <h4>Projects</h4>
+                <h4>Menu</h4>
                 <ul>
-                  <li> <i class="material-icons">ballot</i> <a href="http://">Tracking App</a></li>
-                  <li> <i class="material-icons">ballot</i> <a href="http://">E-Ticket</a></li>
-                  <li> <i class="material-icons">ballot</i> <a href="http://">Warehouse</a></li>
+                  <li> <i class="material-icons"> dashboard </i> <a href="http://">Dashboar</a></li>
+                  <li> <i class="material-icons">notifications</i> <a href="http://">Notification</a></li>
+                  <li> <i class="material-icons">history</i> <a href="http://">History</a></li>
+                  <li> <i class="material-icons">assignment</i> <a href="http://">Apply</a></li>
                 </ul>
               </div>
-              <div class="add-btn">
+              <!-- <div class="add-btn">
                   <i class="material-icons"> add </i>
                 <span>Add Project</span>
-              </div>
+              </div> -->
            </mat-drawer>
          
              <!-- <button class="arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
               <i *ngIf="arrowLeft" class="fas fa-chevron-left"></i>
               <i *ngIf="!arrowLeft" class="fas fa-chevron-right"></i>
              </button> -->
-               <div class="nav">
-                 <div class="icons-div">
-                  <form class="example-form">
-                      <mat-form-field class="example-full-width">
-                        <input matInput placeholder="Search"
-                               [errorStateMatcher]="matcher">
-                      </mat-form-field>
-                    </form>
-                 <span>  <i class="material-icons"> move_to_inbox  </i></span>
-                 <span>   <i class="material-icons"> notifications  </i></span>
-                 <span>  <i class="material-icons"> account_circle  </i> </span>
+             <nav class="navbar navbar-light justify-content-between">
+              <a class="navbar-brand"></a>
+              <form class="form-inline">
+                <div class="nav">
+                  <div class="icons-div">
+                   <!-- <form class="example-form">
+                       <mat-form-field class="example-full-width">
+                         <input matInput placeholder="Search"
+                                [errorStateMatcher]="matcher">
+                       </mat-form-field>
+                     </form>
+                  <span>  <i class="material-icons"> move_to_inbox  </i></span> -->
+                  <span>   <i class="material-icons"> notifications  </i>
+                  <div class="notification-circle">4</div></span>
+                  <span>  <i class="material-icons"> account_circle  </i> </span>
+                 </div>
                 </div>
-               </div>
+              </form>
+            </nav>
+             
+           <!-- sidebar button -->
                <button class="button-sidebar arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
                   <i class="material-icons"> menu </i>
                  </button>
-              
+             <!-- sidebar button -->  
            <router-outlet></router-outlet>
 
          

@@ -50,14 +50,16 @@ export const routes: Routes = [
                 path: 'inbox',
                 loadChildren: 'src/app/components/inbox/_modules#InboxModule'
             },
+           
             {
-                path: 'holidays',
+                path: 'holiday',
                 loadChildren: 'src/app/components/holidays/_modules#HolidaysModule'
             },
             {
                 path: 'notification',
                 loadChildren: 'src/app/components/notification/_modules#NotificationModule'
-            }
+            },
+          
             
         ],
 
