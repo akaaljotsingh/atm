@@ -1,0 +1,38 @@
+.apply-main {
+    height: 100vh;
+    padding: 40px 40px 0px 40px;
+}
+.apply-header {
+    width: 70%;
+}
+.leave-form {
+    background-color: white;
+    padding: 22px;
+    width: 70%;
+    .mat-form-field  {
+        width: 100%!important;
+    }
+}
+textarea {
+     width: 100%;
+     text-align: left;
+     font-size: 14px;
+     color: grey;
+     padding-left: 10px;
+}
+.submit {
+  margin-top: 10px;
+    input {
+        float: right;
+        padding: 3px 20px;
+        background-color: #1565C0;
+        color: white;
+        border-radius: 0px;
+        text-decoration: none;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+}

@@ -59,6 +59,10 @@ export const routes: Routes = [
                 path: 'notification',
                 loadChildren: 'src/app/components/notification/_modules#NotificationModule'
             },
+            {
+                path: 'apply',
+                loadChildren: 'src/app/components/apply/_module#ApplyModule'
+            },
           
             
         ],

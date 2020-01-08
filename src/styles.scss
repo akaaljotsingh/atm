@@ -76,11 +76,47 @@ td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
 ng-sidebar-container {
   height: calc(100vh - 25px) !important;
 }
-.mat-header-cell {
-  font-size: 17px;
-}
+// .mat-header-cell {
+//   font-size: 17px;
+// }
 
 
 .mat-drawer-container {
   color: #1E3262;
 }
+
+.header {
+  margin-bottom: 30px;
+  .text {
+    float: left;
+    font-size: 26px;
+    color: #1E3262;
+    h2 {
+    font-size: 1.575rem;
+  }
+  }
+  .button {
+    float: right;
+    .btn{ 
+      padding: 3px 20px;
+      // border: 1px solid #70AADE;
+      background-color: #23b9fc;
+      color: white;
+      border-radius: 0px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.225);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+  }
+}
+.padding-left {
+ padding-left: 10px!important;
+}
+
+
+button:focus {
+  outline: none;
+}
+

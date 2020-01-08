@@ -1,0 +1,41 @@
+<div class="apply-main">
+  <div class="apply-header">
+    <div class="header clearfix">
+        <div class="text">
+            <h2>Apply For Leave</h2>
+        </div>
+        <div class="button">
+        <a href="" class="btn padding-left"><i _ngcontent-det-c5="" class="material-icons"> keyboard_arrow_left </i> Back</a></div>
+    </div>
+  </div>
+  
+<div class="leave-form">
+        <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="From">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+              <br>
+         <mat-form-field>
+                <input matInput [matDatepicker]="pick" placeholder="To">
+                <mat-datepicker-toggle matSuffix [for]="pick"></mat-datepicker-toggle>
+                <mat-datepicker #pick></mat-datepicker>
+              </mat-form-field> 
+              <br>  
+              <mat-form-field>
+                    <mat-select placeholder="Type">
+                      <mat-option value="option">Sick Leave</mat-option>
+                      <mat-option value="option">Annual Leave</mat-option>
+                      <mat-option value="option">Personal Work</mat-option>
+                    </mat-select>
+                  </mat-form-field>   
+               <br>
+               <form>
+                    <textarea rows="4" cols="65" name="comment" form="usrform">Discription</textarea>
+               </form>   
+               <div class="submit clearfix"> <input type="submit"></div>  
+               
+</div>
+
+
+</div>

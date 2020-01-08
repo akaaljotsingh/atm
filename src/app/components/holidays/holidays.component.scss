@@ -1,24 +1,110 @@
 .holidays-main-div{
     padding: 40px 40px 0px 40px;
     background-color: #F5F6FA;
+    height: 100vh;
+    
+    .table-header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    .year-select {
+      width: 33%;
+      // float: left;
+      i {
+        position: absolute;
+        color: white;
+        top: 5px;
+        right: 10px;
+        font-size: 28px;
+      }
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #2c3e50;
+        background-image: none;
+        box-shadow: 0px 0px 8px 0px #a6a6a6;
+      }
+      /* Remove IE arrow */
+      select::-ms-expand {
+        display: none;
+      }
+      /* Custom Select */
+      .select {
+        position: relative;
+        display: flex;
+        height: 2em;
+        line-height: 2;
+        background: #2c3e50;
+        overflow: hidden;
+        font-size: 18px;
+      }
+      select {
+        flex: 1;
+        padding: 0 .5em;
+        color: #fff;
+        cursor: pointer;
+      }
+      /* Arrow */
+      .select::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 1em;
+        color: white;
+        background: #34495e;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+      }
+      /* Transition */
+      .select:hover::after {
+        color: #23b9fc;
+      }
+    }
+    .mr-left {
+      margin-left: 1%;
+    }
+    .used-leave {
+      background: #2c3e50;
+      // float: left;
+      width: 33%;
+    }
+    .left-leave {
+      background: #2c3e50;
+      // float: left;
+      width: 33%;
+    }
+    .text {
+      padding: 9px 15px;
+      height: 36px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      .heading {
+       float: left;
+      }
+      .value {
+      float: right;
+      }
+    }
+  }
     h2{
         color: #1E3262!important;
     }
     .float-l{ float: left;}
-    .float-r{ float: right; margin-top: 25px;}
-    .btn{ 
-        padding: 9px 24px;
-        border: 1px solid #70AADE;
-        background-color: #70AADE;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-     }
+    .float-r{ float: right; margin-top: 3px;}
+   
      .btn:hover{
-         transition: 1s;
-         -webkit-box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
-         -moz-box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
-         box-shadow: 0px 0px 8px 0px rgba(112,170,222,1);
+      box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.225);
+      background-color: #23b9fc;
      }
      table {
         width: 100%;
@@ -38,12 +124,39 @@
       }
       .mat-tab-group {
       // border: 1px solid gray!important;
-      margin-top: 40px;
+      margin-top: 10px;
       background-color: white!important;
       padding: 15px!important;
-      border-radius: 10px!important;
       -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
 -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
 box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
       }
+}
+
+table th .mat-header-cell {
+  font-weight: 700!important;
+  color: #37474f!important;
+}
+
+
+table th, td {
+    width: 21%!important;
+  }
+
+.tag {
+  color: white;
+  font-size: 14px;
+  padding: 5px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pending {
+  background-color: #cac8c8;
+}
+.reject {
+  background-color: #e53935;
+}
+.accept {
+  background-color: #4cd04c;
 }

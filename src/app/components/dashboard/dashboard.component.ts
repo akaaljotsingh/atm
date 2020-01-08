@@ -43,9 +43,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
+
 export class DashboardComponent implements OnInit {
-
-
 
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 

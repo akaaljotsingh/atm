@@ -3,6 +3,45 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 
+export interface PeriodicElement {
+  name: string;
+  type: string;
+  from: string;
+  to: string;
+  day: number;
+}
+
+const ELEMENT_DATA: PeriodicElement[] = [
+  {name:'Amarjeet Singh', type:'Sick', from:'22/12/2019', to:'23/12/2019', day:2 },
+  {name:'Amarjeet Singh', type:'Personal work', from:'22/12/2019', to:'23/12/2019', day:2 },
+  {name:'Amarjeet Singh', type:'Annual Leave', from:'22/12/2019', to:'23/12/2019', day:2 },
+  {name:'Amarjeet Singh', type:'Other', from:'22/12/2019', to:'23/12/2019', day:1 },
+  {name:'Akaljot Singh', type:'Sick', from:'22/12/2019', to:'23/12/2019', day:5 },
+  {name:'Baljit Singh', type:'Sick', from:'22/12/2019', to:'23/12/2019', day:3 },
+
+];
+
+export interface userdata {
+  name: string;
+  type: string;
+  from: string;
+  to: string;
+  day: number;
+  status: string;
+}
+
+const USER_DATA: userdata[] = [
+  {name:'Amarjeet Singh', type:'Sick', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
+  {name:'Amarjeet Singh', type:'Personal work', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
+  {name:'Amarjeet Singh', type:'Annual Leave', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
+  {name:'Amarjeet Singh', type:'Other', from:'22/12/2019', to:'23/12/2019', day:1, status:'Pending' },
+];
+
+export interface YEAR {
+  value: number;
+  viewValue: number;
+}
+
 @Component({
   selector: 'app-holidays',
   templateUrl: './holidays.component.html',
@@ -10,66 +49,27 @@ import {MatTableDataSource} from '@angular/material/table';
 })
 
 
+
 export class HolidaysComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'progress', 'color'];
-  dataSource: MatTableDataSource<UserData>;
 
-  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  // YEAR: YEAR[] = [
+  //   {value: 'steak-0', viewValue: 'Steak'},
+  //   {value: 'pizza-1', viewValue: 'Pizza'},
+  //   {value: 'tacos-2', viewValue: 'Tacos'}
+  // ];
 
+  displayedColumns: string[] = ['name', 'type', 'from', 'to','day'];
+  dataSource = ELEMENT_DATA;
 
-  constructor() {
-    // Create 100 users
-    const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
+  displayedCol: string[] = ['name', 'type', 'from', 'to','day', 'status'];
+  dataS = USER_DATA;
 
-    // Assign the data to the data source for the table to render
-    this.dataSource = new MatTableDataSource(users);
-  }
-
+  
   ngOnInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    
   }
 
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource.paginator) {
-      this.dataSource.paginator.firstPage();
-    }
-  }
-
- 
 
 }
 
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  color: string;
-}
 
-const COLORS: string[] = [
-  'maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple', 'fuchsia', 'lime', 'teal',
-  'aqua', 'blue', 'navy', 'black', 'gray'
-];
-const NAMES: string[] = [
-  'Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack', 'Charlotte', 'Theodore', 'Isla', 'Oliver',
-  'Isabella', 'Jasper', 'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'
-];
-
-
-
-/** Builds and returns a new User. */
-function createNewUser(id: number): UserData {
-  const name = NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
-      NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
-
-  return {
-    id: id.toString(),
-    name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    color: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
-  };
-}
