@@ -17,6 +17,7 @@ import {MatInputModule} from '@angular/material/input';
 
 
 
+
 export const routes: Routes = [
     // {
     //     path: '',
@@ -58,6 +59,10 @@ export const routes: Routes = [
             {
                 path: 'notification',
                 loadChildren: 'src/app/components/notification/_modules#NotificationModule'
+            },
+            {
+                path: 'record',
+                loadChildren: 'src/app/components/record/_module#RecordModule'
             },
           
             
