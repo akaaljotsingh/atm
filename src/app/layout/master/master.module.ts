@@ -64,6 +64,10 @@ export const routes: Routes = [
                 path: 'record',
                 loadChildren: 'src/app/components/record/_module#RecordModule'
             },
+            {
+                path: 'profile',
+                loadChildren: 'src/app/components/profile/_module#ProfileModule'
+            },
 
             {
                 path: 'apply',

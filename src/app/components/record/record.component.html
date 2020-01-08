@@ -1,301 +1,291 @@
-
 <mat-tab-group animationDuration="0ms">
 
-                <mat-tab label="Team Calender">
-                        
-
-                        
-                                        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 history">
-
-                                                
-
-                                                        <!--- Note that these columns can be defined in any order.
-                                                              The actual rendered columns are set as a property on the row definition" -->
-                                                      
-                                                        <!-- Name Column -->
-                                                        <ng-container matColumnDef="name">
-                                                          <th mat-header-cell *matHeaderCellDef> Name </th>
-                                                          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-                                                        </ng-container>
-                                                      
-                                                        <!-- ID Column -->
-                                                        <ng-container matColumnDef="id">
-                                                          <th mat-header-cell *matHeaderCellDef> ID </th>
-                                                          <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
-                                                        </ng-container>
-                                                      
-                                                        <!-- USED Column -->
-                                                        <ng-container matColumnDef="usedleaves">
-                                                          <th mat-header-cell *matHeaderCellDef> Used Leaves</th>
-                                                          <td mat-cell *matCellDef="let element"> {{element.Usedleaves}} </td>
-                                                        </ng-container>
-                                                      
-                                                        <!-- Left Column -->
-                                                        <ng-container matColumnDef="Leftleaves">
-                                                          <th mat-header-cell *matHeaderCellDef> Left Leaves </th>
-                                                          <td mat-cell *matCellDef="let element"> {{element.Leftleaves}} </td>
-                                                        </ng-container>
-
-                                                        <ng-container matColumnDef="extraleaves">
-                                                                        <th mat-header-cell *matHeaderCellDef> Extra Leaves </th>
-                                                                        <td mat-cell *matCellDef="let element"> {{element.extraleaves}} </td>
-                                                                      </ng-container>         
-                                                                    
-                                                      
-                                                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                                                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-                                                
-                                                </table>
-                                                
-                        
-                                
-                                              
-                                              
-                </mat-tab>
-            
-                <mat-tab label="Pending Requests">
-                    <div class="clearfix">
-                        <div class="list">
-                                <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
+        <mat-tab label="Team Calender">
+    
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 history">
+    
+                <!--- Note that these columns can be defined in any order.
+                                                                  The actual rendered columns are set as a property on the row definition" -->
+    
+                <!-- Name Column -->
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+    
+                <!-- ID Column -->
+                <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef> ID </th>
+                    <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
+                </ng-container>
+    
+                <!-- USED Column -->
+                <ng-container matColumnDef="usedleaves">
+                    <th mat-header-cell *matHeaderCellDef> Used Leaves</th>
+                    <td mat-cell *matCellDef="let element"> {{element.Usedleaves}} </td>
+                </ng-container>
+    
+                <!-- Left Column -->
+                <ng-container matColumnDef="Leftleaves">
+                    <th mat-header-cell *matHeaderCellDef> Left Leaves </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Leftleaves}} </td>
+                </ng-container>
+    
+                <ng-container matColumnDef="extraleaves">
+                    <th mat-header-cell *matHeaderCellDef> Extra Leaves </th>
+                    <td mat-cell *matCellDef="let element"> {{element.extraleaves}} </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+            </table>
+    
+        </mat-tab>
+    
+        <mat-tab label="Pending Requests">
+            <div class="clearfix">
+                <div class="list">
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
                                 </div>
-            
+    
                             </div>
-                        
-                            <!-- <hr class="line"> -->
+    
                         </div>
-                          <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                        
-                            <!-- <hr class="line"> -->
-                        </div>
-                        <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                        </div>                             
-                        <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                        </div>
-                        <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                        </div>
-                        <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                        </div>
-                        <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                        </div>
-                         <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                         </div>
-                         <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-                            <!-- <hr class="line"> -->
-                         </div>
-                         <div class="employee">
-                            <div class="employee1">
-            
-                                <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                                <div class="list1">
-            
-                                    <h6>Philip Valdez</h6>
-                                    <h6 class="date">3rd July 2020</h6>
-            
-                                    <div class="cause">
-                                        <span>1 Day</span>
-                                        <span class="dot"></span>
-                                        <span>Sick</span>
-            
-                                    </div>
-            
-                                </div>
-            
-                            </div>
-            
-                        </div>
-                        </div>
-                        <div class="detail1">
-                            <div class="details">
-                                <button class="bbutton">pending</button>
-                                <p>Philip Valdes<span class="philip"> has applied for sick leave</span></p>
-                                <hr>
-                                <p style="margin-bottom: 4px;">3rd July,2019 <span class="date">. 1 Day</span></p>
-                                <p class="date">Applied on 3rd July, 2019, 1:03pm</p>
-                                <div class="reason">
-                                    <span>"Dengue fever"</span>
-                                </div>
-                                <form class="example-form">
-                                    <mat-form-field class="example-full-width">
-                                        <textarea matInput placeholder="Add comments"></textarea>
-                                    </mat-form-field>
-                                </form>
-                                <hr>
-                                <div class="result">
-                                    <button class="bbutton1">Decline</button>
-                                    <button class="bbutton2">Approve</button>
-            
-                                </div>
-            
-                            </div>
-            
-                        </div>
+    
+                        <!-- <hr class="line"> -->
                     </div>
-            
-                </mat-tab>
-            
-            </mat-tab-group>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot"></span>
+                                    <span>Sick</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="detail1">
+                    <div class="details">
+                        <button class="bbutton">pending</button>
+                        <p>Philip Valdes<span class="philip"> has applied for sick leave</span></p>
+                        <hr>
+                        <p style="margin-bottom: 4px;">3rd July,2019 <span class="date">. 1 Day</span></p>
+                        <p class="date">Applied on 3rd July, 2019, 1:03pm</p>
+                        <div class="reason">
+                            <span>"Dengue fever"</span>
+                        </div>
+                        <form class="example-form">
+                            <mat-form-field class="example-full-width">
+                                <textarea matInput placeholder="Add comments"></textarea>
+                            </mat-form-field>
+                        </form>
+                        <hr>
+                        <div class="result">
+                            <button class="bbutton1">Decline</button>
+                            <button class="bbutton2">Approve</button>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </mat-tab>
+    
+    </mat-tab-group>
