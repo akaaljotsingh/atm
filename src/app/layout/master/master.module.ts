@@ -68,6 +68,11 @@ export const routes: Routes = [
                 path: 'profile',
                 loadChildren: 'src/app/components/profile/_module#ProfileModule'
             },
+
+            {
+                path: 'apply',
+                loadChildren: 'src/app/components/apply/_module#ApplyModule'
+            },
           
             
         ],

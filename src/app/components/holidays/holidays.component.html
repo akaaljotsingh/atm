@@ -1,56 +1,138 @@
 <div class="holidays-main-div">
-    <div class="clearfix">
-        <div class="float-l">
-            <h2>Holidays</h2>
+    <div class="header clearfix">
+        <div class="text">
+            <h2>History</h2>
         </div>
-        <div class="float-r"><a href="#" class="btn">Apply</a></div>
+        <div class="button">
+        <a href="" class="btn"> Back</a></div>
     </div>
-    <mat-tab-group>
-        <mat-tab label="First">
-                <mat-form-field>
-                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-                      </mat-form-field>
-                      
-                      <div class="mat-elevation-z8">
-                        <table mat-table [dataSource]="dataSource" matSort>
-                      
-                          <!-- ID Column -->
-                          <ng-container matColumnDef="id">
-                            <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-                            <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-                          </ng-container>
-                      
-                          <!-- Progress Column -->
-                          <ng-container matColumnDef="progress">
-                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Progress </th>
-                            <td mat-cell *matCellDef="let row"> {{row.progress}}% </td>
-                          </ng-container>
-                      
-                          <!-- Name Column -->
-                          <ng-container matColumnDef="name">
-                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-                            <td mat-cell *matCellDef="let row"> {{row.name}} </td>
-                          </ng-container>
-                      
-                          <!-- Color Column -->
-                          <ng-container matColumnDef="color">
-                            <th mat-header-cell *matHeaderCellDef mat-sort-header> Color </th>
-                            <td mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </td>
-                          </ng-container>
-                      
-                          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                          <tr mat-row *matRowDef="let row; columns: displayedColumns;">
-                          </tr>
-                        </table>
-                      
-                        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
-                      </div>
+    <div class="table-header clearfix">
+<div class="year-select">
+    <div class="select">
+        <select name="slct" id="slct">
+          <option selected >2019</option>
+          <option value="1">2018</option>
+          <option value="2">2017</option>
+        </select>
+        <i class="material-icons"> keyboard_arrow_down </i>
+      </div>
+    </div>
 
-            <!-- Copyright 2019 Google LLC. All Rights Reserved.
-                          Use of this source code is governed by an MIT-style license that
-                          can be found in the LICENSE file at http://angular.io/license -->
+    <div class="used-leave mr-left">
+      <div class="text">
+        <div class="heading">Used Leaves</div>
+        <div class="value">5</div>
+      </div></div>
+
+    <div class="left-leave mr-left">
+        <div class="text">
+            <div class="heading">Left Leaves</div>
+            <div class="value">7</div>
+          </div>
+           </div>
+
+  </div>
+    <!-- <mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>   -->
+
+    <mat-tab-group>
+        <mat-tab label="History">
+                <!-- <mat-form-field>
+                        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+                      </mat-form-field> -->
+                      
+                      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                      
+                        <!-- Position Column -->
+                        <ng-container matColumnDef="name">
+                          <th mat-header-cell *matHeaderCellDef> Name </th>
+                          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+                      
+                        <!-- Name Column -->
+                        <ng-container matColumnDef="type">
+                          <th mat-header-cell *matHeaderCellDef> Type </th>
+                          <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+                        </ng-container>
+                      
+                        <!-- Weight Column -->
+                        <ng-container matColumnDef="from">
+                          <th mat-header-cell *matHeaderCellDef> From </th>
+                          <td mat-cell *matCellDef="let element"> {{element.from}} </td>
+                        </ng-container>
+                      
+                        <!-- Symbol Column -->
+                        <ng-container matColumnDef="to">
+                          <th mat-header-cell *matHeaderCellDef> To </th>
+                          <td mat-cell *matCellDef="let element"> {{element.to}} </td>
+                        </ng-container>
+                        <!-- Symbol Column -->
+                        <ng-container matColumnDef="day">
+                          <th mat-header-cell *matHeaderCellDef> Days </th>
+                          <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+                        </ng-container>
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                      </table>
+                      
+                      
+
+            
         </mat-tab>
-        <mat-tab label="Second"> Content 2 </mat-tab>
+        <mat-tab label="Requests" class="request"> 
+         
+              
+          <table mat-table [dataSource]="dataS" class="mat-elevation-z8">
+                      
+            <!-- Position Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="type">
+              <th mat-header-cell *matHeaderCellDef> Type </th>
+              <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="from">
+              <th mat-header-cell *matHeaderCellDef> From </th>
+              <td mat-cell *matCellDef="let element"> {{element.from}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="to">
+              <th mat-header-cell *matHeaderCellDef> To </th>
+              <td mat-cell *matCellDef="let element"> {{element.to}} </td>
+            </ng-container>
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="day">
+              <th mat-header-cell *matHeaderCellDef> Days </th>
+              <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef>Status</th>
+              <td mat-cell *matCellDef="let element"> <div class="tag pending">Pending</div>
+                <div class="tag accept">Accept</div>
+                <div class="tag reject">Reject</div> </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedCol"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedCol;"></tr>
+          </table>
+          
+        
+        </mat-tab>
     </mat-tab-group>
 
 </div>
