@@ -1,16 +1,12 @@
 .profile{
-    width:100%;
-    
-    
-}
+    width:100%;  
+    margin: auto;
 .heading{
     background-color: #1565c0;
-    max-width: 50%;
+    max-width: 80%;
     height: 241px;
     text-align: center;
     margin: auto;
-    border-radius: 8px;
-
     h5{
         font-size: 34px;
     color: white;
@@ -19,13 +15,20 @@
 .dot {
 	height: 70px;
     width: 70px;
-    background-color: #4491ea;
+    background-color: #91BADF;
     border-radius: 50%;
     display: inline-block;
-   
-    padding: 14px;
-    font-size: 29px;
-    box-shadow: 0px 2px 7px 0px;
+    color: white;
+    padding: 6px;
+    font-size: 40px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
     margin-top: 53px;
     margin-bottom: 25px;
+}
+.profile-info {
+    height: 500px;
+    width: 50%;
+    background-color: white;
+}
+
 }
