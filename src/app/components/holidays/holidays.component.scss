@@ -74,16 +74,16 @@
     }
     .used-leave {
       background: #2c3e50;
-      // float: left;
+      height: 46px;
       width: 33%;
     }
     .left-leave {
       background: #2c3e50;
-      // float: left;
+      height: 46px;
       width: 33%;
     }
     .text {
-      padding: 9px 15px;
+      padding: 12px 15px;
       height: 36px;
       color: white;
       font-size: 14px;
@@ -159,4 +159,11 @@ table th, td {
 }
 .accept {
   background-color: #4cd04c;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  height: 46px;
+  background-color: #2C3E50!important;
+  font-size: 18px!important;
+  padding: 0px 11px!important;
 }

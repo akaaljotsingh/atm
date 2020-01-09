@@ -57,6 +57,7 @@ export class HolidaysComponent implements OnInit {
   //   {value: 'pizza-1', viewValue: 'Pizza'},
   //   {value: 'tacos-2', viewValue: 'Tacos'}
   // ];
+  selected = 'option1';
 
   displayedColumns: string[] = ['name', 'type', 'from', 'to','day'];
   dataSource = ELEMENT_DATA;

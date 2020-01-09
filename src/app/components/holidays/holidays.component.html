@@ -8,14 +8,14 @@
     </div>
     <div class="table-header clearfix">
 <div class="year-select">
-    <div class="select">
-        <select name="slct" id="slct">
-          <option selected >2019</option>
-          <option value="1">2018</option>
-          <option value="2">2017</option>
-        </select>
-        <i class="material-icons"> keyboard_arrow_down </i>
-      </div>
+  <mat-form-field>
+    <mat-label></mat-label>
+    <mat-select [(value)]="selected">
+      <mat-option value="option1">2019</mat-option>
+      <mat-option value="option2">2018</mat-option>
+      <mat-option value="option3">2017</mat-option>
+    </mat-select>
+  </mat-form-field>
     </div>
 
     <div class="used-leave mr-left">
