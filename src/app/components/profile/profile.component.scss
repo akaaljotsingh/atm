@@ -1,15 +1,13 @@
-.profile{
-    width:100%;
-    
-    
-}
+
 .heading{
-    background-color: #1565c0;
-    max-width: 50%;
+    background-color: #70aade;
+    max-width: 58%;
     height: 241px;
     text-align: center;
     margin: auto;
-    border-radius: 8px;
+    position: relative;
+    margin-bottom: -120px;
+   
 
     h5{
         font-size: 34px;
@@ -22,10 +20,55 @@
     background-color: #4491ea;
     border-radius: 50%;
     display: inline-block;
-   
+   color: white;
     padding: 14px;
     font-size: 29px;
-    box-shadow: 0px 2px 7px 0px;
+    box-shadow: 0px 2px 7px 0px #5167bf;
     margin-top: 53px;
     margin-bottom: 25px;
+}
+
+.box2 {
+	background-color: #ffffff;
+    max-width: 67%;
+    margin: auto;
+    
+}
+.details{
+    padding: 153px;
+    margin-bottom: 20px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #263262;
+   
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    color: #263262;
+    margin-right: 18px;
+}
+.data{
+    display: flex;
+    align-items: baseline;
+    margin-top: 23px;
+}
+.title{
+    color: #1e3262;
+    font-size: 18px;
+    font-weight: 500;
+}
+.edit{
+    padding: 4px 25px;
+    background-color: #70aade;
+    border: none;
+    color: white;
+}
+.subhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
