@@ -6,6 +6,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import { ChartsModule } from 'ng2-charts';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 
 @NgModule({
@@ -19,6 +23,7 @@ import { ChartsModule } from 'ng2-charts';
     MatTableModule,
     CommonModule,
     ChartsModule,
+    MatButtonModule,
     RouterModule.forChild([
       { path: '', component: RecordComponent }
     ])

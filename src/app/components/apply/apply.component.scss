@@ -13,7 +13,7 @@
 }
 .leave-form {
     background-color: white;
-    padding: 22px;
+    padding: 22px 22px 72px 22px;
     width: 70%;
     .mat-form-field  {
         width: 100%!important;
@@ -41,4 +41,13 @@ textarea {
         justify-content: center;
         border: none;
     }
+}
+.prime{
+    float: right;
+    margin-top: 10px;
+    background-color: #23b9fc;
+}
+.backbutton{
+    background-color: #23b9fc;
+    color: white;
 }

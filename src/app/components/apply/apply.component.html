@@ -5,7 +5,10 @@
             <h2>Apply For Leave</h2>
         </div>
         <div class="button">
-        <a routerLink="/holiday" class="btn padding-left"><i _ngcontent-det-c5="" class="material-icons"> keyboard_arrow_left </i> Back</a></div>
+        <!-- <a routerLink="/holiday" class="btn padding-left"><i _ngcontent-det-c5="" class="material-icons"> keyboard_arrow_left </i> Back</a> -->
+        <a mat-flat-button routerLink="/holiday"class="backbutton" >Back</a>
+      </div>
+       
     </div>
   </div>
   
@@ -34,7 +37,8 @@
                <form>
                     <textarea rows="4" cols="65" name="comment" form="usrform">Discription</textarea>
                </form>   
-               <div class="submit clearfix"> <input type="submit"></div>  
+               <!-- <div class="submit clearfix"> <input type="submit"></div>   -->
+               <button mat-flat-button color="primary" class="prime">submit</button>
                
 </div>
 
