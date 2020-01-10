@@ -1,5 +1,6 @@
 .main-div {
     width: 100%;
+   
     .icon-image {
       line-height: 2;
       img {
@@ -56,10 +57,10 @@
         width: 50px;
         border: none;
         padding: 4px 8px 4px 6px;
-        position: absolute;
+        position: fixed;
         top: 9px;
         left: 20px;
-        z-index: 999;
+        z-index: 99999;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -299,5 +300,10 @@
     color: #333333;
     line-height: 2.5;
   }
+}
+.navbar{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
