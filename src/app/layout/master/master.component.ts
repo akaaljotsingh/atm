@@ -11,7 +11,7 @@ import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/form
 })
 export class MasterComponent implements OnInit {
   notificationBox=false;
-
+  profileBox=false;
   // notificationBoxClose(){
   //  // alert();
   // }

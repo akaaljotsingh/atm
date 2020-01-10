@@ -7,6 +7,41 @@
         cursor: pointer;
       }
     }
+    .icons-div {
+      position: relative;
+    }
+    .profile-menu {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 120px;
+      background-color: white;
+      border-radius: 5px;
+      position: absolute;
+      top: 50px;
+      right: 27px;
+      z-index: 5;
+      // border: .5px solid rgba(0,0,0,.04);
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),
+                  0 4px 5px 0 rgba(0,0,0,.14),
+                  0 1px 10px 0 rgba(0,0,0,.12);
+      i {
+        font-size: 18px!important;
+        margin-right: 12px;
+        margin-left: 3px;
+        // height: 38px!important;
+      }
+      .option {
+        font-size: 14px;
+        padding: 7px;
+        color: #707070;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          background: rgba(0,0,0,.04);
+        }
+      }
+    }
     .icon-image-inbox {
       line-height: 2;
       img {
@@ -130,7 +165,7 @@
       }
     }
     mat-drawer {
-      min-width: 250px;
+      min-width: 215px;
       position: absolute;
       background-color: #70AADE;
      .profile-div {

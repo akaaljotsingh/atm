@@ -1,9 +1,15 @@
 .apply-main {
     height: 100vh;
-    padding: 40px 40px 0px 40px;
+    padding: 20px 20px 20px 20px;
 }
 .apply-header {
     width: 70%;
+    .btn {
+        padding: 3px 13px 3px 0px;
+        i {
+            margin-right: 1px;
+        }
+    }
 }
 .leave-form {
     background-color: white;

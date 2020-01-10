@@ -5,11 +5,7 @@ import { RecordComponent } from './record.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
-
-
-
-
-
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -21,9 +17,8 @@ import {MatTableModule} from '@angular/material/table';
     MatTabsModule,
     MatInputModule,
     MatTableModule,
-   
-
     CommonModule,
+    ChartsModule,
     RouterModule.forChild([
       { path: '', component: RecordComponent }
     ])
