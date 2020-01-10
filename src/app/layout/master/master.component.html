@@ -9,7 +9,7 @@
                 </div>
                 <div class="usser-name">
                   <h4>Jhon Simchenko</h4>
-                  <span>Product Owner</span>
+                  <span>Designer</span>
                 </div>
                 <!-- <div class="logout">
                   <i class="material-icons">
@@ -30,9 +30,9 @@
               <div class="sidebar-menu">
                 <h4>Menu</h4>
                 <ul>
-                  <li routerLink="/dashboard"> <i class="material-icons"> dashboard </i> <a >Dashboard</a></li>
-                  <li routerLink="/notification"> <i class="material-icons">notifications</i> <a >Notification</a></li>
-                  <li routerLink="/holiday"> <i class="material-icons">history</i> <a >History</a></li>
+                  <li routerLink="/dashboard"> <i class="material-icons"> dashboard </i> <a>Dashboard</a></li>
+                  <li routerLink="/notification"> <i class="material-icons">notifications</i> <a>Notification</a></li>
+                  <li routerLink="/history"> <i class="material-icons">history</i> <a >History</a></li>
                   <li routerLink="/apply"> <i class="material-icons">assignment</i> <a >Apply</a></li>
                 </ul>
               </div>
@@ -55,18 +55,25 @@
                  <!-- <span>  <i class="material-icons"> move_to_inbox  </i></span> -->
                   <span routerLink="/notification">   <i class="material-icons"> notifications  </i>
                   <div class="notification-circle">4</div></span>
-                  <span>  <i class="material-icons"> account_circle  </i> </span>
+                  <span>  <i class="material-icons" (click)="profileBox=!profileBox"> account_circle  </i> </span>
+                  <div class="profile-menu" *ngIf="profileBox">
+                      <div class="option"><i class="material-icons"> account_circle  </i> Profile</div>
+                      <div class="option"><i class="material-icons"> exit_to_app  </i> Logout</div>
+                    </div>
                  </div>
+                
                 </div>
               </form>
+              
             </nav>
              
            <!-- sidebar button -->
-               <button class="button-sidebar arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
-                  <i class="material-icons"> menu </i>
-                 </button>
+           <button class="button-sidebar arrow-btn" type="button" mat-button (click)="drawer.toggle()" (click)="arrowLeft=!arrowLeft">
+              <i class="material-icons"> menu </i>
+             </button>
              <!-- sidebar button -->  
             </div>
+            
            <router-outlet></router-outlet>
 
          

@@ -53,7 +53,7 @@ export const routes: Routes = [
             },
            
             {
-                path: 'holiday',
+                path: 'history',
                 loadChildren: 'src/app/components/holidays/_modules#HolidaysModule'
             },
             {

@@ -1,6 +1,8 @@
+
+<div class="main-div">
 <mat-tab-group animationDuration="0ms">
 
-        <mat-tab label="Team Calender">
+        <mat-tab label="Team Record">
     
             <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 history">
     
@@ -43,21 +45,21 @@
     
         </mat-tab>
     
-        <mat-tab label="Pending Requests">
+        <mat-tab label="Leave Requests" class="leave-request">
             <div class="clearfix">
                 <div class="list">
                     <div class="employee">
-                        <div class="employee1">
+                        <div class="employee1 clicked-employee">
     
                             <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
                             <div class="list1">
     
                                 <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
+                                <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
     
                                 <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
+                                    <span>2 Day</span>
+                                    <span class="dot sick-dot"></span>
                                     <span>Sick</span>
     
                                 </div>
@@ -79,8 +81,8 @@
     
                                 <div class="cause">
                                     <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
+                                    <span class="dot personal-dot"></span>
+                                    <span>Personal work</span>
     
                                 </div>
     
@@ -101,7 +103,28 @@
     
                                 <div class="cause">
                                     <span>1 Day</span>
-                                    <span class="dot"></span>
+                                    <span class="dot earned-dot"></span>
+                                    <span>Earned</span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        <!-- <hr class="line"> -->
+                    </div>
+                    <div class="employee">
+                        <div class="employee1">
+    
+                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
+                            <div class="list1">
+    
+                                <h6>Philip Valdez</h6>
+                                <h6 class="date">3rd July 2020</h6>
+    
+                                <div class="cause">
+                                    <span>1 Day</span>
+                                    <span class="dot sick-dot"></span>
                                     <span>Sick</span>
     
                                 </div>
@@ -122,8 +145,8 @@
     
                                 <div class="cause">
                                     <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
+                                    <span class="dot personal-dot"></span>
+                                    <span>Personal work</span>
     
                                 </div>
     
@@ -143,7 +166,7 @@
     
                                 <div class="cause">
                                     <span>1 Day</span>
-                                    <span class="dot"></span>
+                                    <span class="dot sick-dot"></span>
                                     <span>Sick</span>
     
                                 </div>
@@ -152,120 +175,16 @@
     
                         </div>
                         <!-- <hr class="line"> -->
-                    </div>
-                    <div class="employee">
-                        <div class="employee1">
-    
-                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                            <div class="list1">
-    
-                                <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
-    
-                                <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-                        <!-- <hr class="line"> -->
-                    </div>
-                    <div class="employee">
-                        <div class="employee1">
-    
-                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                            <div class="list1">
-    
-                                <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
-    
-                                <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-                        <!-- <hr class="line"> -->
-                    </div>
-                    <div class="employee">
-                        <div class="employee1">
-    
-                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                            <div class="list1">
-    
-                                <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
-    
-                                <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-                        <!-- <hr class="line"> -->
-                    </div>
-                    <div class="employee">
-                        <div class="employee1">
-    
-                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                            <div class="list1">
-    
-                                <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
-    
-                                <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-                        <!-- <hr class="line"> -->
-                    </div>
-                    <div class="employee">
-                        <div class="employee1">
-    
-                            <img src="../../../assets/images/profile-img.jpg" alt="" style="border-radius:50%; width:51px">
-                            <div class="list1">
-    
-                                <h6>Philip Valdez</h6>
-                                <h6 class="date">3rd July 2020</h6>
-    
-                                <div class="cause">
-                                    <span>1 Day</span>
-                                    <span class="dot"></span>
-                                    <span>Sick</span>
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
+                    </div> 
+                    
                 </div>
                 <div class="detail1">
                     <div class="details">
                         <button class="bbutton">pending</button>
                         <p>Philip Valdes<span class="philip"> has applied for sick leave</span></p>
                         <hr>
-                        <p style="margin-bottom: 4px;">3rd July,2019 <span class="date">. 1 Day</span></p>
-                        <p class="date">Applied on 3rd July, 2019, 1:03pm</p>
+                        <p style="margin-bottom: 4px;">20th Jan 2019 - 21th Jan 2020<span class="day">2 Days</span></p>
+                        <p class="date">Applied on <span style="color: black;">19th Jan, 2020, 1:03pm</span></p>
                         <div class="reason">
                             <span>"Dengue fever"</span>
                         </div>
@@ -284,8 +203,39 @@
                     </div>
     
                 </div>
-            </div>
+                <div class="more-detail">
+                    <div class="profile-box">
+                      <div class="img">
+                          <img  alt="profile pic" src="../../../assets/images/profile-img.jpg" style="border-radius:50%; width:51px"></div>  
+                          <div class="name">Philip Valdez<br><span>Designer</span>  </div>
+                        </div>
+                        <div>
+                                <div class="chart-div">
+                                  <div style="display: block">
+                                    <canvas baseChart
+                                      [datasets]="barChartData"
+                                      [labels]="barChartLabels"
+                                      [options]="barChartOptions"
+                                      [plugins]="barChartPlugins"
+                                      [legend]="barChartLegend"
+                                      [chartType]="barChartType">
+                                    </canvas>
+                                  </div>
+                                  <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button> -->
+                                </div>
+
+         <div class="consumed">
+            <div class="heading">Summary</div>
+            <div><span class="dot sick-dot"></span>Sick - 4</div>
+            <div><span class="dot earned-dot"></span>Earned- 3</div>
+            <div><span class="dot personal-dot"></span>Personal work- 1</div><br>
+         </div>                       
+      </div>
+      </div>
+     </div>
     
         </mat-tab>
     
     </mat-tab-group>
+    
+</div>

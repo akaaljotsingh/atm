@@ -1,28 +1,29 @@
+
 .list1 {
 	display: grid;
 	padding-left: 33px;
 }
 
-.dot {
-	height: 15px;
-	width: 15px;
-	background-color: pink;
-	border-radius: 50%;
-	display: inline-block;
-	margin-right: 4px;
-	margin-left: 12px;
-}
+
 
 .employee1 {
 	display: flex;
-	padding-top: 25px;
-	align-items: flex-start;
-	margin-left: 20px;
+	padding: 15px 15px;
+	align-items: flex-start;	
+}
+.clicked-employee {
+	background-color: #ECECEC;
 }
 
 .date {
 	font-size: 13px;
 	color: grey;
+}
+.day {
+	margin-left: 10px;
+    font-size: 16px;
+	color: #1E3262;
+	font-weight: 500;
 }
 
 .cause {
@@ -42,11 +43,9 @@
 	padding-top: 31px;
 	padding-bottom: 23px;
 	box-shadow: 2px 3px 6px 2px #dedfe2;
-	margin-left: 80px;
-	margin-top: 48px;
-	width: 50%;
 	background-color: white;
 }
+
 
 .bbutton {
 	border: 1px solid orange;
@@ -65,8 +64,8 @@
 	max-width: 70%;
 	height: 52px;
 	padding: 14px;
-	margin-top: 41px;
-	margin-bottom: 30px;
+	margin-top: 14px;
+    margin-bottom: 14px;
 }
 
 .bbutton1 {
@@ -102,9 +101,15 @@
 
 .detail1 {
 	float: left;
-	width: 70%;
-	// height: 800px;
-	// border: 1px solid gray;
+	width: 40%;
+	padding: 15px;
+}
+.more-detail {
+	background-color: white;
+	float: left;
+	width: 30%;
+	padding: 15px;
+	height: 100vh;
 }
 
 .history {
@@ -115,10 +120,60 @@
 	border: 1px solid #dfe0e2;
 }
 
-.employee:hover {
-	background-color: #f0f2f7;
+.profile-box {
+	background-color: #ececec;
+	// height: 60px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	img {
+		width: 40px;
+    height: 45px;
+	}
+	.name {
+		line-height: 1;
+		margin-left: 15px;
+		span {
+			color: grey;
+			font-size: 14px;
+		}
+	}
 }
 
-.employee1:hover {
-	background-color: #f0f2f7;
+.chart-div {
+	margin-top: 15px;
+	border-bottom: 1px dashed gray;
+	padding-bottom: 20px;
+}
+.consumed {
+	padding-top: 20px;
+	.dot {
+		margin-left: 0px!important;
+		margin-right: 7px;
+	}
+	.heading{
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+}
+.dot {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 4px;
+	margin-left: 30px;
+}
+.sick-dot {
+	background-color: pink;
+}
+.personal-dot {
+	background-color: #2E506B;
+}
+.earned-dot {
+	background-color: #FEDE87;
+}
+.leave-request {
+	margin: 0px 20px;
 }
