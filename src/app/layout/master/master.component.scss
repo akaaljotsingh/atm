@@ -57,10 +57,10 @@
         width: 50px;
         border: none;
         padding: 4px 8px 4px 6px;
-        position: fixed;
+        position: absolute;
         top: 9px;
         left: 20px;
-        z-index: 99999;
+        // z-index: 99999;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -301,9 +301,5 @@
     line-height: 2.5;
   }
 }
-.navbar{
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-}
+
 
