@@ -1,24 +1,66 @@
 <div class="close"><i (click)="onNoClick()" class="material-icons">  close </i></div>
-<div class="main-div">
-<h1>How can we help?</h1>
-<form>
-    
-    <input type="text" name="firstname" placeholder="Start typing here.."><br>
-  </form>
+<div class="editabledata">
+    <div class="example-container">
+        <div class="field1">
+            <div class="icon">
 
-  <div class="help-sections-wrapper">
-      <div class="help-section-component" 
-      style="background-image: url(&quot;https://cdn7.monday.com/images/help-center/webinars.png&quot;); background-color: rgb(2, 208, 244);">
-      <div class="section-content">
-          <span class="sub-title"></span>
+                <i class="fas fa-user"></i>
+            </div>
+            <mat-form-field>
+
+                <input matInput placeholder="Name">
+            </mat-form-field>
+
         </div>
-        <div class="section-footer">
-            <span class="footer-title">Arethos <b>webinars</b></span>
-        </div></div>
-        <div class="help-section-component" style="background-image: 
-        url(&quot;https://cdn7.monday.com/images/help-center/contact-us.png&quot;);
-         background-color: rgb(1, 201, 113);"><div class="section-content"><span class="sub-title"></span>
-         </div>
-         <div class="section-footer"><span class="footer-title">Contact Us</span></div></div><div class="help-section-component" style="background-image: url(&quot;https://cdn7.monday.com/images/help-center/video-tutorials.png&quot;); background-color: rgb(255, 204, 0);"><div class="section-content"><span class="sub-title"></span></div><div class="section-footer"><span class="footer-title">Tutorial <b>videos</b></span>
-</div></div></div>
+        <div class="field1">
+            <div class="icon">
+                <i class="far fa-envelope"></i>
+            </div>
+            <mat-form-field>
+
+                <input matInput placeholder="Email">
+            </mat-form-field>
+        </div>
+        <div class="field1">
+            <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <mat-form-field>
+
+                <input matInput placeholder="Phone">
+            </mat-form-field>
+        </div>
+        <div class="field1">
+
+            <div class="icon">
+                <i class="fab fa-skype"></i>
+            </div>
+            <mat-form-field>
+
+                <input matInput placeholder="Skype Name">
+            </mat-form-field>
+        </div>
+
+        <div class="field1">
+
+            <div class="icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <mat-form-field>
+
+                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+                <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    </button> -->
+
+            </mat-form-field>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="buttons">
+    <button class="save">Save</button>
+    <button class="cancel">Cancel</button>
+
 </div>

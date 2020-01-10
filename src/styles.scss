@@ -162,5 +162,33 @@ button:focus {
 .main-div {
   .mat-header-cell {
    color: #1E3262;
+  }
+}
+.editabledata{
+
+  .mat-form-field {
+    display: block;
+  }
+  .mat-form-field-infix{
+    width: 491px;
+  }
+  
+}
+.remember{
+  .mat-checkbox-inner-container{
+    margin-right: 19px;
+  }
+}
+.login{
+  .mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color:white !important;
+  }
+  
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: rgb(255, 255, 255);
+}
+.mat-checkbox-frame {
+  border-color: rgb(255, 255, 255);
 }
 }
+  

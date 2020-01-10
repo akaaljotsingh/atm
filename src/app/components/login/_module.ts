@@ -7,6 +7,7 @@ import { ResetComponent } from './reset.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { RecoveryComponent } from './recovery.component';
 
 
 
@@ -14,7 +15,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   declarations: [
     LoginComponent,
     SignupComponent,
-    ResetComponent
+    ResetComponent,
+    RecoveryComponent
   ],
 
   imports: [
@@ -26,7 +28,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     RouterModule.forChild([
       { path: '', component: LoginComponent },
       { path: 'signup', component: SignupComponent},
-      { path:'reset',component:ResetComponent}
+      { path:'reset',component:ResetComponent},
+      { path:'recovery',component:RecoveryComponent}
+
     ])
   ],
   providers: [],

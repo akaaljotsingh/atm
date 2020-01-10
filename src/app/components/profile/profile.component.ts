@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(HelpPopupComponent, {
       width: '600px',
-      height: '500px',
+      height: '530px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
