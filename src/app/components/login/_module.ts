@@ -8,6 +8,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { RecoveryComponent } from './recovery.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 
@@ -24,6 +26,7 @@ import { RecoveryComponent } from './recovery.component';
     MatInputModule,
     MatIconModule,
     MatCheckboxModule,
+    MatButtonModule,
 
     RouterModule.forChild([
       { path: '', component: LoginComponent },

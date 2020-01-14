@@ -20,7 +20,7 @@
 //    margin-right: 26px;
 // }
 .mat-checkbox {
-  margin-left: 100px;
+  // margin-left: 100px;
   color: white;
 }
 input:focus{
@@ -32,15 +32,15 @@ input:focus{
   letter-spacing: 1px;
 }
 .button1{
+ 
+  
+   padding: 4px 147px;
    border: none;
-   background-color: #FFFFFF;
-   padding: 10px 147px;
-   border-radius: 25px;
    color: #0778bd;
-   margin-top: 36px;
-   margin-left: 58px;
-   font-weight: bold;
-   font-size: 18px;
+   margin-top: 28px;
+  //  margin-left: 66px;
+  //  font-weight: bold;
+  //  font-size: 18px;
 }
 .button1:hover{
   transition: 1s;
@@ -108,20 +108,19 @@ i {
 .image1{
 font-size: 85px;  
 border-radius:50%;
-// margin-top: -72px;
-margin-left: 48px;
+margin-bottom: 12px;
 }
 .mat-form-field {
   width: 60%!important;
 }
 .psw {
-   display: block;
-   /* float: right; */
+   display: block; 
    color: white;
-   margin: 36px;
+   margin-top: 39px;
+   margin-bottom: 15px;  
 }
 .psw a{
-    color: #FFFFFF;
+    color: cyan;
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
@@ -149,6 +148,19 @@ margin-left: 48px;
 .center{
    text-align: center;
 }
-.remember{
-  display: flex;
+// .remember{
+//   display: flex;
+// }
+.login{
+  text-align: center;
+  margin-top: -28px;
+}
+.picon{
+  float: right;
+  margin-top: -41px;
+}
+.upload{
+  color: white;
+  font-size: 13px;
+  margin-top: 10px;
 }

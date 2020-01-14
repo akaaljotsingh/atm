@@ -15,7 +15,9 @@
     color: white;
     }
 }
+
 .dot {
+    position: relative;
 	height: 70px;
     width: 70px;
     background-color: #91BADF;
@@ -26,7 +28,14 @@
     font-size: 29px;
     box-shadow: 0px 2px 7px 0px #5167bf;
     margin-top: 53px;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
+}
+.profileimage{
+    position: absolute;
+    border-radius:50%;
+   
+    top: 1px;
+    right: 0px;
 }
 
 .box2 {
@@ -78,3 +87,15 @@
     font-size: 13px;
     padding-left: 5px;
 }
+.upload{
+    color: white;
+    font-size: 11px;
+  }
+  .heading{
+    a{
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  }

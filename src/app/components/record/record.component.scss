@@ -50,8 +50,7 @@
 .bbutton {
 	border: 1px solid orange;
 	background-color: #f8ecd6;
-	padding: 1px 14px;
-	border-radius: 3px;
+	
 	margin-bottom: 27px;
 }
 
@@ -61,7 +60,7 @@
 
 .reason {
 	background-color: #f0f2f7;
-	max-width: 70%;
+	max-width: 93%;
 	height: 52px;
 	padding: 14px;
 	margin-top: 14px;
@@ -69,23 +68,10 @@
 }
 
 .bbutton1 {
-	border: none;
-	padding: 5px 16px;
-	/* border: none; */
-	background-color: transparent;
-	margin-right: 31px;
-	background-color: #e82626;
-	color: white;
+	margin-right: 27px;
 }
 
-.bbutton2 {
-	border: none;
-	padding: 5px 16px;
-	background-color: transparent;
-	margin-right: 31px;
-	background-color: #189e18;
-	color: white;
-}
+
 
 .result {
 	text-align: right;
