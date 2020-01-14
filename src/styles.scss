@@ -2,12 +2,12 @@
 body{
     margin:0;
 }
+
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-
+@import '../node_modules/saturn-datepicker/theming';
 
 .orange {
   background-color: #FDAB3D;
@@ -191,4 +191,20 @@ button:focus {
   border-color: rgb(255, 255, 255);
 }
 }
-  
+// .mat-fab {
+//   height: 45px!important;
+//   width: 45px!important;
+// }
+// .mat-fab .mat-button-wrapper {
+//   line-height: 14px!important;
+// }
+//  .nav {
+//   .mat-button {
+//     min-width: 65px!important;
+//     padding: 0 12px!important;
+//     height: 35px;
+//     margin-top: 10px;
+//     margin-right: 0px;
+//     font-size: 15px;
+//   }
+//  } 

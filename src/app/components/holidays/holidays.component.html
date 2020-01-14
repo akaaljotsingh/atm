@@ -122,9 +122,14 @@
 
             <ng-container matColumnDef="status">
               <th mat-header-cell *matHeaderCellDef>Status</th>
-              <td mat-cell *matCellDef="let element"> <div class="tag pending">Pending</div>
+              <td mat-cell *matCellDef="let element"> 
+                  <span class="badge badge-success">Accept</span>
+                  <span class="badge pending-bg">Pending</span>
+                  <span class="badge badge-danger">Reject</span>
+                <!-- <div class="tag pending">Pending</div>
                 <div class="tag accept">Accept</div>
-                <div class="tag reject">Reject</div> </td>
+                <div class="tag reject">Reject</div> -->
+               </td>
             </ng-container>
           
             <tr mat-header-row *matHeaderRowDef="displayedCol"></tr>

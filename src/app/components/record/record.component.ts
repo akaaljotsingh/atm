@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { SatCalendar, SatCalendarFooter, SatDatepicker } from 'saturn-datepicker';
 
 
 @Component({
@@ -13,10 +15,21 @@ export class RecordComponent implements OnInit {
   displayedColumns: string[] = ['name', 'id', 'usedleaves', 'Leftleaves','extraleaves'];
   dataSource = ELEMENT_DATA;
 
+  form: FormGroup;
+  // rangesFooter = RangesFooter;
 
-  constructor() { 
-   
+  inlineRange;
+  constructor(fb: FormBuilder) {
+    this.form = fb.group({
+      date: [{begin: new Date(2018, 7, 5), end: new Date(2018, 7, 25)}]
+    });
   }
+
+  inlineRangeChange($event) {
+    this.inlineRange = $event;
+  } 
+
+
 
   ngOnInit() {
   }
@@ -42,13 +55,13 @@ export class RecordComponent implements OnInit {
   ];
 
     // events
-    public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
-      console.log(event, active);
-    }
+    // public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    //   console.log(event, active);
+    // }
   
-    public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
-      console.log(event, active);
-    }
+    // public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    //   console.log(event, active);
+    // }
   
     public randomize(): void {
       // Only Change 3 values
@@ -62,7 +75,70 @@ export class RecordComponent implements OnInit {
         40];
       this.barChartData[0].data = data;
     }
+
+
+      // Pie
+  public pieChartOptions: ChartOptions = {
+    responsive: true,
+    legend: {
+      position: 'top',
+    },
+    plugins: {
+      datalabels: {
+        formatter: (value, ctx) => {
+          const label = ctx.chart.data.labels[ctx.dataIndex];
+          return label;
+        },
+      },
+    }
+  };
+  public pieChartLabels: Label[] = [['Used Leaves'],  'Left Leaves'];
+  public pieChartData: number[] = [5, 7];
+  public pieChartType: ChartType = 'pie';
+  public pieChartLegend = true;
+  public pieChartPlugins = [];
+  public pieChartColors = [
+    {
+      backgroundColor: ['rgba(255,0,0,0.3)', 'rgba(0,255,0,0.3)'],
+    },
+  ];
+
+// events
+public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
+  console.log(event, active);
 }
+
+public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+  console.log(event, active);
+}
+
+changeLabels() {
+  const words = ['Used', 'Left'];
+  const randomWord = () => words[Math.trunc(Math.random() * words.length)];
+  this.pieChartLabels = Array.apply(null, { length: 2 }).map(_ => randomWord());
+}
+
+addSlice() {
+  this.pieChartLabels.push(['Used', 'Left']);
+  this.pieChartData.push(400);
+  this.pieChartColors[0].backgroundColor.push('rgba(196,79,244,0.3)');
+}
+
+removeSlice() {
+  this.pieChartLabels.pop();
+  this.pieChartData.pop();
+  this.pieChartColors[0].backgroundColor.pop();
+}
+
+changeLegendPosition() {
+  this.pieChartOptions.legend.position = this.pieChartOptions.legend.position === 'left' ? 'top' : 'left';
+}
+  }
+
+
+
+
+
 export interface PeriodicElement {
   name: string;
   ID: number;
