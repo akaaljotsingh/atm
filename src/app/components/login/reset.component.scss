@@ -20,7 +20,7 @@
 //    margin-right: 26px;
 // }
 .mat-checkbox {
-  margin-left: 100px;
+  // margin-left: 100px;
   color: white;
 }
 input:focus{
@@ -32,13 +32,13 @@ input:focus{
   letter-spacing: 1px;
 }
 .button1{
-   border: none;
+ 
   
    padding: 4px 147px;
-   
+   border: none;
    color: #0778bd;
-   margin-top: 13px;
-   margin-left: 65px;
+   margin-top: 21px;
+  
 }
 .button1:hover{
   transition: 1s;
@@ -107,19 +107,21 @@ i {
 font-size: 85px;  
 border-radius:50%;
 // margin-top: -72px;
-margin-left: 48px;
+// margin-left: 48px;
+margin-bottom: 19px;
 }
 .mat-form-field {
   width: 60%!important;
 }
 .psw {
    display: block;
-   /* float: right; */
+   
    color: white;
-   margin: 36px;
+   margin-top: 39px;
+   
 }
 .psw a{
-    color: #FFFFFF;
+    color: cyan;
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
@@ -147,9 +149,13 @@ margin-left: 48px;
 .center{
    text-align: center;
 }
-.remember{
-  display: flex;
-}
+// .remember{
+//   display: flex;
+// }
 .login{
-  margin-top: 50px;
+  text-align: center;
+}
+.picon{
+  float: right;
+  margin-top: -41px;
 }

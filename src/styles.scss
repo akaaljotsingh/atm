@@ -180,15 +180,35 @@ button:focus {
   }
 }
 .login{
+  mat-label{
+    color:white;
+  }
+  a{text-decoration: none;}
+  .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    /* color: rgba(0,0,0,.87); */
+    color: white !important;
+}
+.mat-form-field-wrapper{
+  margin-top: 12px !important;
+    margin-bottom: -27px !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgb(255, 255, 255);
+}
   .mat-form-field-appearance-legacy .mat-form-field-underline {
     background-color:white !important;
   }
   
 .mat-form-field-appearance-legacy .mat-form-field-label {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
 }
 .mat-checkbox-frame {
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255) !important;
 }
 }
-  
+.details{
+  .mat-form-field-flex{
+    width: 139%;
+  }
+
+}
