@@ -11,8 +11,7 @@ import { SatCalendar, SatCalendarFooter, SatDatepicker } from 'saturn-datepicker
   styleUrls: ['./record.component.scss']
 })
 export class RecordComponent implements OnInit {
-  
-  displayedColumns: string[] = ['name', 'id', 'usedleaves', 'Leftleaves','extraleaves'];
+  displayedColumns: string[] = ['name', 'id', 'usedleaves', 'Leftleaves', 'extraleaves'];
   dataSource = ELEMENT_DATA;
 
   form: FormGroup;
@@ -26,14 +25,10 @@ export class RecordComponent implements OnInit {
   }
 
   inlineRangeChange($event) {
-    this.inlineRange = $event;
-  } 
-
-
+    this.inlineRange = $event; }
 
   ngOnInit() {
   }
- 
   public barChartOptions: ChartOptions = {
     responsive: true,
     // We use these empty structures as placeholders for dynamic theming.
@@ -144,10 +139,10 @@ export interface PeriodicElement {
   ID: number;
   Usedleaves: number;
   Leftleaves: number;
-  extraleaves:number;
+  extraleaves: number;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves:3,extraleaves:2},
+  {name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves:3, extraleaves:2 },
   {name: 'Jack', ID: 76898, Usedleaves:6, Leftleaves: 6,extraleaves:2},
   {name: 'Anne', ID: 71268, Usedleaves: 6,Leftleaves: 6,extraleaves:2},
   {name: 'Rock', ID: 76869, Usedleaves: 9, Leftleaves: 3,extraleaves:2},
