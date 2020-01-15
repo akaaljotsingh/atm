@@ -12,19 +12,22 @@
   </div>
   <div class="leave-form">
      <mat-form-field appearance="outline">
-        <input matInput [matDatepicker]="picker" placeholder="From">
+         <mat-label>From</mat-label>
+        <input matInput [matDatepicker]="picker" placeholder="">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
      </mat-form-field>
      <br>
      <mat-form-field appearance="outline">
-        <input matInput [matDatepicker]="pick" placeholder="To">
+         <mat-label>To</mat-label>
+        <input matInput [matDatepicker]="pick" placeholder="">
         <mat-datepicker-toggle matSuffix [for]="pick"></mat-datepicker-toggle>
         <mat-datepicker #pick></mat-datepicker>
      </mat-form-field>
      <br>  
      <mat-form-field appearance="outline">
-        <mat-select placeholder="Type">
+         <mat-label>Type</mat-label>
+        <mat-select placeholder="">
            <mat-option value="option">Sick Leave</mat-option>
            <mat-option value="option">Annual Leave</mat-option>
            <mat-option value="option">Personal Work</mat-option>
@@ -32,9 +35,14 @@
         </mat-select>
      </mat-form-field>
      <br>
-     <form > 
+     <mat-form-field appearance="outline"> 
+         <mat-label>Discription</mat-label>
+         <textarea matInput placeholder=""></textarea>
+       </mat-form-field>
+     <!-- <form > 
+         
         <textarea rows="4" cols="65" name="comment" form="usrform">Discription</textarea>
-     </form>
+     </form> -->
      <!-- <div class="submit clearfix"> <input type="submit"></div>   -->
      <button mat-flat-button color="primary" class="prime">submit</button>
   </div>
