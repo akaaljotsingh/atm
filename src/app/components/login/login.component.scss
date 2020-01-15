@@ -95,24 +95,24 @@ input:focus {
 }
 
 .form-group {
-	display: flex;
+	// display: flex;
 	margin: 20px 0px 20px 0px;
 	text-align: center;
 	width: 100%;
-	margin-left: 70px;
+	// margin-left: 70px;
 }
 
-i {
-	position: relative;
-	top: 16px;
-	right: -7px;
-	margin-right: 5px;
-}
+// i {
+// 	position: relative;
+// 	top: 16px;
+// 	right: -7px;
+// 	margin-right: 5px;
+// }
 
 .image1 {
 	font-size: 85px;
 	border-radius: 50%;
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 }
 
 .mat-form-field {
@@ -167,6 +167,7 @@ i {
 }
 
 .picon {
-	float: right;
-	margin-top: -41px;
+	position: absolute;
+    right: -1px;
+    top: -2px;
 }

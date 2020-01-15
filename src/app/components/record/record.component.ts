@@ -11,8 +11,7 @@ import { SatCalendar, SatCalendarFooter, SatDatepicker } from 'saturn-datepicker
   styleUrls: ['./record.component.scss']
 })
 export class RecordComponent implements OnInit {
-  
-  displayedColumns: string[] = ['name', 'id', 'usedleaves', 'Leftleaves','extraleaves'];
+  displayedColumns: string[] = ['name', 'id', 'usedleaves', 'Leftleaves', 'extraleaves'];
   dataSource = ELEMENT_DATA;
 
   form: FormGroup;
