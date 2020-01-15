@@ -14,6 +14,8 @@ import { SidebarModule } from 'ng-sidebar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
+// import { MatSharedModule } from 'src/app/shared/mat.module';
+
 
 
 
@@ -92,7 +94,7 @@ export const routes: Routes = [
         MatInputModule,
         SidebarModule.forRoot(),
         MatProgressBarModule,
-        MatCheckboxModule
+        MatCheckboxModule,
     ],
 
     declarations: [

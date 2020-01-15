@@ -214,6 +214,24 @@
                           <img  alt="profile pic" src="../../../assets/images/profile-img.jpg" style="border-radius:50%; width:51px"></div>  
                           <div class="name">Philip Valdez<br><span>Designer</span>  </div>
                         </div>
+
+                        <!-- Range Calendar Section -->
+                        <form>
+                            <section>
+                              <span class="code" *ngIf="inlineRange">
+                                {{ inlineRange.begin | date }}
+                                {{ inlineRange.end | date }}
+                              </span>
+                              <div class="inlineCalendarContainer">
+                                <sat-calendar [rangeMode]="true"
+                                              (dateRangesChange)="inlineRangeChange($event)"
+                                              [selected]="selectedDate">
+                                </sat-calendar>
+                              </div>
+                            </section>
+                          </form>
+                    <!-- Range Calendar Section End-->
+
                         <div>
                                 <div class="chart-div">
                                   <div style="display: block">
@@ -228,6 +246,30 @@
                                   </div>
                                   <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button> -->
                                 </div>
+            <div class="pei-chat">
+                    <div>
+                            <div>
+                              <div class="chart">
+                                <canvas baseChart
+                                  [data]="pieChartData"
+                                  [labels]="pieChartLabels"
+                                  [chartType]="pieChartType"
+                                  [options]="pieChartOptions"
+                                  [plugins]="pieChartPlugins"
+                                  [colors]="pieChartColors"
+                                  [legend]="pieChartLegend">
+                                </canvas>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <!-- <button mat-button mat-raised-button color="primary" (click)="pieChartLegend=!pieChartLegend">Toggle Legend</button>
+                            <button mat-button mat-raised-button color="primary" (click)="changeLabels()">Change Labels</button>
+                            <button mat-button mat-raised-button color="primary" (click)="addSlice()">Add Slice</button>
+                            <button mat-button mat-raised-button color="primary" (click)="removeSlice()">Remove Slice</button>
+                            <button mat-button mat-raised-button color="primary" (click)="changeLegendPosition()">Change Legend Position</button> -->
+                          </div>
+            </div>                    
 
          <div class="consumed">
             <div class="heading">Summary</div>
@@ -236,6 +278,7 @@
             <div><span class="dot personal-dot"></span>Personal work- 1</div><br>
          </div>                       
       </div>
+
       </div>
      </div>
     

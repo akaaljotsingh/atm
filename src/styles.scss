@@ -2,12 +2,12 @@
 body{
     margin:0;
 }
+
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-
+@import '../node_modules/saturn-datepicker/theming';
 
 .orange {
   background-color: #FDAB3D;
@@ -152,7 +152,7 @@ button:focus {
 }
 
 .mat-form-field-infix {
-  width: 292px!important;
+  width: 320px!important;
 }
 .main-dashboard {
   .mat-header-cell {
@@ -180,9 +180,16 @@ button:focus {
   }
 }
 .login{
+  .mat-form-field-label-wrapper {
+    top: -1.4em;
+    padding-top: .84375em;
+}
   mat-label{
     color:white;
   }
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 7px 0 7px 0;
+}
   a{text-decoration: none;}
   .mat-form-field-appearance-outline .mat-form-field-outline-thick {
     /* color: rgba(0,0,0,.87); */
@@ -208,7 +215,7 @@ button:focus {
 }
 .details{
   .mat-form-field-flex{
-    width: 139%;
+    width: 393px;
   }
 
 }

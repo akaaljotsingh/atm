@@ -6,10 +6,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import { ChartsModule } from 'ng2-charts';
-import {MatButtonModule} from '@angular/material/button';
-
-
-
+import { MatSharedModule } from 'src/app/shared/mat.module';
+import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +17,16 @@ import {MatButtonModule} from '@angular/material/button';
   ],
 
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
+    SatDatepickerModule,
+    SatNativeDateModule,
+    MatSharedModule,
     MatTabsModule,
     MatInputModule,
     MatTableModule,
     CommonModule,
     ChartsModule,
-    MatButtonModule,
     RouterModule.forChild([
       { path: '', component: RecordComponent }
     ])

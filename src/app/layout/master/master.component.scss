@@ -1,6 +1,9 @@
 .main-div {
     width: 100%;
-   
+   .fixed-sidebar {
+     position: fixed;
+     width: 215px;
+   }
     .icon-image {
       line-height: 2;
       img {
@@ -40,6 +43,9 @@
         cursor: pointer;
         &:hover {
           background: rgba(0,0,0,.04);
+        }
+        &:focus {
+          outline: none;
         }
       }
     }
@@ -122,6 +128,9 @@
       //  top: 0;
       //   width: 100%;
       //   text-align: right;
+      .bd-right {
+        border-right: 1px solid #5A5A5A;
+      }
         .icons-div {
           text-align: right;
           display: inline-flex;
@@ -131,6 +140,7 @@
           color: #5A5A5A;
           font-size: 24px;
         }
+        
         span {
           position: relative;
           padding: 19px 10px 0px 10px;

@@ -3,6 +3,7 @@
     <div class="content">
        <mat-drawer-container class="example-container" autosize>
            <mat-drawer #drawer class="example-sidenav" mode="side">
+             <div class="fixed-sidebar">
               <div class="profile-div">
                 <div class="img-circle">
                   <img src="../../../assets/images/profile-img.jpg" alt="profile-img">
@@ -36,6 +37,7 @@
                   <li routerLink="/apply"> <i class="material-icons">assignment</i> <a >Apply</a></li>
                 </ul>
               </div>
+            </div>
               <!-- <div class="add-btn">
                   <i class="material-icons"> add </i>
                 <span>Add Project</span>
@@ -53,12 +55,13 @@
                 <div class="nav">
                   <div class="icons-div">
                  <!-- <span>  <i class="material-icons"> move_to_inbox  </i></span> -->
+                 <span>  <i class="material-icons"> add_box  </i> </span>
                   <span routerLink="/notification">   <i class="material-icons"> notifications  </i>
                   <div class="notification-circle">4</div></span>
                   <span>  <i class="material-icons" (click)="profileBox=!profileBox"> account_circle  </i> </span>
                   <div class="profile-menu" *ngIf="profileBox">
-                      <div class="option"><i class="material-icons"> account_circle  </i> Profile</div>
-                      <div class="option"><i class="material-icons"> exit_to_app  </i> Logout</div>
+                      <div class="option"  routerLink="/profile"><i class="material-icons"> account_circle  </i> Profile</div>
+                      <div class="option"><i class="material-icons"> exit_to_app </i> Logout</div>
                     </div>
                  </div>
                 

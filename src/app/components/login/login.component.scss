@@ -36,7 +36,7 @@ input:focus {
 }
 
 .button1 {
-	padding: 4px 147px;
+	padding: 8px 147px;
 	border: none;
 	color: #0778bd;
 	margin-top: 36px;
@@ -99,14 +99,14 @@ input:focus {
 	margin: 20px 0px 20px 0px;
 	text-align: center;
 	width: 100%;
-	margin-left: 90px;
+	margin-left: 70px;
 }
 
 i {
 	position: relative;
 	top: 16px;
 	right: -7px;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 
 .image1 {
@@ -116,7 +116,8 @@ i {
 }
 
 .mat-form-field {
-	width: 60%!important;
+	width: 347px!important;
+	margin-bottom: 8px;
 }
 
 .psw {

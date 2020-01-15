@@ -1,10 +1,10 @@
 
+@import '../../../../node_modules/saturn-datepicker/bundle.css';
+
 .list1 {
 	display: grid;
 	padding-left: 33px;
 }
-
-
 
 .employee1 {
 	display: flex;
@@ -95,7 +95,6 @@
 	float: left;
 	width: 30%;
 	padding: 15px;
-	height: 100vh;
 }
 
 .history {
@@ -114,7 +113,7 @@
 	align-items: center;
 	img {
 		width: 40px;
-    height: 45px;
+    height: 48px;
 	}
 	.name {
 		line-height: 1;
@@ -162,4 +161,10 @@
 }
 .leave-request {
 	margin: 0px 20px;
+}
+.chart {
+	margin-top: 15px;
+}
+form {
+	margin-top: 10px;
 }
