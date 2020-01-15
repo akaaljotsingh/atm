@@ -29,10 +29,7 @@ export class RecordComponent implements OnInit {
     this.inlineRange = $event;
   } 
 
-
-
-  ngOnInit() {
-  }
+  ngOnInit() { }
  
   public barChartOptions: ChartOptions = {
     responsive: true,
@@ -135,24 +132,20 @@ changeLegendPosition() {
 }
   }
 
-
-
-
-
 export interface PeriodicElement {
   name: string;
   ID: number;
   Usedleaves: number;
   Leftleaves: number;
-  extraleaves:number;
+  extraleaves: number;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves:3,extraleaves:2},
-  {name: 'Jack', ID: 76898, Usedleaves:6, Leftleaves: 6,extraleaves:2},
-  {name: 'Anne', ID: 71268, Usedleaves: 6,Leftleaves: 6,extraleaves:2},
-  {name: 'Rock', ID: 76869, Usedleaves: 9, Leftleaves: 3,extraleaves:2},
-  {name: 'Janni', ID: 86798, Usedleaves: 2, Leftleaves: 10,extraleaves:2},
-  {name: 'Devid', ID: 57896, Usedleaves: 7, Leftleaves: 5,extraleaves:2},
-  {name: 'Maic', ID: 61276, Usedleaves: 6, Leftleaves: 6,extraleaves:2},
+  {name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves:3, extraleaves:2 },
+  {name: 'Jack', ID: 76898, Usedleaves:6, Leftleaves: 6, extraleaves:2 },
+  {name: 'Anne', ID: 71268, Usedleaves: 6,Leftleaves: 6, extraleaves:2 },
+  {name: 'Rock', ID: 76869, Usedleaves: 9, Leftleaves: 3, extraleaves:2 },
+  {name: 'Janni', ID: 86798, Usedleaves: 2, Leftleaves: 10 ,extraleaves:2 },
+  {name: 'Devid', ID: 57896, Usedleaves: 7, Leftleaves: 5, extraleaves:2 },
+  {name: 'Maic', ID: 61276, Usedleaves: 6, Leftleaves: 6, extraleaves:2} ,
   
 ];
