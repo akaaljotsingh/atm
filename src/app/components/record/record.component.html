@@ -1,9 +1,11 @@
 
+
+
 <div class="main-div">
 <mat-tab-group animationDuration="0ms">
 
         <mat-tab label="Team Record">
-    
+                <div class="recordtable">
             <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 history">
     
                 <!--- Note that these columns can be defined in any order.
@@ -42,8 +44,10 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     
             </table>
+        </div>
     
         </mat-tab>
+    
     
         <mat-tab label="Leave Requests" class="leave-request">
             <div class="clearfix">
