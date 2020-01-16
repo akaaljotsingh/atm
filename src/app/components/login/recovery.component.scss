@@ -40,9 +40,7 @@ input:focus {
 	border: none;
 	color: #0778bd;
 	margin-top: 24px;
-	//  margin-left: 66px;
-	//  font-weight: bold;
-	//  font-size: 18px;
+	
 }
 
 .button1:hover {
@@ -70,14 +68,6 @@ input:focus {
 	cursor: pointer;
 }
 
-.forgot-pss {
-	a {
-		margin-left: 80px;
-		color: white;
-		text-decoration: none;
-	}
-}
-
 .mat-form-field-appearance-legacy .mat-form-field-underline {
 	color: white!important;
 }
@@ -102,49 +92,15 @@ input:focus {
 	
 }
 
-// i {
-// 	position: relative;
-// 	top: 16px;
-// 	right: -7px;
-// 	margin-right: 5px;
-// }
-
 .image1 {
 	font-size: 85px;
 	border-radius: 50%;
-	// margin-bottom: 30px;
 }
 
 .mat-form-field {
 	width: 347px!important;
 	margin-bottom: 8px;
 }
-
-.psw {
-	display: block;
-	color: white;
-	margin-top: 39px;
-}
-
-.psw a {
-	color: cyan;
-	font-weight: 500;
-	text-decoration: none;
-	cursor: pointer;
-	margin-left: 6px;
-}
-
-.psw a:hover {
-	text-decoration: underline;
-}
-
-
-
-.terms {
-	color: white;
-	text-align: center;
-}
-
 .Aligner {
 	display: flex;
 	align-items: center;

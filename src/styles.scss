@@ -190,7 +190,7 @@ button:focus {
   .mat-form-field-appearance-outline .mat-form-field-infix {
     padding: 7px 0 7px 0;
 }
-  a{text-decoration: none;}
+  // a{text-decoration: none;}
   .mat-form-field-appearance-outline .mat-form-field-outline-thick {
     /* color: rgba(0,0,0,.87); */
     color: white !important;
@@ -213,11 +213,17 @@ button:focus {
   border-color: rgb(255, 255, 255) !important;
 }
 }
-.details{
-  .mat-form-field-flex{
-    width: 393px;
-  }
+// .details{
+//   .mat-form-field-flex{
+//    width: 100%;
+//   }
 
+// }
+// .mat-form-field-appearance-legacy .mat-form-field-underline {
+//   background-color:#70aade;
+// }
+.mat-form-field.mat-focused .mat-form-field-label{
+  color:#70aade;
 }
 
 .cal-month-view .cal-day-cell {
@@ -292,4 +298,13 @@ button:focus {
 	&:hover {
 		box-shadow: 0 0 10px rgba(0,0,0,.2);
 	}
+.mat-form-field.mat-focused .mat-form-field-ripple{
+  background-color: #70aade;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: rgba(0,0,0,.12);
+}
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+color: #70aade;
+}
 }
