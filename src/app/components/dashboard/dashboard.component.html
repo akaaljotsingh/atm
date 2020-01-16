@@ -1,152 +1,270 @@
 <div class="main-dashboard">
-
-    <div class="calender">
-    <div class="row text-center table-head">
-        <div class="col-md-4">
-          <div class="btn-group">
-            <div
-              class="btn center"
-              mwlCalendarPreviousView
-              [view]="view"
-              [(viewDate)]="viewDate"
-              (viewDateChange)="closeOpenMonthViewDay()"
-            >
-            <i class="material-icons">  keyboard_arrow_left  </i>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8 pl-0 pr-0">
+        <div class="calender">
+          <div class="row text-center table-head">
+            <div class="col-md-4">
+              <div class="btn-group">
+                <div class="btn center" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate"
+                  (viewDateChange)="closeOpenMonthViewDay()">
+                  <i class="material-icons"> keyboard_arrow_left </i>
+                </div>
+                <div class="btn center" mwlCalendarToday [(viewDate)]="viewDate">
+                  <i class="material-icons"> today </i>
+                </div>
+                <div class="btn center" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate"
+                  (viewDateChange)="closeOpenMonthViewDay()">
+                  <i class="material-icons"> keyboard_arrow_right </i>
+                </div>
+              </div>
             </div>
-            <div
-              class="btn center"
-              mwlCalendarToday
-              [(viewDate)]="viewDate"
-            >
-            <i class="material-icons">  today   </i>
+            <div class="col-md-4">
+              <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
             </div>
-            <div
-              class="btn center"
-              mwlCalendarNextView
-              [view]="view"
-              [(viewDate)]="viewDate"
-              (viewDateChange)="closeOpenMonthViewDay()"
-            >
-            <i class="material-icons">  keyboard_arrow_right  </i>
+            <div class="col-md-4">
+              <div class="btn-group">
+                <div class="btn btn-primary border-right" (click)="setView(CalendarView.Month)"
+                  [class.active]="view === CalendarView.Month">
+                  Month
+                </div>
+                <div class="btn btn-primary border-right" (click)="setView(CalendarView.Week)"
+                  [class.active]="view === CalendarView.Week">
+                  Week
+                </div>
+                <div class="btn btn-primary" (click)="setView(CalendarView.Day)"
+                  [class.active]="view === CalendarView.Day">
+                  Day
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
-        </div>
-        <div class="col-md-4">
-          <div class="btn-group">
-            <div
-              class="btn btn-primary border-right"
-              (click)="setView(CalendarView.Month)"
-              [class.active]="view === CalendarView.Month"
-            >
-              Month
-            </div>
-            <div
-              class="btn btn-primary border-right"
-              (click)="setView(CalendarView.Week)"
-              [class.active]="view === CalendarView.Week"
-            >
-              Week
-            </div>
-            <div
-              class="btn btn-primary"
-              (click)="setView(CalendarView.Day)"
-              [class.active]="view === CalendarView.Day"
-            >
-              Day
-            </div>
+
+          <div [ngSwitch]="view">
+            <mwl-calendar-month-view *ngSwitchCase="CalendarView.Month" [viewDate]="viewDate" [events]="events"
+              [refresh]="refresh" [activeDayIsOpen]="activeDayIsOpen" (dayClicked)="dayClicked($event.day)"
+              (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-month-view>
+            <mwl-calendar-week-view *ngSwitchCase="CalendarView.Week" [viewDate]="viewDate" [events]="events"
+              [refresh]="refresh" (eventClicked)="handleEvent('Clicked', $event.event)"
+              (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-week-view>
+            <mwl-calendar-day-view *ngSwitchCase="CalendarView.Day" [viewDate]="viewDate" [events]="events"
+              [refresh]="refresh" (eventClicked)="handleEvent('Clicked', $event.event)"
+              (eventTimesChanged)="eventTimesChanged($event)">
+            </mwl-calendar-day-view>
           </div>
         </div>
       </div>
-    
-      <div [ngSwitch]="view">
-        <mwl-calendar-month-view
-          *ngSwitchCase="CalendarView.Month"
-          [viewDate]="viewDate"
-          [events]="events"
-          [refresh]="refresh"
-          [activeDayIsOpen]="activeDayIsOpen"
-          (dayClicked)="dayClicked($event.day)"
-          (eventClicked)="handleEvent('Clicked', $event.event)"
-          (eventTimesChanged)="eventTimesChanged($event)"
-        >
-        </mwl-calendar-month-view>
-        <mwl-calendar-week-view
-          *ngSwitchCase="CalendarView.Week"
-          [viewDate]="viewDate"
-          [events]="events"
-          [refresh]="refresh"
-          (eventClicked)="handleEvent('Clicked', $event.event)"
-          (eventTimesChanged)="eventTimesChanged($event)"
-        >
-        </mwl-calendar-week-view>
-        <mwl-calendar-day-view
-          *ngSwitchCase="CalendarView.Day"
-          [viewDate]="viewDate"
-          [events]="events"
-          [refresh]="refresh"
-          (eventClicked)="handleEvent('Clicked', $event.event)"
-          (eventTimesChanged)="eventTimesChanged($event)"
-        >
-        </mwl-calendar-day-view>
+      <div class="col-4">
+        <div class="holiday-div">
+          <div class="clearfix p-3">
+            <div class="holiday-heading float-left">
+              Employees on Leave
+            </div>
+            <div class="refresh-icon float-right">
+              <span> <i class="material-icons"> autorenew </i></span>
+            </div>
+          </div>
+          <hr>
+
+          <div class="absent">
+            <!-- on holiday list -->
+            <div class="employee">
+              <div class="employee-on-leave bodrer">
+                <img src="../../../assets/images/GIRL.jpg" alt="user">
+                <div class="list1">
+                  <h6>Isabela Phelaps</h6>
+                  <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                  <div class="down-row d-flex">
+                    <div class="cause">
+                      <span>6 Day</span>
+                      <span class="dot sick-dot"></span>
+                      <span>Sick</span>
+                    </div>
+                    <div class="accept">
+                      <div class="box box-reject">Reject</div>
+                      <div class="box box-accept">Accept</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <!-- on holiday list -->
+                        <div class="employee">
+                            <div class="employee-on-leave bodrer">
+                              <img src="../../../assets/images/user-1.jpg" alt="user">
+                              <div class="list1">
+                                <h6>Devid Corn</h6>
+                                <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                                <div class="down-row d-flex">
+                                  <div class="cause">
+                                    <span>2 Day</span>
+                                    <span class="dot personal-dot"></span>
+                                    <span>Personal</span>
+                                  </div>
+                                  <div class="accept">
+                                    <div class="box box-reject">Reject</div>
+                                    <div class="box box-accept">Accept</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                                      <!-- on holiday list -->
+            <div class="employee">
+                <div class="employee-on-leave bodrer">
+                  <img src="../../../assets/images/user-1.jpg" alt="user">
+                  <div class="list1">
+                    <h6>Devid Corn</h6>
+                    <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                    <div class="down-row d-flex">
+                      <div class="cause">
+                        <span>3 Day</span>
+                        <span class="dot personal-dot"></span>
+                        <span>Personal</span>
+                      </div>
+                      <div class="accept">
+                        <div class="box box-reject">Reject</div>
+                        <div class="box box-accept">Accept</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                          <!-- on holiday list -->
+            <div class="employee">
+                <div class="employee-on-leave bodrer">
+                  <img src="../../../assets/images/profile-img.jpg" alt="user">
+                  <div class="list1">
+                    <h6>Trevor Hansen</h6>
+                    <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                    <div class="down-row d-flex">
+                      <div class="cause">
+                        <span>1 Day</span>
+                        <span class="dot earned-dot"></span>
+                        <span>Earned</span>
+                      </div>
+                      <div class="accept">
+                        <div class="box box-reject">Reject</div>
+                        <div class="box box-accept">Accept</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                          <!-- on holiday list -->
+            <div class="employee">
+                <div class="employee-on-leave bodrer">
+                  <img src="../../../assets/images/GIRL.jpg" alt="user">
+                  <div class="list1">
+                    <h6>Isabela Phelaps</h6>
+                    <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                    <div class="down-row d-flex">
+                      <div class="cause">
+                        <span>2 Day</span>
+                        <span class="dot sick-dot"></span>
+                        <span>Sick</span>
+                      </div>
+                      <div class="accept">
+                        <div class="box box-reject">Reject</div>
+                        <div class="box box-accept">Accept</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- <div class="employee">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="employee-on-leave bodrer">
+                    <img src="../../../assets/images/user-1.jpg" alt="user">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <div class="list1">
+                    <h6>Devid Corn</h6>
+                    <h6 class="date"><span>20th Jan 2020</span> - <span>21th Jan 2019</span></h6>
+                    <div class="down-row d-flex">
+                      <div class="cause">
+                        <span>2 Day</span>
+                        <span class="dot personal-dot"></span>
+                        <span>Personal</span>
+                      </div>
+                      <div class="accept">
+                        <div class="box box-reject">Reject</div>
+                        <div class="box box-accept">Accept</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+
       </div>
     </div>
-      <div class="container-fluid mt-5">
-        <div class="row">
-          <div class="col-9 pl-0">
-            <div class="holiday-div">
-              <div class="clearfix p-3">
-              <div class="holiday-heading float-left">
-                  List of Holidays
-              </div>
-              <div class="refresh-icon float-right">
-               <span> <i class="material-icons">  autorenew  </i></span>
-              </div></div>
-              <hr>
-              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-        
-                <!--- Note that these columns can be defined in any order.
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-9 pl-0 pr-0">
+        <div class="holiday-div">
+          <div class="clearfix p-3">
+            <div class="holiday-heading float-left">
+              List of Holidays
+            </div>
+            <div class="refresh-icon float-right">
+              <span> <i class="material-icons"> autorenew </i></span>
+            </div>
+          </div>
+          <hr>
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
                       The actual rendered columns are set as a property on the row definition" -->
-              
-                <!-- Position Column -->
-                <!-- <ng-container matColumnDef="position">
+
+            <!-- Position Column -->
+            <!-- <ng-container matColumnDef="position">
                   <th mat-header-cell *matHeaderCellDef> Date </th>
                   <td mat-cell *matCellDef="let element"> {{element.position}} </td>
                 </ng-container> -->
-              
-                <!-- Name Column -->
-                <ng-container matColumnDef="name">
-                  <th mat-header-cell *matHeaderCellDef> Date</th>
-                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-                </ng-container>
-              
-              
-                <!-- Symbol Column -->
-                <ng-container matColumnDef="symbol">
-                  <th mat-header-cell *matHeaderCellDef> Occasion </th>
-                  <td mat-cell *matCellDef="let element" > {{element.symbol}} </td>
-                </ng-container>
-              
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-              </table>
-              
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Date</th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef> Occasion </th>
+              <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+
+        </div>
+
+      </div>
+
+      <div class="col-3">
+        <div class="holiday-div">
+          <div class="clearfix p-3">
+            <div class="holiday-heading float-left">
+              Today Absent
             </div>
-        
+            <div class="refresh-icon float-right">
+              <span> <i class="material-icons"> autorenew </i></span>
+            </div>
           </div>
-          <div class="col-3">
-              <div class="holiday-div">
-                  <div class="clearfix p-3">
-                  <div class="holiday-heading float-left">
-                      Today Absent
-                  </div>
-                  <div class="refresh-icon float-right">
-                   <span> <i class="material-icons">  autorenew  </i></span>
-                  </div></div>
-                  <hr>
-          <div class="absent">
+          <hr>
+          <div class="today-absent">
             <!-- absent person list -->
             <div class="list">
               <div class="img"><img src="../../../assets/images/user-1.jpg" alt="user"></div>
@@ -155,55 +273,53 @@
                 <p class="position">Developer</p>
               </div>
             </div>
-             <!-- absent person list -->
-             <div class="list">
-                <div class="img"><img src="../../../assets/images/profile-img.jpg" alt="user"></div>
-                <div class="detail">
-                  <p class="name">Devid Corn</p>
-                  <p class="position">Developer</p>
-                </div>
-              </div>
-               <!-- absent person list -->
+            <!-- absent person list -->
             <div class="list">
-                <div class="img"><img src="../../../assets/images/GIRL.jpg" alt="user"></div>
-                <div class="detail">
-                  <p class="name">Isabela Phelps</p>
-                  <p class="position">Developer</p>
-                </div>
+              <div class="img"><img src="../../../assets/images/profile-img.jpg" alt="user"></div>
+              <div class="detail">
+                <p class="name">Devid Corn</p>
+                <p class="position">Developer</p>
               </div>
-               <!-- absent person list -->
+            </div>
+            <!-- absent person list -->
             <div class="list">
-                <div class="img"><img src="../../../assets/images/user-1.jpg" alt="user"></div>
-                <div class="detail">
-                  <p class="name">Trevor Hansen</p>
-                  <p class="position">Developer</p>
-                </div>
+              <div class="img"><img src="../../../assets/images/GIRL.jpg" alt="user"></div>
+              <div class="detail">
+                <p class="name">Isabela Phelps</p>
+                <p class="position">Developer</p>
               </div>
-               <!-- absent person list -->
+            </div>
+            <!-- absent person list -->
             <div class="list">
-                <div class="img"><img src="../../../assets/images/profile-img.jpg" alt="user"></div>
-                <div class="detail">
-                  <p class="name">Devid Corn</p>
-                  <p class="position">Developer</p>
-                </div>
+              <div class="img"><img src="../../../assets/images/user-1.jpg" alt="user"></div>
+              <div class="detail">
+                <p class="name">Trevor Hansen</p>
+                <p class="position">Developer</p>
               </div>
-                 <!-- absent person list -->
+            </div>
+            <!-- absent person list -->
             <div class="list">
-                <div class="img"><img src="../../../assets/images/GIRL.jpg" alt="user"></div>
-                <div class="detail">
-                  <p class="name">Isabela Phelps</p>
-                  <p class="position">Developer</p>
-                </div>
+              <div class="img"><img src="../../../assets/images/profile-img.jpg" alt="user"></div>
+              <div class="detail">
+                <p class="name">Devid Corn</p>
+                <p class="position">Developer</p>
               </div>
-          </div>        
-                  
-                </div>
-            
+            </div>
+            <!-- absent person list -->
+            <div class="list">
+              <div class="img"><img src="../../../assets/images/GIRL.jpg" alt="user"></div>
+              <div class="detail">
+                <p class="name">Isabela Phelps</p>
+                <p class="position">Developer</p>
+              </div>
+            </div>
           </div>
+
         </div>
+
       </div>
- 
+    </div>
+  </div>
+
 
 </div>
-
-

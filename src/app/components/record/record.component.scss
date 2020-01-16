@@ -5,6 +5,9 @@
 	display: grid;
 	padding-left: 33px;
 }
+.table-tab {
+	padding: 20px 20px;
+}
 
 .employee1 {
 	display: flex;
@@ -42,8 +45,11 @@
 	padding-left: 27px;
 	padding-top: 31px;
 	padding-bottom: 23px;
-	box-shadow: 2px 3px 6px 2px #dedfe2;
 	background-color: white;
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	&:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,.2);
+	}
 }
 
 
@@ -144,23 +150,7 @@
 		margin-bottom: 10px;
 	}
 }
-.dot {
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	display: inline-block;
-	margin-right: 4px;
-	margin-left: 30px;
-}
-.sick-dot {
-	background-color: pink;
-}
-.personal-dot {
-	background-color: #2E506B;
-}
-.earned-dot {
-	background-color: #FEDE87;
-}
+
 .leave-request {
 	margin: 0px 20px;
 }

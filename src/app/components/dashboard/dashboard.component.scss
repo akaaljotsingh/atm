@@ -1,3 +1,6 @@
+.main-dashboard {
+	height: 100vh;
+}
 h3 {
 	margin: 0 0 10px;
   }
@@ -65,9 +68,10 @@ h3 {
 .holiday-div, .calender {
 	background-color: white;
 	border-radius: 8px 8px 0px 0px;
-	box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),
-	            0 6px 8px 1px rgba(0,0,0,.14),
-	            0 1px 12px 2px rgba(0,0,0,.12);
+	box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	&:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,.2);
+	}
 }
 .holiday-div {
 	hr {
@@ -101,10 +105,14 @@ border-color: #03a9f4!important;
 .border-right {
 	border-right: 1px solid grey;
 }
-
 .absent {
 	padding: 7px 15px 0px 15px;
-	height: 440px;
+	height: 582px;
+}
+
+.today-absent {
+	padding: 7px 15px 0px 15px;
+	height: 441px;
 	.list {
 		display: flex;
 		align-items: center;
@@ -132,5 +140,47 @@ border-color: #03a9f4!important;
 				color: gray;
 			}
 		}
+		.reason, .leave {
+			margin: 17px 0px 0px 45px;
+		}
 	}	
+}
+
+.accept {
+	display: flex;
+	align-items: center;
+	width: 140px;
+.box {
+	height: 27px;
+	width: 60px;
+	margin-left: 9px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.box-reject {
+	background-color: #f44336;
+}
+.box-accept {
+	background-color: green;
+}
+}
+.dot {
+	margin-left: 20px!important;
+}
+.list1 {
+    padding-left: 20px!important;
+}
+.employee-on-leave {
+    padding: 15px 5px!important;   
+}
+.down-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cause {
+width: 155px;
 }
