@@ -219,3 +219,77 @@ button:focus {
   }
 
 }
+
+.cal-month-view .cal-day-cell {
+  min-height: 80px;
+}
+
+.cal-month-view .cal-day-cell {
+  min-height: 75px;
+}
+
+// list of person who are on leave or apply for leave start
+.list1 {
+	display: grid;
+	padding-left: 33px;
+}
+
+.employee-on-leave {
+	display: flex;
+	padding: 15px 15px;
+  align-items: flex-start;
+  img {
+    border-radius: 50%;
+    width: 51px;
+  }	
+}
+.bodrer {
+ border-bottom: .5px solid #e1e1e2;
+}
+.clicked-employee {
+	background-color: #ECECEC;
+}
+
+.date {
+	font-size: 13px;
+	color: grey;
+}
+.day {
+	margin-left: 10px;
+    font-size: 16px;
+	color: #1E3262;
+	font-weight: 500;
+}
+
+.cause {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.dot {
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 4px;
+	margin-left: 30px;
+}
+.sick-dot {
+	background-color: pink;
+}
+.personal-dot {
+	background-color: #2E506B;
+}
+.earned-dot {
+	background-color: #FEDE87;
+}
+
+// list of person who are on leave or apply for leave End
+
+.mat-elevation-z8 {
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	&:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,.2);
+	}
+}
