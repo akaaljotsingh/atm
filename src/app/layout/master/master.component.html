@@ -34,7 +34,7 @@
                   <li routerLink="/dashboard"> <i class="material-icons"> dashboard </i> <a>Dashboard</a></li>
                   <!-- <li routerLink="/notification"> <i class="material-icons">notifications</i> <a>Notification</a></li> -->
                   <li routerLink="/history"> <i class="material-icons">history</i> <a >Leave</a></li>
-                  <li routerLink="/apply"> <i class="material-icons">assignment</i> <a >Apply</a></li>
+                  <!-- <li routerLink="/apply"> <i class="material-icons">assignment</i> <a >Apply</a></li> -->
                 </ul>
               </div>
             </div>
@@ -53,7 +53,10 @@
               <a class="navbar-brand"></a>
               <form class="form-inline">
                 <div class="nav">
-                  <div class="icons-div">
+                    <div class="button">
+                        <!-- <a href="" class="btn"> Back</a> -->
+                        <a mat-flat-button class="backbutton"(click)="openDialog()">Apply</a>
+                      </div>                  <div class="icons-div">
                  <!-- <span>  <i class="material-icons"> move_to_inbox  </i></span> -->
                  <!-- <span>  <i class="material-icons"> add_box  </i> </span> -->
                   <span routerLink="/notification">   <i class="material-icons"> notifications  </i>
@@ -64,6 +67,7 @@
                       <div class="option"  routerLink="/profile"><i class="material-icons"> account_circle  </i> Profile</div>
                       <div class="option"><i class="material-icons"> exit_to_app </i> Logout</div>
                     </div>
+                   
                  </div>
                 
                 </div>

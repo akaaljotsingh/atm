@@ -31,7 +31,7 @@ export interface userdata {
 }
 
 const USER_DATA: userdata[] = [
-  {name:'Amarjeet Singh', type:'Sick', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
+  {name: 'Amarjeet Singh', type: 'Sick', from: '22/12/2019', to: '23/12/2019', day: 2, status: 'Pending' },
   {name:'Amarjeet Singh', type:'Personal work', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
   {name:'Amarjeet Singh', type:'Annual Leave', from:'22/12/2019', to:'23/12/2019', day:2, status:'Pending' },
   {name:'Amarjeet Singh', type:'Other', from:'22/12/2019', to:'23/12/2019', day:1, status:'Pending' },
@@ -59,18 +59,14 @@ export class HolidaysComponent implements OnInit {
   // ];
   selected = 'option1';
 
-  displayedColumns: string[] = ['name', 'type', 'from', 'to','day'];
+  displayedColumns: string[] = ['name', 'type', 'from', 'to', 'day'];
   dataSource = ELEMENT_DATA;
 
-  displayedCol: string[] = ['name', 'type', 'from', 'to','day', 'status'];
+  displayedCol: string[] = ['name', 'type', 'from', 'to', 'day', 'status'];
   dataS = USER_DATA;
 
-  
-  ngOnInit() {
-    
+ ngOnInit() {
+    }
   }
-
-
-}
 
 

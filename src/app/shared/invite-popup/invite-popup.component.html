@@ -1,47 +1,91 @@
-<div class="close"><i (click)="onNoClick()" class="material-icons">  close </i></div>
-<div class="invite-users-modal-component">
-    <div class="invite-users-modal-content">
-        <div class="invite-users-title-wrapper">
-            <img class="user-image" src="https://cdn7.monday.com/images/invite-users/user-invite-logo.png" alt="user logo">
-            <div class="invite-users-title">Invite new members</div></div><div class="content-input-wrapper">
-                <div class="invite-users-modal-subtitle">
-                        <i class="far fa-envelope"></i>
-     Invite with email</div><div class="emails-kind-wrapper">
-           <div class="emails-input-wrapper">
-               <div class="tags-input-component">
-                 <div class="tags-input-wrapper" id="tags-input-wrapper">
-                    <div class="tags-wrapper" id="tags-wrapper"></div>
-                      <input class="tags-input" id="tags-input" type="text" placeholder="Enter one or more email addresses" value="">
-                    </div>
-                </div>
+
+        <!-- <div class="maindiv">
+        <form class="example-form">
+                <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>from</mat-label>
+                  <input matInput placeholder="" value="">
+
+                  <input matInput [matDatepicker]="picker" placeholder="">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+
+                
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>To</mat-label>
+                        <input matInput placeholder="" value="">
+
+                        <input matInput [matDatepicker]="picker2" placeholder="">
+                 <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                 <mat-datepicker #picker2></mat-datepicker>
+                        
+                      </mat-form-field>
+
+                      <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Type</mat-label>
+                          
+                            <mat-select placeholder="">
+                               <mat-option value="option">Sick Leave</mat-option>
+                               <mat-option value="option">Annual Leave</mat-option>
+                               <mat-option value="option">Personal Work</mat-option>
+                               <mat-option value="option">Earned </mat-option>
+                            </mat-select>
+                            <input matInput placeholder="" value="">
+                          </mat-form-field>
+                          <mat-form-field appearance="outline">
+                                <mat-label>Description</mat-label>
+                                <textarea matInput placeholder=""></textarea>
+                              </mat-form-field>
+                              
+              
+              </form>
+              
+             
             </div>
-        </div>
-        <!-- <div class="user-kind-radio-wrapper">
-            <div class="user-kind-radio-option">
-                <div class="radio-button-component  color-undefined size-sm  selected">
-                    <div class="radio-button-circle color-undefined"></div>
-                    <span class="radio-button-label">Member</span>
-                </div>
-            </div>
-            <div class="user-kind-radio-option">
-                <div class="radio-button-component  color-undefined size-sm  ">
-                    <div class="radio-button-circle color-undefined"></div>
-                    <span class="radio-button-label">Viewer (Read-only)</span>
-                </div></div>
-                <div class="free-indication">Free</div>
-            </div> -->
-            <mat-radio-group aria-label="Select an option">
-                    <mat-radio-button value="1">Member</mat-radio-button>
-                    <mat-radio-button value="2">Viewer </mat-radio-button>
-                  </mat-radio-group>                  
-        </div>
-            <div class="bottom-wrapper">
-                <button type="submit" disabled="" tabindex="0" class="invite-button ds-btn ds-btn-primary ds-btn-md disabled">Invite</button>
-            </div></div><div class="invite-users-externals-wrapper">
-                <div class="invite-users-external-component">
-                    <span class="title">You can also import your contacts from:</span>
-                    <img alt="gmail" class="integration-icon" src="https://cdn7.monday.com/images/gmail-dark-bg.svg">
-                    <img alt="outlook" class="integration-icon" src="https://cdn7.monday.com/images/outlook.svg">
-                </div>
-            </div>
-        </div>
+            <div class="button">
+                  
+                    <a mat-flat-button class="prime" >Submit</a>
+                 </div> -->
+            
+                 <div class="close"><i (click)="onNoClick()" class="material-icons">  close </i></div>
+                 
+                 <div class="apply-main">
+                       
+                        <div class="leave-form">
+                           <mat-form-field appearance="outline">
+                               <mat-label>From</mat-label>
+                              <input matInput [matDatepicker]="picker" placeholder="">
+                              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                              <mat-datepicker #picker></mat-datepicker>
+                           </mat-form-field>
+                           <br>
+                           <mat-form-field appearance="outline">
+                               <mat-label>To</mat-label>
+                              <input matInput [matDatepicker]="pick" placeholder="">
+                              <mat-datepicker-toggle matSuffix [for]="pick"></mat-datepicker-toggle>
+                              <mat-datepicker #pick></mat-datepicker>
+                           </mat-form-field>
+                           <br>  
+                           <mat-form-field appearance="outline">
+                               <mat-label>Type</mat-label>
+                              <mat-select placeholder="">
+                                 <mat-option value="option">Sick Leave</mat-option>
+                                 <mat-option value="option">Annual Leave</mat-option>
+                                 <mat-option value="option">Personal Work</mat-option>
+                                 <mat-option value="option">Earned </mat-option>
+                              </mat-select>
+                           </mat-form-field>
+                           <br>
+                           <mat-form-field appearance="outline"> 
+                               <mat-label>Discription</mat-label>
+                               <textarea matInput placeholder=""></textarea>
+                             </mat-form-field>
+                           <!-- <form > 
+                               
+                              <textarea rows="4" cols="65" name="comment" form="usrform">Discription</textarea>
+                           </form> -->
+                           <!-- <div class="submit clearfix"> <input type="submit"></div>   -->
+                           <button mat-flat-button color="primary" class="prime">submit</button>
+                        </div>
+                      </div>

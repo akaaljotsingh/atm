@@ -92,7 +92,7 @@
         font-size: 12px;
       }
       .button-sidebar {
-        background-color: #1565C0;
+        background-color: #70aade;
         border-radius: 50%;
         height: 50px;
         width: 50px;
@@ -120,6 +120,7 @@
       }
       nav { 
         background-color: white;
+      
       //   padding: 0px 20px 0px 0px;
       //   height: 50px;
       //   background-color: #F0F2F7;
@@ -346,5 +347,11 @@
     line-height: 2.5;
   }
 }
+
+  .backbutton{
+    background-color: #70aade;
+      color: white;
+      
+  }
 
 

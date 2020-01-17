@@ -37,6 +37,7 @@ import {
     MatTooltipModule,
     MatTreeModule
 } from '@angular/material';
+
 // import { InvitePopupComponent } from './invite-popup/invite-popup.component';
 
 
@@ -65,7 +66,7 @@ import {
         MatProgressBarModule,
         MatProgressSpinnerModule,
         MatRadioModule,
-        MatRippleModule,                                                     
+        MatRippleModule,
         MatSelectModule,
         MatSidenavModule,
         MatSliderModule,

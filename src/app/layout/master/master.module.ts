@@ -6,15 +6,20 @@ import { PublicComponent } from '../public/public.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
-import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component'
-import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component'
-import {ActivityComponent} from '../../shared/activity/activity.component'
+import {InvitePopupComponent} from '../../shared/invite-popup/invite-popup.component';
+import {HelpPopupComponent} from '../../shared/help-popup/help-popup.component';
+import {ActivityComponent} from '../../shared/activity/activity.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { SidebarModule } from 'ng-sidebar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+
+import {MatDatepickerModule, MatNativeDateModule} from '@angular/material';
+
 // import { MatSharedModule } from 'src/app/shared/mat.module';
 
 
@@ -95,8 +100,12 @@ export const routes: Routes = [
         MatRadioModule,
         MatInputModule,
         SidebarModule.forRoot(),
+        MatDatepickerModule,
+        MatNativeDateModule,
         MatProgressBarModule,
         MatCheckboxModule,
+        MatButtonModule,
+        MatSelectModule,
     ],
 
     declarations: [

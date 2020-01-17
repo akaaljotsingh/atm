@@ -9,15 +9,20 @@
       height: 150px;
     }
     .table-header {
-      width: 100%;
+      width: 95%;
       border-radius: 4px;
-      background: #2c3e50;
+      background: #1e3262;
       display: flex;
       align-items: center;
-      height: 85px;
-      // justify-content: center;
+      height: 106px;
+    margin: auto;
+    position: relative;
+    margin-bottom: -80px;
+     
     .year-select {
       width: 33%;
+      padding: 23px;
+     
       // float: left;
       i {
         position: absolute;
@@ -136,9 +141,9 @@
       margin-top: 10px;
       background-color: white!important;
       padding: 15px!important;
-      -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
--moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+//       -webkit-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+// -moz-box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
+// box-shadow: 0px 0px 8px 0px rgba(166,166,166,1);
       }
 }
 
@@ -186,6 +191,13 @@ table th, td {
   color: white;}
   
 .backbutton{
-  background-color: #2c3e50;
+  background-color: #70aade;
     color: white;
+    
+}
+.outerbox{
+  width: 100%;
+    background-color: white;
+    height: 104px;
+    border-radius: 4px;
 }

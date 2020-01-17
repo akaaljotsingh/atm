@@ -11,22 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
-
-
-
 @NgModule({
   declarations: [
-    AppComponent,
-   
-    
-   
-    
-    
-    
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    Routing,MasterModule, BrowserAnimationsModule
+    Routing, MasterModule, BrowserAnimationsModule,
+    // MatDatepickerModule,
+    // MatNativeDateModule
   ],
   providers: [AppConfig, {
     provide: LocationStrategy, useClass: HashLocationStrategy

@@ -14,8 +14,7 @@ export interface DialogData {
 export class InvitePopupComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<InvitePopupComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+    public dialogRef: MatDialogRef<InvitePopupComponent>) {}
 
   onNoClick(): void {
     this.dialogRef.close();

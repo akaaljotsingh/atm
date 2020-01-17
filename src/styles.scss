@@ -316,3 +316,22 @@ color: #70aade !important;
 .mat-form-field.mat-focused .mat-form-field-ripple{
   background-color: #70aade ;
 }
+.table-header{
+  .year-select{
+    .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+      color: rgb(255, 255, 255);
+  }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgb(255, 255, 255);
+}
+mat-label{
+  color: white;
+}
+  }
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #70aade;
+}
+.nav{
+  align-items: center;
+}

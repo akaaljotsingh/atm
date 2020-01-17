@@ -10,27 +10,25 @@ import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/form
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit {
-  notificationBox=false;
-  profileBox=false;
+  notificationBox =false;
+  profileBox =false;
   // notificationBoxClose(){
   //  // alert();
   // }
-          
   @HostListener('document:click', ['$event'])
   clickout(event) {
-    
-    if(this.eRef.nativeElement.contains(event.target)) {
-       //this.notificationBox=true;
+    if (this.eRef.nativeElement.contains(event.target)) {
+       // this.notificationBox=true;
     } else {
-      this.notificationBox=false;
+      this.notificationBox = false;
     }
   }
 
-  constructor(private eRef: ElementRef,public dialog: MatDialog) { }
+  constructor(private eRef: ElementRef, public dialog: MatDialog) { }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(InvitePopupComponent, {
-      width: '650px',
+      width: '600px',
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
