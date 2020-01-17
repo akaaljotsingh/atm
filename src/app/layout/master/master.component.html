@@ -32,8 +32,8 @@
                 <h4>Menu</h4>
                 <ul>
                   <li routerLink="/dashboard"> <i class="material-icons"> dashboard </i> <a>Dashboard</a></li>
-                  <li routerLink="/notification"> <i class="material-icons">notifications</i> <a>Notification</a></li>
-                  <li routerLink="/history"> <i class="material-icons">history</i> <a >History</a></li>
+                  <!-- <li routerLink="/notification"> <i class="material-icons">notifications</i> <a>Notification</a></li> -->
+                  <li routerLink="/history"> <i class="material-icons">history</i> <a >Leave</a></li>
                   <li routerLink="/apply"> <i class="material-icons">assignment</i> <a >Apply</a></li>
                 </ul>
               </div>
@@ -55,9 +55,10 @@
                 <div class="nav">
                   <div class="icons-div">
                  <!-- <span>  <i class="material-icons"> move_to_inbox  </i></span> -->
-                 <span>  <i class="material-icons"> add_box  </i> </span>
+                 <!-- <span>  <i class="material-icons"> add_box  </i> </span> -->
                   <span routerLink="/notification">   <i class="material-icons"> notifications  </i>
-                  <div class="notification-circle">4</div></span>
+                  <div class="notification-circle">4</div>
+                </span>
                   <span>  <i class="material-icons" (click)="profileBox=!profileBox"> account_circle  </i> </span>
                   <div class="profile-menu" *ngIf="profileBox">
                       <div class="option"  routerLink="/profile"><i class="material-icons"> account_circle  </i> Profile</div>
