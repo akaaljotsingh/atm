@@ -14,6 +14,7 @@ import { SidebarModule } from 'ng-sidebar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
+import {MatBadgeModule} from '@angular/material/badge';
 // import { MatSharedModule } from 'src/app/shared/mat.module';
 
 
@@ -87,6 +88,7 @@ export const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
         CommonModule,
+        MatBadgeModule,
         MatSidenavModule,
         MatTooltipModule,
         MatDialogModule,

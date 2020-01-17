@@ -1,17 +1,28 @@
-<div class="holidays-main-div">
-    <div class="header clearfix">
-        <div class="text">
-            <h2>History</h2>
-        </div>
-        <div class="button">
-        <!-- <a href="" class="btn"> Back</a> -->
-        <a mat-flat-button routerLink="" class="backbutton">Back</a>
-      </div>
+<div class="header clearfix">
+    <div class="text">
+        <h2>History</h2>
     </div>
-    <div class="table-header clearfix">
+    <div class="button">
+    <!-- <a href="" class="btn"> Back</a> -->
+    <a mat-flat-button routerLink="" class="backbutton">Back</a>
+  </div>
+</div>
+<div class="holidays-main-div">   
+
+    <!-- <mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>   -->
+<div class="tab-outer">
+    <div class="table-header-main">
+    <div class="table-header">
 <div class="year-select">
-  <mat-form-field>
-    <mat-label></mat-label>
+  <mat-form-field appearance="outline">
+    <mat-label>Year</mat-label>
     <mat-select [(value)]="selected">
       <mat-option value="option1">2019</mat-option>
       <mat-option value="option2">2018</mat-option>
@@ -20,7 +31,7 @@
   </mat-form-field>
     </div>
 
-    <div class="used-leave mr-left">
+    <!-- <div class="used-leave mr-left">
       <div class="text">
         <div class="heading">Used Leaves</div>
         <div class="value">5</div>
@@ -31,18 +42,10 @@
             <div class="heading">Left Leaves</div>
             <div class="value">7</div>
           </div>
-           </div>
-
-  </div>
-    <!-- <mat-form-field>
-        <mat-label>Favorite food</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>   -->
-
+           </div> -->
+          </div>
+        </div>
+      </div>
     <mat-tab-group>
         <mat-tab label="History">
                 <!-- <mat-form-field>
@@ -141,5 +144,5 @@
         
         </mat-tab>
     </mat-tab-group>
-
+  
 </div>
