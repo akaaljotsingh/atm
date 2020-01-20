@@ -250,6 +250,7 @@ button:focus {
   img {
     border-radius: 50%;
     width: 51px;
+    margin-left: -7px;
   }	
 }
 .bodrer {
@@ -270,11 +271,7 @@ button:focus {
 	font-weight: 500;
 }
 
-.cause {
-	font-size: 14px;
-	display: flex;
-	align-items: center;
-}
+
 
 .dot {
 	height: 13px;
@@ -334,4 +331,12 @@ mat-label{
 }
 .nav{
   align-items: center;
+}
+.table-header{
+  .mat-progress-bar{
+    width: 75%;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: #70aade;
+}
 }

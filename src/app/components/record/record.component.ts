@@ -20,16 +20,16 @@ export class RecordComponent implements OnInit {
   inlineRange;
   constructor(fb: FormBuilder) {
     this.form = fb.group({
-      date: [{begin: new Date(2018, 7, 5), end: new Date(2018, 7, 25)}]
+      date: [{ begin: new Date(2018, 7, 5), end: new Date(2018, 7, 25) }]
     });
   }
 
   inlineRangeChange($event) {
     this.inlineRange = $event;
-  } 
+  }
 
   ngOnInit() { }
- 
+
   public barChartOptions: ChartOptions = {
     responsive: true,
     // We use these empty structures as placeholders for dynamic theming.
@@ -41,7 +41,7 @@ export class RecordComponent implements OnInit {
       }
     }
   };
-  public barChartLabels: Label[] = ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Aug','Sep','Oct','Nov','Dec'];
+  public barChartLabels: Label[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
   public barChartPlugins = [];
@@ -50,30 +50,30 @@ export class RecordComponent implements OnInit {
     { data: [5, 2, 4, 4, 5, 2, 7, 8], label: 'Off Day Trend 2020' }
   ];
 
-    // events
-    // public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
-    //   console.log(event, active);
-    // }
-  
-    // public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
-    //   console.log(event, active);
-    // }
-  
-    public randomize(): void {
-      // Only Change 3 values
-      const data = [
-        Math.round(Math.random() * 100),
-        59,
-        80,
-        (Math.random() * 100),
-        56,
-        (Math.random() * 100),
-        40];
-      this.barChartData[0].data = data;
-    }
+  // events
+  // public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
+  //   console.log(event, active);
+  // }
+
+  // public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+  //   console.log(event, active);
+  // }
+
+  public randomize(): void {
+    // Only Change 3 values
+    const data = [
+      Math.round(Math.random() * 100),
+      59,
+      80,
+      (Math.random() * 100),
+      56,
+      (Math.random() * 100),
+      40];
+    this.barChartData[0].data = data;
+  }
 
 
-      // Pie
+  // Pie
   public pieChartOptions: ChartOptions = {
     responsive: true,
     legend: {
@@ -88,7 +88,7 @@ export class RecordComponent implements OnInit {
       },
     }
   };
-  public pieChartLabels: Label[] = [['Used Leaves'],  'Left Leaves'];
+  public pieChartLabels: Label[] = [['Used Leaves'], 'Left Leaves'];
   public pieChartData: number[] = [5, 7];
   public pieChartType: ChartType = 'pie';
   public pieChartLegend = true;
@@ -99,37 +99,37 @@ export class RecordComponent implements OnInit {
     },
   ];
 
-// events
-public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
-  console.log(event, active);
-}
-
-public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
-  console.log(event, active);
-}
-
-changeLabels() {
-  const words = ['Used', 'Left'];
-  const randomWord = () => words[Math.trunc(Math.random() * words.length)];
-  this.pieChartLabels = Array.apply(null, { length: 2 }).map(_ => randomWord());
-}
-
-addSlice() {
-  this.pieChartLabels.push(['Used', 'Left']);
-  this.pieChartData.push(400);
-  this.pieChartColors[0].backgroundColor.push('rgba(196,79,244,0.3)');
-}
-
-removeSlice() {
-  this.pieChartLabels.pop();
-  this.pieChartData.pop();
-  this.pieChartColors[0].backgroundColor.pop();
-}
-
-changeLegendPosition() {
-  this.pieChartOptions.legend.position = this.pieChartOptions.legend.position === 'left' ? 'top' : 'left';
-}
+  // events
+  public chartClicked({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    console.log(event, active);
   }
+
+  public chartHovered({ event, active }: { event: MouseEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
+  changeLabels() {
+    const words = ['Used', 'Left'];
+    const randomWord = () => words[Math.trunc(Math.random() * words.length)];
+    this.pieChartLabels = Array.apply(null, { length: 2 }).map(_ => randomWord());
+  }
+
+  addSlice() {
+    this.pieChartLabels.push(['Used', 'Left']);
+    this.pieChartData.push(400);
+    this.pieChartColors[0].backgroundColor.push('rgba(196,79,244,0.3)');
+  }
+
+  removeSlice() {
+    this.pieChartLabels.pop();
+    this.pieChartData.pop();
+    this.pieChartColors[0].backgroundColor.pop();
+  }
+
+  changeLegendPosition() {
+    this.pieChartOptions.legend.position = this.pieChartOptions.legend.position === 'left' ? 'top' : 'left';
+  }
+}
 
 export interface PeriodicElement {
   name: string;
@@ -139,12 +139,12 @@ export interface PeriodicElement {
   extraleaves: number;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves:3, extraleaves:2 },
-  {name: 'Jack', ID: 76898, Usedleaves:6, Leftleaves: 6, extraleaves:2 },
-  {name: 'Anne', ID: 71268, Usedleaves: 6,Leftleaves: 6, extraleaves:2 },
-  {name: 'Rock', ID: 76869, Usedleaves: 9, Leftleaves: 3, extraleaves:2 },
-  {name: 'Janni', ID: 86798, Usedleaves: 2, Leftleaves: 10 ,extraleaves:2 },
-  {name: 'Devid', ID: 57896, Usedleaves: 7, Leftleaves: 5, extraleaves:2 },
-  {name: 'Maic', ID: 61276, Usedleaves: 6, Leftleaves: 6, extraleaves:2} ,
-  
+  { name: 'smith', ID: 55076, Usedleaves: 3, Leftleaves: 3, extraleaves: 2 },
+  { name: 'Jack', ID: 76898, Usedleaves: 6, Leftleaves: 6, extraleaves: 2 },
+  { name: 'Anne', ID: 71268, Usedleaves: 6, Leftleaves: 6, extraleaves: 2 },
+  { name: 'Rock', ID: 76869, Usedleaves: 9, Leftleaves: 3, extraleaves: 2 },
+  { name: 'Janni', ID: 86798, Usedleaves: 2, Leftleaves: 10, extraleaves: 2 },
+  { name: 'Devid', ID: 57896, Usedleaves: 7, Leftleaves: 5, extraleaves: 2 },
+  { name: 'Maic', ID: 61276, Usedleaves: 6, Leftleaves: 6, extraleaves: 2 },
+
 ];

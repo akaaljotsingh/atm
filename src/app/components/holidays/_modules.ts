@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HolidaysComponent } from './holidays.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatSharedModule } from 'src/app/shared/mat.module';
+
+
 
 
 
@@ -12,13 +14,10 @@ import { MatSharedModule } from 'src/app/shared/mat.module';
   declarations: [
     HolidaysComponent,
   ],
- 
-    
-
   imports: [
     MatTabsModule,
-        MatTableModule, 
-        MatSharedModule, 
+    MatTableModule,
+    MatSharedModule,
     CommonModule,
     RouterModule.forChild([
       { path: '', component: HolidaysComponent }

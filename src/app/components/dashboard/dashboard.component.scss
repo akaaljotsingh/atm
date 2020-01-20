@@ -80,6 +80,7 @@ h3 {
 		height: 0.5px;
 		margin: 0px;
 	}
+	
 }
 
 .btn-primary {
@@ -149,6 +150,7 @@ border-color: #03a9f4!important;
 .accept {
 	display: flex;
 	align-items: center;
+	margin-top: 11px;
 .box {
 	height: 27px;
 	width: 60px;
@@ -166,11 +168,13 @@ border-color: #03a9f4!important;
 	background-color: green;
 }
 }
-.dot {
-	margin-left: 20px!important;
-}
+// .dot {
+// 	margin-left: 10px !important;
+// 	margin-right: 3px;
+// }
 .list1 {
-    padding-left: 20px!important;
+	// width: 100%;
+    padding-left: 16px!important;
 }
 .employee-on-leave {
     padding: 15px 5px!important;   
@@ -182,3 +186,31 @@ border-color: #03a9f4!important;
 // .fix-width {
 // 	width: 35px;
 // }
+.rejectbutton{
+	margin-right: 13px;
+    padding: 0px;
+}
+.accepttbutton{
+	padding: 0px;
+	background-color: green;
+	color: white;
+
+}
+
+.cause {
+	font-size: 14px;
+    display: flex;
+    align-items: center;
+	
+}
+.status{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.holiday{
+	margin-bottom: 46px;
+}
+.holidayscroll{
+	overflow-y: scroll;
+}

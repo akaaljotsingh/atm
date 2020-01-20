@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatSharedModule } from 'src/app/shared/mat.module';
+
 
 
 
@@ -14,6 +16,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   imports: [
     FormsModule,
     ReactiveFormsModule,
+    MatSharedModule,
     CommonModule,
     RouterModule.forChild([
       { path: '', component: ProfileComponent }

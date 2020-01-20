@@ -18,10 +18,12 @@
     margin: auto;
     position: relative;
     margin-bottom: -80px;
+    justify-content: space-evenly;
      
     .year-select {
-      width: 33%;
-      padding: 23px;
+      margin-top: 20px;
+    width: 35%;
+    // padding: 20px;
      
       // float: left;
       i {
@@ -90,7 +92,9 @@
       background: #2c3e50;
       height: 46px;
       width: 33%;
+      margin-left: 39px;
     }
+    
     .left-leave {
       background: #2c3e50;
       height: 46px;
@@ -200,4 +204,28 @@ table th, td {
     background-color: white;
     height: 104px;
     border-radius: 4px;
+}
+.used{
+  width: 35%;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+}
+  .usedleave{
+    color: white;
+    
+  }
+  .button{
+    a{
+      text-decoration: none;
+    }
+  }
+.header{
+  .button{
+    margin-right: 14px;
+  }
 }
