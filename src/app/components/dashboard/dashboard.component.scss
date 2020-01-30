@@ -114,6 +114,7 @@ border-color: #03a9f4!important;
 .today-absent {
 	padding: 7px 15px 0px 15px;
 	height: 441px;
+	overflow-y: auto;
 	.list {
 		display: flex;
 		align-items: center;
@@ -206,11 +207,15 @@ border-color: #03a9f4!important;
 .status{
 	display: flex;
     align-items: center;
-    justify-content: space-between;
+	justify-content: space-between;
+	.dot{
+		margin-right: 4px;
+		margin-left: 4px;
+	}
 }
 .holiday{
 	margin-bottom: 46px;
 }
 .holidayscroll{
-	overflow-y: scroll;
+	overflow-y: auto;
 }
