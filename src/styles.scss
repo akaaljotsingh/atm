@@ -278,8 +278,7 @@ button:focus {
 	width: 13px;
 	border-radius: 50%;
 	display: inline-block;
-	margin-right: 4px;
-	margin-left: 30px;
+
 }
 .sick-dot {
 	background-color: pink;
@@ -339,4 +338,11 @@ mat-label{
   .mat-progress-bar-fill::after {
     background-color: #70aade;
 }
+}
+.mat-drawer-content {
+  height: 100vh !important;
+}
+.mat-button {
+  min-width: 53px !important;
+    line-height: 31px;
 }

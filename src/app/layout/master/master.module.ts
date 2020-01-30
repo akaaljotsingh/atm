@@ -81,9 +81,7 @@ export const routes: Routes = [
                 path: 'apply',
                 loadChildren: 'src/app/components/apply/_module#ApplyModule'
             },
-          
-            
-        ],
+          ],
 
     }
 
@@ -114,9 +112,8 @@ export const routes: Routes = [
         InvitePopupComponent,
         HelpPopupComponent,
         ActivityComponent
-         
-    ],
+        ],
     providers: [],
-    entryComponents: [InvitePopupComponent,HelpPopupComponent,ActivityComponent]
+    entryComponents: [InvitePopupComponent, HelpPopupComponent, ActivityComponent]
 })
 export class MasterModule { }

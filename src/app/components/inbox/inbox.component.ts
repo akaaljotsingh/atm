@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class InboxComponent implements OnInit {
-  replySection=false;
-  replyMessage=false;
+  replySection = false;
+  replyMessage = false;
 
   constructor() { }
 
